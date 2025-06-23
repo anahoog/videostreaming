@@ -7,7 +7,6 @@ Este projeto executa cenários de simulação de videostreaming utilizando o **O
 
 ## Requisitos
 
-- Ubuntu 20.04 ou superior
 - OMNeT++ 6.1 ([https://omnetpp.org](https://omnetpp.org))
 - INET 4.5 (clonado em `samples/inet4.5`)
 - `make`, `gcc/g++`, `clang`, `ffmpeg`, `vlc`, `tcpdump`, `moreutils`
