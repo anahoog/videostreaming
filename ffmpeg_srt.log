@@ -1,0 +1,63 @@
+[2025-06-22 21:48:57] ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+[2025-06-22 21:48:57]   built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+[2025-06-22 21:48:57]   configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+[2025-06-22 21:48:57]   libavutil      58. 29.100 / 58. 29.100
+[2025-06-22 21:48:57]   libavcodec     60. 31.102 / 60. 31.102
+[2025-06-22 21:48:57]   libavformat    60. 16.100 / 60. 16.100
+[2025-06-22 21:48:57]   libavdevice    60.  3.100 / 60.  3.100
+[2025-06-22 21:48:57]   libavfilter     9. 12.100 /  9. 12.100
+[2025-06-22 21:48:57]   libswscale      7.  5.100 /  7.  5.100
+[2025-06-22 21:48:57]   libswresample   4. 12.100 /  4. 12.100
+[2025-06-22 21:48:57]   libpostproc    57.  3.100 / 57.  3.100
+[2025-06-22 21:48:57] [mov,mp4,m4a,3gp,3g2,mj2 @ 0x60bd7ac31e00] st: 1 edit list: 2 Missing key frame while searching for timestamp: 0
+[2025-06-22 21:48:57] [mov,mp4,m4a,3gp,3g2,mj2 @ 0x60bd7ac31e00] st: 1 edit list 2 Cannot find an index entry before timestamp: 0.
+[2025-06-22 21:48:57] Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'soundh264.mp4':
+[2025-06-22 21:48:57]   Metadata:
+[2025-06-22 21:48:57]     major_brand     : isom
+[2025-06-22 21:48:57]     minor_version   : 0
+[2025-06-22 21:48:57]     compatible_brands: mp41avc1
+[2025-06-22 21:48:57]     creation_time   : 2025-05-23T22:04:43.000000Z
+[2025-06-22 21:48:57]     playback_requirements: QuickTime 6.0 or greater
+[2025-06-22 21:48:57]     playback_requirements-eng: QuickTime 6.0 or greater
+[2025-06-22 21:48:57]     encoder         : vlc 3.0.20 stream output
+[2025-06-22 21:48:57]     encoder-eng     : vlc 3.0.20 stream output
+[2025-06-22 21:48:57]   Duration: 00:05:58.72, start: 0.000000, bitrate: 2167 kb/s
+[2025-06-22 21:48:57]   Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)
+[2025-06-22 21:48:57]     Metadata:
+[2025-06-22 21:48:57]       creation_time   : 2025-05-23T22:04:43.000000Z
+[2025-06-22 21:48:57]       handler_name    : SoundHandler
+[2025-06-22 21:48:57]       vendor_id       : [0][0][0][0]
+[2025-06-22 21:48:57]   Stream #0:1[0x2](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1107:1108 DAR 492:277], 2026 kb/s, SAR 959:960 DAR 959:540, 29.98 fps, 30 tbr, 90k tbn (default)
+[2025-06-22 21:48:57]     Metadata:
+[2025-06-22 21:48:57]       creation_time   : 2025-05-23T22:04:43.000000Z
+[2025-06-22 21:48:57]       handler_name    : VideoHandler
+[2025-06-22 21:48:57]       vendor_id       : [0][0][0][0]
+[2025-06-22 21:49:00] Stream mapping:
+[2025-06-22 21:49:00]   Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+[2025-06-22 21:49:00]   Stream #0:0 -> #0:1 (aac (native) -> aac (native))
+[2025-06-22 21:49:00] Press [q] to stop, [?] for help
+[2025-06-22 21:49:00] [libx264 @ 0x60bd7aee7640] using SAR=959/960
+[2025-06-22 21:49:00] [libx264 @ 0x60bd7aee7640] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-06-22 21:49:00] [libx264 @ 0x60bd7aee7640] profile High, level 4.0, 4:2:0, 8-bit
+[2025-06-22 21:49:00] Output #0, mpegts, to 'srt://192.168.2.20:4004?mode=listener&pkt_size=1316':
+[2025-06-22 21:49:00]   Metadata:
+[2025-06-22 21:49:00]     major_brand     : isom
+[2025-06-22 21:49:00]     minor_version   : 0
+[2025-06-22 21:49:00]     compatible_brands: mp41avc1
+[2025-06-22 21:49:00]     encoder         : Lavf60.16.100
+[2025-06-22 21:49:00]     playback_requirements: QuickTime 6.0 or greater
+[2025-06-22 21:49:00]     playback_requirements-eng: QuickTime 6.0 or greater
+[2025-06-22 21:49:00]   Stream #0:0(eng): Video: h264, yuv420p(tv, bt709, progressive), 1920x1080 [SAR 959:960 DAR 959:540], q=2-31, 2000 kb/s, 30 fps, 90k tbn (default)
+[2025-06-22 21:49:00]     Metadata:
+[2025-06-22 21:49:00]       creation_time   : 2025-05-23T22:04:43.000000Z
+[2025-06-22 21:49:00]       handler_name    : VideoHandler
+[2025-06-22 21:49:00]       vendor_id       : [0][0][0][0]
+[2025-06-22 21:49:00]       encoder         : Lavc60.31.102 libx264
+[2025-06-22 21:49:00]     Side data:
+[2025-06-22 21:49:00]       cpb: bitrate max/min/avg: 0/0/2000000 buffer size: 0 vbv_delay: N/A
+[2025-06-22 21:49:00]   Stream #0:1(eng): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+[2025-06-22 21:49:00]     Metadata:
+[2025-06-22 21:49:00]       creation_time   : 2025-05-23T22:04:43.000000Z
+[2025-06-22 21:49:00]       handler_name    : SoundHandler
+[2025-06-22 21:49:00]       vendor_id       : [0][0][0][0]
+[2025-06-22 21:49:00]       encoder         : Lavc60.31.102 aac
