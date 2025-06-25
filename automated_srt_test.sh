@@ -1,52 +1,47 @@
 #!/bin/bash
 
-# Verifica se o utilitário 'ts' está instalado
-if ! command -v ts &> /dev/null; then
-    echo "[ERRO] O utilitário 'ts' não está instalado. Instale com: sudo apt install moreutils"
-    exit 1
-fi
+# Ativa o ambiente virtual
+source "$(dirname "$0")/../../../../../.venv/bin/activate"
 
-# Caminho do vídeo
-VIDEO="soundh264.mp4"
-
-# IPs e porta
+VIDEO="RickAstley.mkv"
 SERVER_IP="192.168.2.20"
-CLIENT_IP="192.168.3.99"
 PORT=4004
+PROTO="srt"
 
-# Arquivos de saída
-FFMPEG_LOG="ffmpeg_srt.log"
-VLC_LOG="vlc_srt.log"
-PCAP_FILE="srt_capture.pcap"
+TIMESTAMP=$(date '+%Y%m%d_%H%M%S')
+DIR="capturas/${PROTO}_${TIMESTAMP}"
+mkdir -p "$DIR"
+
+FFMPEG_LOG="$DIR/ffmpeg_srt.log"
+VLC_LOG="$DIR/vlc_srt.log"
+PCAP_FILE="$DIR/srt_capture.pcap"
+CSV_FILE="$DIR/srt_capture.csv"
+RESULTS_CSV="$DIR/resultados.csv"
 
 echo "[INFO] Iniciando teste SRT em $(date '+%Y-%m-%d %H:%M:%S')"
 
-# Iniciar captura de pacotes SRT
+# Captura pacotes SRT (porta 4004)
 echo "[INFO] Iniciando captura de pacotes na porta $PORT..."
 sudo tcpdump -i any port $PORT -w "$PCAP_FILE" &
 TCPDUMP_PID=$!
 
-# Iniciar FFmpeg como servidor SRT (listener) com timestamps no log
+# Inicia FFmpeg (listener)
 echo "[INFO] Iniciando FFmpeg (listener SRT)..."
 ffmpeg -re -i "$VIDEO" \
-  -c:v libx264 -preset veryfast -b:v 2M \
-  -c:a aac -b:a 128k \
-  -f mpegts "srt://$SERVER_IP:$PORT?mode=listener&pkt_size=1316" \
-  2>&1 | ts '[%Y-%m-%d %H:%M:%S]' > "$FFMPEG_LOG" &
-
+    -c:v libx264 -preset veryfast -b:v 2M \
+    -c:a aac -ar 44100 -b:a 128k \
+    -f mpegts "srt://$SERVER_IP:$PORT?mode=listener&pkt_size=1316" \
+    2>&1 | ts '[%Y-%m-%d %H:%M:%S]' > "$FFMPEG_LOG" &
 FFMPEG_PID=$!
-sleep 3
 
-# Iniciar o VLC como cliente SRT (caller) com timestamps no log
+sleep 5
+
+# Inicia VLC como cliente (caller)
 echo "[INFO] Iniciando VLC (caller SRT)..."
-cvlc -vvv "srt://$CLIENT_IP:$PORT?mode=caller" \
-  2>&1 | ts '[%Y-%m-%d %H:%M:%S]' > "$VLC_LOG" &
-
+cvlc -vvv "srt://$SERVER_IP:$PORT?mode=caller" 2>&1 | ts '[%Y-%m-%d %H:%M:%S]' > "$VLC_LOG" &
 VLC_PID=$!
 
-# Tempo de execução do teste (ajuste conforme necessário)
-DURACAO_TESTE=25
-sleep $DURACAO_TESTE
+sleep 25
 
 # Finaliza os processos
 echo "[INFO] Encerrando processos..."
@@ -54,8 +49,18 @@ kill $FFMPEG_PID &> /dev/null
 kill $VLC_PID &> /dev/null
 sudo kill $TCPDUMP_PID
 
+# Converte pcap para CSV
+echo "[INFO] Convertendo captura para CSV com $(pwd)/pcap.sh..."
+./pcap.sh "$PCAP_FILE" "$CSV_FILE"
+
+# Executa coleta de métricas
+echo "[INFO] Executando análise com coletar.py..."
+python3 coletar.py -d "$DIR" -o "$RESULTS_CSV"
+
 echo "[SUCESSO] Teste SRT finalizado às $(date '+%Y-%m-%d %H:%M:%S')"
-echo "Logs salvos em:"
+echo "Arquivos salvos em:"
 echo "  - $FFMPEG_LOG"
 echo "  - $VLC_LOG"
 echo "  - $PCAP_FILE"
+echo "  - $CSV_FILE"
+echo "  - $RESULTS_CSV"

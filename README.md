@@ -55,8 +55,6 @@ cd showcases/emulation/videostreaming
 # Para escutar com o protocolo SRT
 ./VideoStreamingShowcase -u Cmdenv -f omnetpp.ini -c General-01
 
-# Para escutar com o protocolo RTP e RTMP
-./VideoStreamingShowcase -u Cmdenv -f omnetpp.ini -c General-03
 ```
 
 > Use `-u Qtenv` para abrir com interface gráfica (GUI).
@@ -84,4 +82,67 @@ cd showcases/emulation/videostreaming
 
 ---
 
+## Coleta de Métricas QoE/QoS
 
+Este projeto inclui o script `coletar_metricas.py`, que realiza a coleta automatizada de métricas de desempenho e experiência de vídeo para os protocolos **RTMP**, **RTP** e **SRT**.
+
+### Métricas coletadas
+
+- Retransmissões  
+- Tempo total de sessão (s)  
+- Jitter médio (s)  
+- Playback Start Time (s)  
+- Duration of Interruptions (s)  
+- Number of Interruptions  
+- Eventos de Buffering (detectados via log do VLC)  
+- Taxa de Perda Estimada  
+- Nome dos arquivos de origem (CSV, log)
+
+###  Requisitos
+
+Certifique-se de ter o Python ≥ 3.8 e instale as dependências com:
+
+```bash
+pip install pandas numpy tabulate
+
+```
+
+
+Se estiver em um sistema com gerenciamento externo de pacotes (como Ubuntu), recomenda-se criar um ambiente virtual:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install pandas numpy tabulate
+```
+
+### Como executar
+
+Execute o script apontando para a pasta onde estão os arquivos `.csv` e `vlc_*.log`:
+
+```bash
+python3 coletar.py -d /caminho/para/os/arquivos -o resultado.csv
+```
+
+* `-d`: Diretório onde estão os arquivos de captura e logs (padrão: diretório atual).
+* `-o`: Nome do arquivo CSV de saída com os resultados.
+
+### Exemplo de arquivos esperados
+
+Na pasta informada via `-d`, espera-se encontrar:
+
+* Arquivos CSV com nomes como:
+
+  * `rtmp.csv`
+  * `rtp.csv`
+  * `srt.csv`
+* Arquivos de log VLC com nomes como:
+
+  * `vlc_rtmp.log`
+  * `vlc_rtp.log`
+  * `vlc_srt.log`
+
+```
+
+Se quiser também a versão para colar diretamente no Overleaf em LaTeX, posso converter para você. Deseja?
+```

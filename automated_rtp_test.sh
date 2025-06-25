@@ -1,58 +1,69 @@
 #!/bin/bash
 
-# Verifica se o utilitário 'ts' está instalado
-if ! command -v ts &> /dev/null; then
-    echo "[ERRO] O utilitário 'ts' não está instalado. Instale com: sudo apt install moreutils"
-    exit 1
+# Ativa ambiente virtual se existir
+if [[ -f ../../../../../../.venv/bin/activate ]]; then
+    echo "Activating python virtual environment in '../../../../../../.venv'"
+    source ../../../../../../.venv/bin/activate
 fi
 
-
-
-# Caminho do vídeo de entrada
-VIDEO="soundh264.mp4"
-
-# IPs e porta
+PROTO=rtp
+VIDEO="RickAstley.mkv"
 DEST_IP="192.168.2.99"
 SOURCE_IP="192.168.3.20"
-RTP_PORT=4004
-RTP_URL="rtp://192.168.3.20@$RTP_PORT"
+PORT=4004
+RTP_URL="rtp://$SOURCE_IP@$PORT"
 
-# Arquivos de log e captura
-VLC_TX_LOG="vlc_rtp_tx.log"
-VLC_RX_LOG="vlc_rtp_rx.log"
-PCAP_FILE="rtp_capture.pcap"
+# Diretório de saída com timestamp
+DIR_BASE="capturas"
+TIMESTAMP=$(date "+%Y%m%d_%H%M%S")
+DIR="$DIR_BASE/${PROTO}_${TIMESTAMP}"
+mkdir -p "$DIR"
+
+FFMPEG_LOG="$DIR/ffmpeg_${PROTO}.log"
+VLC_LOG="$DIR/vlc_${PROTO}.log"
+PCAP_FILE="$DIR/${PROTO}_capture.pcap"
+CSV_FILE="$DIR/${PROTO}_capture.csv"
+RESULTADOS="$DIR/resultados.csv"
 
 echo "[INFO] Iniciando teste RTP em $(date '+%Y-%m-%d %H:%M:%S')"
 
-# Inicia captura de pacotes RTP
-echo "[INFO] Capturando pacotes RTP na porta $RTP_PORT..."
-sudo tcpdump -i any port $RTP_PORT -w "$PCAP_FILE" &
+echo "[INFO] Iniciando captura de pacotes na porta $PORT..."
+sudo tcpdump -i any port $PORT -w "$PCAP_FILE" &
 TCPDUMP_PID=$!
 
-# Inicia o VLC como transmissor RTP
-echo "[INFO] Iniciando VLC como transmissor RTP..."
-cvlc "$VIDEO" --loop \
---sout "#transcode{vcodec=h264,acodec=mp4a,vb=2048k,ab=64k,deinterlace,scale=1,threads=2}:rtp{mux=ts,dst=192.168.2.99,port=$RTP_PORT}" \
-2>&1 | ts '[%Y-%m-%d %H:%M:%S]' > "$VLC_TX_LOG" &
+echo "[INFO] Iniciando FFmpeg para envio RTP..."
+ffmpeg -re -i "$VIDEO" \
+    -an -c:v libx264 -preset veryfast -b:v 2M \
+    -f rtp "rtp://$DEST_IP:$PORT" \
+    2>&1 | ts '[%Y-%m-%d %H:%M:%S]' > "$FFMPEG_LOG" &
 
-VLC_TX_PID=$!
+FFMPEG_PID=$!
 sleep 2
 
-# Inicia o VLC como receptor RTP com log timestampado
 echo "[INFO] Iniciando VLC como receptor RTP..."
-vlc "rtp://192.168.3.20:4004" -vvv 2>&1 | ts '[%Y-%m-%d %H:%M:%S]' > "$VLC_RX_LOG" &
+cvlc -vvv "rtp://$SOURCE_IP:$PORT" \
+    2>&1 | ts '[%Y-%m-%d %H:%M:%S]' > "$VLC_LOG" &
 
-VLC_RX_PID=$!
+VLC_PID=$!
 sleep 25
 
-# Finaliza os processos
 echo "[INFO] Encerrando processos..."
-kill $VLC_TX_PID &> /dev/null
-kill $VLC_RX_PID &> /dev/null
+kill $FFMPEG_PID &> /dev/null
+kill $VLC_PID &> /dev/null
 sudo kill $TCPDUMP_PID
 
+sleep 2
+
+echo "[INFO] Convertendo captura para CSV com $(realpath ./pcap.sh)..."
+./pcap.sh "$PCAP_FILE" "$CSV_FILE"
+
+echo "[INFO] Executando análise com coletar.py..."
+python3 coletar.py -d "$DIR" -o "$RESULTADOS"
+
 echo "[SUCESSO] Teste RTP finalizado às $(date '+%Y-%m-%d %H:%M:%S')"
-echo "Logs salvos em:"
-echo "  - $VLC_TX_LOG"
-echo "  - $VLC_RX_LOG"
+echo "Arquivos salvos em:"
+echo "  - $FFMPEG_LOG"
+echo "  - $VLC_LOG"
 echo "  - $PCAP_FILE"
+echo "  - $CSV_FILE"
+echo "  - $RESULTADOS"
