@@ -1,75 +1,0 @@
-[2025-06-19 11:12:44] ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
-[2025-06-19 11:12:44]   built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
-[2025-06-19 11:12:44]   configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
-[2025-06-19 11:12:44]   libavutil      58. 29.100 / 58. 29.100
-[2025-06-19 11:12:44]   libavcodec     60. 31.102 / 60. 31.102
-[2025-06-19 11:12:44]   libavformat    60. 16.100 / 60. 16.100
-[2025-06-19 11:12:44]   libavdevice    60.  3.100 / 60.  3.100
-[2025-06-19 11:12:44]   libavfilter     9. 12.100 /  9. 12.100
-[2025-06-19 11:12:44]   libswscale      7.  5.100 /  7.  5.100
-[2025-06-19 11:12:44]   libswresample   4. 12.100 /  4. 12.100
-[2025-06-19 11:12:44]   libpostproc    57.  3.100 / 57.  3.100
-[2025-06-19 11:12:44] Input #0, matroska,webm, from 'RickAstley.mkv':
-[2025-06-19 11:12:44]   Metadata:
-[2025-06-19 11:12:44]     MAJOR_BRAND     : dash
-[2025-06-19 11:12:44]     MINOR_VERSION   : 0
-[2025-06-19 11:12:44]     COMPATIBLE_BRANDS: iso6avc1mp41
-[2025-06-19 11:12:44]     ENCODER         : Lavf58.29.100
-[2025-06-19 11:12:44]   Duration: 00:00:17.37, start: -0.007000, bitrate: 2315 kb/s
-[2025-06-19 11:12:44]   Stream #0:0: Video: h264 (High), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 1k tbn (default)
-[2025-06-19 11:12:44]     Metadata:
-[2025-06-19 11:12:44]       HANDLER_NAME    : ISO Media file produced by Google Inc.
-[2025-06-19 11:12:44]       DURATION        : 00:00:17.373000000
-[2025-06-19 11:12:44]   Stream #0:1(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
-[2025-06-19 11:12:44]     Metadata:
-[2025-06-19 11:12:44]       DURATION        : 00:00:17.320000000
-[2025-06-19 11:12:44] Stream mapping:
-[2025-06-19 11:12:44]   Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
-[2025-06-19 11:12:44] Press [q] to stop, [?] for help
-[2025-06-19 11:12:45] [libx264 @ 0x5f7ae9aaea80] using SAR=1/1
-[2025-06-19 11:12:45] [libx264 @ 0x5f7ae9aaea80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
-[2025-06-19 11:12:45] [libx264 @ 0x5f7ae9aaea80] profile High, level 4.0, 4:2:0, 8-bit
-[2025-06-19 11:12:45] Output #0, rtp, to 'rtp://192.168.3.99:4004':
-[2025-06-19 11:12:45]   Metadata:
-[2025-06-19 11:12:45]     MAJOR_BRAND     : dash
-[2025-06-19 11:12:45]     MINOR_VERSION   : 0
-[2025-06-19 11:12:45]     COMPATIBLE_BRANDS: iso6avc1mp41
-[2025-06-19 11:12:45]     encoder         : Lavf60.16.100
-[2025-06-19 11:12:45]   Stream #0:0: Video: h264, yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 2000 kb/s, 25 fps, 90k tbn (default)
-[2025-06-19 11:12:45]     Metadata:
-[2025-06-19 11:12:45]       HANDLER_NAME    : ISO Media file produced by Google Inc.
-[2025-06-19 11:12:45]       DURATION        : 00:00:17.373000000
-[2025-06-19 11:12:45]       encoder         : Lavc60.31.102 libx264
-[2025-06-19 11:12:45]     Side data:
-[2025-06-19 11:12:45]       cpb: bitrate max/min/avg: 0/0/2000000 buffer size: 0 vbv_delay: N/A
-[2025-06-19 11:12:45] SDP:
-[2025-06-19 11:12:45] v=0
-[2025-06-19 11:12:45] o=- 0 0 IN IP4 127.0.0.1
-[2025-06-19 11:12:45] s=No Name
-[2025-06-19 11:12:45] c=IN IP4 192.168.3.99
-[2025-06-19 11:12:45] t=0 0
-[2025-06-19 11:12:45] a=tool:libavformat 60.16.100
-[2025-06-19 11:12:45] m=video 4004 RTP/AVP 96
-[2025-06-19 11:12:45] b=AS:2000
-[2025-06-19 11:12:45] a=rtpmap:96 H264/90000
-[2025-06-19 11:12:45] a=fmtp:96 packetization-mode=1
-[2025-06-19 11:12:45] 
-[2025-06-19 11:14:04] frame=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A dup=26 drop=0 speed=N/A    frame=   10 fps=0.0 q=26.0 size=      35kB time=00:00:00.32 bitrate= 907.9kbits/s dup=26 drop=0 speed=0.513x    frame=   23 fps= 20 q=17.0 size=      38kB time=00:00:00.84 bitrate= 366.3kbits/s dup=26 drop=0 speed=0.735x    frame=   29 fps=6.5 q=23.0 size=      80kB time=00:00:01.32 bitrate= 498.8kbits/s dup=26 drop=0 speed=0.294x    frame=   31 fps=4.1 q=25.0 size=     152kB time=00:00:01.44 bitrate= 865.9kbits/s dup=26 drop=0 speed=0.191x    frame=   32 fps=2.3 q=26.0 size=     174kB time=00:00:01.48 bitrate= 962.6kbits/s dup=26 drop=0 speed=0.108x    frame=   33 fps=2.0 q=28.0 size=     201kB time=00:00:01.52 bitrate=1084.8kbits/s dup=26 drop=0 speed=0.0906x    frame=   34 fps=1.5 q=27.0 size=     260kB time=00:00:01.56 bitrate=1366.0kbits/s dup=26 drop=0 speed=0.0681x    frame=   35 fps=1.2 q=27.0 size=     299kB time=00:00:01.60 bitrate=1532.8kbits/s dup=26 drop=0 speed=0.0551x    [out#0/rtp @ 0x5f7ae9a3ce40] video:1176kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.011974%
-[2025-06-19 11:14:04] frame=   75 fps=0.9 q=-1.0 Lsize=    1188kB time=00:00:02.88 bitrate=3379.9kbits/s dup=26 drop=0 speed=0.0362x    
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] frame I:2     Avg QP:14.56  size: 48492
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] frame P:24    Avg QP:17.23  size: 26321
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] frame B:49    Avg QP:16.84  size:  9712
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] consecutive B-frames:  4.0% 10.7% 48.0% 37.3%
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] mb I  I16..4: 38.8% 49.5% 11.7%
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] mb P  I16..4:  9.9% 23.3%  4.8%  P16..4:  7.0%  3.1%  1.6%  0.0%  0.0%    skip:50.1%
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] mb B  I16..4:  1.7%  3.7%  0.9%  B16..8:  9.1%  3.6%  0.4%  direct: 3.2%  skip:77.4%  L0:38.6% L1:55.5% BI: 6.0%
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] final ratefactor: 21.33
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] 8x8 transform intra:59.1% inter:30.1%
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] coded y,uvDC,uvAC intra: 51.3% 55.3% 10.8% inter: 2.7% 8.5% 0.3%
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] i16 v,h,dc,p: 50% 21% 18% 12%
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 32% 26% 19%  3%  3%  4%  4%  4%  3%
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 28% 12%  4%  5%  5%  4%  4%  3%
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] i8c dc,h,v,p: 47% 21% 26%  7%
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] Weighted P-Frames: Y:0.0% UV:0.0%
-[2025-06-19 11:14:04] [libx264 @ 0x5f7ae9aaea80] kb/s:3212.20
-[2025-06-19 11:14:04] Exiting normally, received signal 2.
