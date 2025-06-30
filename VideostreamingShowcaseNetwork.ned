@@ -57,11 +57,14 @@ network VideoStreamingShowcase
       //          @display("p=700,550");
       //  }
 
+
+	
     connections allowunconnected:
         host1.ethg++ <--> Eth100M <--> switch1.ethg++;
         switch1.ethg++ <--> Eth100M <--> router.ethg++;
         router.ethg++ <--> Eth100M <--> switch2.ethg++;
         switch2.ethg++ <--> Eth100M <--> host2.ethg++;
+        
 
         // Conexões diretas entre router2 e os hosts internos
         //host1.ethg++ <--> Eth100M <--> router2.ethg++;

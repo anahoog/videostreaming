@@ -1,0 +1,78 @@
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Input #0, mpegts, from 'srt://192.168.3.99:4004?mode=caller':
+  Duration: N/A, start: 1.400000, bitrate: N/A
+  Program 1 
+    Metadata:
+      service_name    : Service01
+      service_provider: FFmpeg
+  Stream #0:0[0x100]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn
+  Stream #0:1[0x101](eng): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 130 kb/s
+Output #0, mpegts, to 'capturas/srt_20250629_20-23-28/recebido_srt.ts':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 25 fps, 25 tbr, 90k tbn
+  Stream #0:1(eng): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 130 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    1280kB time=00:00:05.73 bitrate=1828.0kbits/s speed=11.1x    size=    1280kB time=00:00:06.25 bitrate=1676.1kbits/s speed=6.03x    size=    1536kB time=00:00:06.77 bitrate=1856.9kbits/s speed=4.35x    size=    1792kB time=00:00:07.25 bitrate=2023.1kbits/s speed=3.49x    size=    1792kB time=00:00:07.73 bitrate=1897.6kbits/s speed=2.98x    size=    2048kB time=00:00:08.33 bitrate=2012.6kbits/s speed=2.67x    size=    2048kB time=00:00:08.85 bitrate=1894.4kbits/s speed=2.43x    size=    2304kB time=00:00:09.37 bitrate=2013.0kbits/s speed=2.25x    size=    2560kB time=00:00:09.89 bitrate=2119.1kbits/s speed=2.12x    size=    2560kB time=00:00:10.37 bitrate=2021.1kbits/s speed=   2x    size=    2560kB time=00:00:10.85 bitrate=1931.8kbits/s speed= 1.9x    size=    2816kB time=00:00:11.45 bitrate=2013.6kbits/s speed=1.84x    size=    3072kB time=00:00:11.97 bitrate=2101.3kbits/s speed=1.77x    20:23:47.754617/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432330897 delayed for 112.846 ms
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 0, dts = 1254259).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 0
+size=    3072kB time=00:00:12.49 bitrate=2013.9kbits/s speed=1.69x    20:23:47.761737/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432330907 delayed for 40.169 ms
+[mpegts @ 0x55e929ef4dc0] PES packet size mismatch
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 1, dts = 1244041).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 1
+    Last message repeated 2 times
+[mpegts @ 0x55e92a07d440] AAC bitstream not in ADTS format and extradata missing
+20:23:48.202123/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331028 delayed for 0.306 ms
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 0, dts = 1304659).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 0
+size=    3328kB time=00:00:13.13 bitrate=2075.4kbits/s speed=1.66x    size=    3328kB time=00:00:13.61 bitrate=2002.2kbits/s speed=1.61x    size=    3584kB time=00:00:14.13 bitrate=2076.9kbits/s speed=1.58x    size=    3584kB time=00:00:14.61 bitrate=2008.7kbits/s speed=1.54x    size=    3840kB time=00:00:15.21 bitrate=2067.4kbits/s speed=1.52x    20:23:50.649279/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331548 delayed for 0.152 ms
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 0, dts = 1553059).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 0
+20:23:50.708979/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331587 delayed for 0.206 ms
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 0, dts = 1574659).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 0
+20:23:50.726792/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331614 delayed for 0.079 ms
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 0, dts = 1589059).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 0
+20:23:50.728808/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331632 delayed for 0.162 ms
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 0, dts = 1596259).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 0
+20:23:50.730459/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331653 delayed for 0.119 ms
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 0, dts = 1607059).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 0
+20:23:50.737050/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331672 delayed for 0.098 ms
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 0, dts = 1614259).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 0
+20:23:50.737308/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331677 delayed for 0.305 ms
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 0, dts = 1617859).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 0
+20:23:50.749110/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331701 delayed for 0.449 ms
+20:23:50.749302/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331710 delayed for 0.631 ms
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 0, dts = 1628659).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 0
+20:23:50.749569/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331716 delayed for 0.868 ms
+20:23:50.749753/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331722 delayed for 1.031 ms
+20:23:50.749860/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331725 delayed for 1.134 ms
+20:23:50.752320/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331730 delayed for 3.584 ms
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 0, dts = 1632259).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 0
+20:23:50.816535/SRT:TsbPd!W:SRT.br: @38619508: RCV-DROPPED 1 packet(s). Packet seqno %1432331821 delayed for 32.081 ms
+[mpegts @ 0x55e929ef4dc0] Packet corrupt (stream = 0, dts = 1668259).
+[in#0/mpegts @ 0x55e929ef4cc0] corrupt input packet in stream 0
+[in#0/mpegts @ 0x55e929ef4cc0] Error during demuxing: Input/output error
+[in#0/mpegts @ 0x55e929ef4cc0] Error retrieving a packet from demuxer: Input/output error
+[out#0/mpegts @ 0x55e929fa7f00] video:3907kB audio:273kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 5.013823%
+size=    4389kB time=00:00:17.25 bitrate=2083.8kbits/s speed=1.65x    

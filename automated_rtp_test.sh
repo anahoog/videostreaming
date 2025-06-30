@@ -7,7 +7,7 @@ if [[ -f ../../../../../../.venv/bin/activate ]]; then
 fi
 
 PROTO=rtp
-VIDEO="RickAstley.mkv"
+VIDEO="soundh264.mp4"
 DEST_IP="192.168.2.99"
 SOURCE_IP="192.168.3.20"
 PORT=4004
@@ -45,7 +45,7 @@ cvlc -vvv "rtp://$SOURCE_IP:$PORT" \
     2>&1 | ts '[%Y-%m-%d %H:%M:%S]' > "$VLC_LOG" &
 
 VLC_PID=$!
-sleep 25
+sleep 400
 
 echo "[INFO] Encerrando processos..."
 kill $FFMPEG_PID &> /dev/null
