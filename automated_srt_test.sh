@@ -3,7 +3,7 @@
 # Ativa o ambiente virtual
 source "$(dirname "$0")/../../../../../.venv/bin/activate"
 
-VIDEO="RickAstley.mkv"
+VIDEO="soundh264.mp4"
 SERVER_IP="192.168.2.20"
 PORT=4004
 PROTO="srt"
@@ -41,7 +41,7 @@ echo "[INFO] Iniciando VLC (caller SRT)..."
 cvlc -vvv "srt://$SERVER_IP:$PORT?mode=caller" 2>&1 | ts '[%Y-%m-%d %H:%M:%S]' > "$VLC_LOG" &
 VLC_PID=$!
 
-sleep 25
+sleep 400
 
 # Finaliza os processos
 echo "[INFO] Encerrando processos..."

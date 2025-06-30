@@ -8,7 +8,7 @@ fi
 
 PROTO=rtmp
 PORT=1935
-VIDEO="RickAstley.mkv"
+VIDEO="soundh264.mp4"
 SERVER_IP="192.168.2.20"
 RTMP_URL="rtmp://$SERVER_IP:$PORT/live/stream"
 DIR_BASE="capturas"
@@ -57,7 +57,7 @@ echo "[INFO] Iniciando VLC (cliente RTMP)..."
 cvlc -vvv "$RTMP_URL" 2>&1 | ts '[%Y-%m-%d %H:%M:%S]' > "$VLC_LOG" &
 
 VLC_PID=$!
-DURACAO_TESTE=25
+DURACAO_TESTE=400
 sleep $DURACAO_TESTE
 
 echo "[INFO] Encerrando processos..."

@@ -13,7 +13,7 @@ if [[ -f ../../../../../../.venv/bin/activate ]]; then
     source ../../../../../../.venv/bin/activate
 fi
 
-VIDEO="RickAstley.mkv"
+VIDEO="soundh264.mp4"
 TIMESTAMP=$(date "+%Y%m%d_%H%M%S")
 DIR_BASE="capturas"
 DIR="$DIR_BASE/${PROTO}_${TIMESTAMP}"
@@ -110,7 +110,7 @@ case "$PROTO" in
 esac
 
 # Espera a execução
-sleep 25
+sleep 600
 
 # Finaliza os processos
 echo "[INFO] Encerrando processos..."
@@ -126,7 +126,7 @@ echo "[INFO] Convertendo captura para CSV..."
 
 # Coletando métricas
 echo "[INFO] Executando análise com coletar.py..."
-python3 coletar.py -d "$DIR" -o "$RESULTADOS"
+python3 "$(dirname "$0")/coletar.py" -d "$DIR" -o "$RESULTADOS"
 
 echo "[SUCESSO] Teste $PROTO finalizado às $(date '+%Y-%m-%d %H:%M:%S')"
 echo "Arquivos salvos em:"
