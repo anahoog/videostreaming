@@ -1,16 +1,18 @@
-
 # Simulação de Videostreaming com OMNeT++ e INET
 
-Este projeto executa cenários de simulação de videostreaming utilizando o **OMNeT++ 6.1** e o **INET Framework 4.5**, com geração e recepção de tráfego real usando VLC e FFmpeg por meio de interfaces TAP.
+Este projeto realiza simulações de videostreaming utilizando o **OMNeT++ 6.1** e o **INET Framework 4.5**, com **tráfego real de vídeo transmitido via FFmpeg** por meio de interfaces **TAP**. O sistema coleta automaticamente capturas de rede e calcula métricas de qualidade de vídeo (QoS/QoE).
 
 ---
 
 ## Requisitos
 
 - OMNeT++ 6.1 ([https://omnetpp.org](https://omnetpp.org))
-- INET 4.5 (clonado em `samples/inet4.5`)
-- `make`, `gcc/g++`, `clang`, `ffmpeg`, `vlc`, `tcpdump`, `moreutils`
-- Interfaces TAP criadas (`tapa`, `tapb`)
+- INET Framework 4.5 (em `samples/inet4.5`)
+- Dependências do sistema:
+  - `gcc`, `g++`, `clang`, `make`
+  - `ffmpeg`, `tcpdump`, `tshark`, `moreutils`
+  - Python 3.8+ com `pandas`, `numpy`, `tabulate` (para análise posterior)
+- Interfaces TAP (`tapa`, `tapb`) previamente criadas com `setup.sh`
 
 ---
 
@@ -23,12 +25,12 @@ cd ~/Downloads/omnetpp-6.1
 # Ative o ambiente
 . setenv
 
-# Clone o INET, se ainda não estiver presente
+# Clone o INET (caso não tenha)
 cd samples
 git clone https://github.com/inet-framework/inet.git inet4.5
 cd inet4.5
 
-# Ative o ambiente do INET
+# Ative novamente o ambiente OMNeT++
 . ../../setenv
 
 # Compile o INET
@@ -37,78 +39,113 @@ make -j$(nproc)
 ````
 
 ---
+
 ## Configuração das Interfaces TAP
 
-Antes de rodar o cenário, certifique-se de criar as interfaces:
+Antes de rodar os testes, execute:
 
 ```bash
 ./setup.sh
 ```
 
+> Isso criará as interfaces TAP `tapa` e `tapb` exigidas pelo cenário.
+
 ---
 
-## Execução do Cenário `General-01`
+## Execução dos Cenários 
 
 ```bash
 cd showcases/emulation/videostreaming
 
-# Para escutar com o protocolo SRT
+# Executa o cenário em modo texto
+
+# Cenário sem erro e delay
 ./VideoStreamingShowcase -u Cmdenv -f omnetpp.ini -c General-01
 
+# Cenário com taxa de erro de 5% e delay de 50ms
+./VideoStreamingShowcase -u Cmdenv -f omnetpp.ini -c General-02
+
+# Cenário com taxa de erro de 10% e delay de 50ms
+./VideoStreamingShowcase -u Cmdenv -f omnetpp.ini -c General-03
+
+# Cenário com taxa de erro de 5% e delay de 300ms
+./VideoStreamingShowcase -u Cmdenv -f omnetpp.ini -c General-04
+
+# Cenário com taxa de erro de 10% e delay de 300ms
+./VideoStreamingShowcase -u Cmdenv -f omnetpp.ini -c General-05
 ```
 
-> Use `-u Qtenv` para abrir com interface gráfica (GUI).
+> Use `-u Qtenv` para rodar com interface gráfica (GUI).
 
 ---
 
+## Testes Automatizados com FFmpeg
 
+O script `ffmpeg_coletas.sh` executa testes de streaming com coleta automática de pacotes e métricas de qualidade de vídeo.
 
-## Estrutura de Arquivos
+### Sintaxe:
 
-* `omnetpp.ini` — configurações dos cenários
-* `*.ned` — topologia da rede
-* `VideoStreamingShowcase` — binário da simulação
-* `automated_srt_test.sh`, `automated_rtp_test.sh`, `automated_rtmp_test.sh`
+```bash
+./ffmpeg_coletas.sh <PROTOCOLO>
+```
+
+* `PROTOCOLO`: `srt`, `rtp` ou `rtmp`
+
+### O que o script faz:
+
+1. Obtém a duração do vídeo automaticamente
+2. Inicia a captura com `tcpdump`
+3. Executa a transmissão e recepção com `ffmpeg`
+4. Aguarda a recepção por 5 minutos
+5. Calcula **PSNR** e **SSIM** com `calculate_metrics.sh`
+6. Converte o `.pcap` para `.csv` com `tshark` conforme o protocolo
+
+### Exemplo:
+
+```bash
+./ffmpeg_coletas.sh rtp
+```
 
 ---
 
-## Métricas Avaliadas
+## Estrutura de Saída
+
+Cada execução cria um diretório `capturas/<PROTO>_<TIMESTAMP>/` contendo:
+
+* `ffmpeg_tx.log` — Log do transmissor FFmpeg
+* `ffmpeg_rx.log` — Log do receptor FFmpeg
+* `recebido_<PROTO>.ts` — Arquivo recebido
+* `*_capture.pcap` — Captura bruta dos pacotes
+* `*_capture.csv` — Captura convertida para CSV (via tshark)
+* `psnr_<PROTO>.stats`, `ssim_<PROTO>.stats` — Métricas visuais
+* `resultados_<PROTO>.csv` — Resultado consolidado
+
+---
+
+## Métricas Coletadas
+
+### QoS
+
+* Retransmissões (estimadas via tshark)
+* Jitter médio
+* Tempo de sessão (duração do tráfego)
+* Taxa de perda estimada
+
+### QoE (Indireta)
 
 * **Playback Start Time**
 * **Number of Interruptions**
 * **Duration of Interruptions**
-* **Throughput médio**
-* **Jitter estimado**
+* **PSNR**
+* **SSIM**
+
+> O cálculo das métricas visuais é feito via `calculate_metrics.sh` comparando o vídeo original com o recebido.
 
 ---
 
-## Coleta de Métricas QoE/QoS
+## Ambiente Python (opcional)
 
-Este projeto inclui o script `coletar_metricas.py`, que realiza a coleta automatizada de métricas de desempenho e experiência de vídeo para os protocolos **RTMP**, **RTP** e **SRT**.
-
-### Métricas coletadas
-
-- Retransmissões  
-- Tempo total de sessão (s)  
-- Jitter médio (s)  
-- Playback Start Time (s)  
-- Duration of Interruptions (s)  
-- Number of Interruptions  
-- Eventos de Buffering (detectados via log do VLC)  
-- Taxa de Perda Estimada  
-- Nome dos arquivos de origem (CSV, log)
-
-###  Requisitos
-
-Certifique-se de ter o Python ≥ 3.8 e instale as dependências com:
-
-```bash
-pip install pandas numpy tabulate
-
-```
-
-
-Se estiver em um sistema com gerenciamento externo de pacotes (como Ubuntu), recomenda-se criar um ambiente virtual:
+Para análise posterior dos resultados:
 
 ```bash
 python3 -m venv venv
@@ -116,33 +153,24 @@ source venv/bin/activate
 pip install pandas numpy tabulate
 ```
 
-### Como executar
+---
 
-Execute o script apontando para a pasta onde estão os arquivos `.csv` e `vlc_*.log`:
+## Observações
 
-```bash
-python3 coletar.py -d /caminho/para/os/arquivos -o resultado.csv
-```
+* O tráfego é gerado com `ffmpeg -re` para simular envio em tempo real.
+* O modo `listener`/`caller` é usado para conexões SRT.
+* O Nginx com módulo RTMP é requerido para testes `rtmp`. Certifique-se de que está instalado corretamente.
+* O script `calculate_metrics.sh` usa `ffmpeg` com filtros de PSNR e SSIM.
 
-* `-d`: Diretório onde estão os arquivos de captura e logs (padrão: diretório atual).
-* `-o`: Nome do arquivo CSV de saída com os resultados.
+---
 
-### Exemplo de arquivos esperados
+## Referências
 
-Na pasta informada via `-d`, espera-se encontrar:
+* [OMNeT++](https://omnetpp.org)
+* [INET Framework](https://inet.omnetpp.org)
+* [FFmpeg Filters](https://ffmpeg.org/ffmpeg-filters.html#ssim)
+* [Wireshark/tshark](https://www.wireshark.org/docs/man-pages/tshark.html)
 
-* Arquivos CSV com nomes como:
 
-  * `rtmp.csv`
-  * `rtp.csv`
-  * `srt.csv`
-* Arquivos de log VLC com nomes como:
 
-  * `vlc_rtmp.log`
-  * `vlc_rtp.log`
-  * `vlc_srt.log`
 
-```
-
-Se quiser também a versão para colar diretamente no Overleaf em LaTeX, posso converter para você. Deseja?
-```
