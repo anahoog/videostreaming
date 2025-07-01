@@ -3,157 +3,173 @@
 # Ativa o ambiente virtual
 source "$(dirname "$0")/../../../../../.venv/bin/activate"
 
-# Parâmetros
-VIDEO="RickAstley.mkv"
+# Diretório deste script (para chamar analisador)
+SCRIPT_DIR="$(dirname "$0")"
+
+# Parâmetros principais
+VIDEO="soundh264.mp4"
 PORTA_SRT=4004
-PORTA_RTP=5005
+PORTA_RTP=4004
 PORTA_RTMP=1935
 
-SERVIDOR_IP_SRT="192.168.2.20"
-SERVIDOR_IP_RTP="192.168.2.99"
-SERVIDOR_IP_RTMP="192.168.2.20"
+SERV_SRT="192.168.2.20"
+SERV_RTP="192.168.2.99"
+SERV_RTMP="192.168.2.20"
 
-CLIENTE_IP_SRT="192.168.3.99"
-CLIENTE_IP_RTP="192.168.3.20"
-CLIENTE_IP_RTMP="192.168.3.99"
+CLI_SRT="192.168.3.99"
+CLI_RTP="192.168.3.20"
+CLI_RTMP="192.168.3.99"
 
 # Uso: ./ffmpeg_coletas.sh <PROTO: srt|rtp|rtmp>
 PROTO="$1"
-if [[ -z "$PROTO" || ( "$PROTO" != "srt" && "$PROTO" != "rtp" && "$PROTO" != "rtmp" ) ]]; then
-    echo "Usage: $0 <srt|rtp|rtmp>"
-    exit 1
+if [[ "$PROTO" != "srt" && "$PROTO" != "rtp" && "$PROTO" != "rtmp" ]]; then
+  echo "Usage: $0 <srt|rtp|rtmp>"
+  exit 1
 fi
 
-# Seleção de porta e IPs
+# Obtém duração do vídeo em segundos (usa ffprobe) [mantém, pode ser útil para logs/fallback]
+DURACAO_VIDEO=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO")
+DURACAO_VIDEO=${DURACAO_VIDEO%.*}
+
+if [[ -z "$DURACAO_VIDEO" || "$DURACAO_VIDEO" -le 0 ]]; then
+  echo "[ERRO] Não foi possível obter a duração do vídeo ($VIDEO)"
+  exit 1
+fi
+
+# Configura porta, IP e filtro de captura
 case "$PROTO" in
-    srt)
-        PORT=$PORTA_SRT
-        SERVIDOR_IP=$SERVIDOR_IP_SRT
-        CLIENTE_IP=$CLIENTE_IP_SRT
-        ;;
-    rtp)
-        PORT=$PORTA_RTP
-        SERVIDOR_IP=$SERVIDOR_IP_RTP
-        CLIENTE_IP=$CLIENTE_IP_RTP
-        ;;
-    rtmp)
-        PORT=$PORTA_RTMP
-        SERVIDOR_IP=$SERVIDOR_IP_RTMP
-        CLIENTE_IP=$CLIENTE_IP_RTMP
-        ;;
+  srt)
+    PORT=$PORTA_SRT; SERVIP=$SERV_SRT; CLIIP=$CLI_SRT; FILTER="udp port $PORT";;
+  rtp)
+    PORT=$PORTA_RTP; SERVIP=$SERV_RTP; CLIIP=$CLI_RTP; FILTER="udp port $PORT";;
+  rtmp)
+    PORT=$PORTA_RTMP; SERVIP=$SERV_RTMP; CLIIP=$CLI_RTMP; FILTER="tcp port $PORT";;
+  *) ;;
 esac
 
-# Prepara diretório e arquivos de saída
-TS=$(date '+%Y%m%d_%H-%M-%S')
+# Cria pasta de resultados
+TS=$(date +"%Y%m%d_%H-%M-%S")
 DIR="capturas/${PROTO}_${TS}"
 mkdir -p "$DIR"
 
-FFMPEG_LOG="$DIR/ffmpeg_${PROTO}.log"
-RECV_LOG="$DIR/ffmpeg_recv_${PROTO}.log"
-PCAP_FILE="$DIR/${PROTO}_capture.pcap"
-RECEBIDO="$DIR/recebido_${PROTO}.ts"
-RESULTS_CSV="$DIR/resultados_${PROTO}.csv"
+# Arquivos de log e saída
+PCAP="$DIR/${PROTO}_capture.pcap"
+CSV_PCAP="$DIR/${PROTO}_capture.csv"
+GRAF_DIR="$DIR/graficos"
+RECV="$DIR/recebido_${PROTO}.ts"
 PSNR_STATS="$DIR/psnr_${PROTO}.stats"
 SSIM_STATS="$DIR/ssim_${PROTO}.stats"
+RESULT_CSV="$DIR/resultados_${PROTO}.csv"
 
-echo "[INFO] Iniciando teste $PROTO em $(date '+%Y-%m-%d %H:%M:%S') (porta $PORT)"
-
-# Captura de pacotes
-sudo tcpdump -i any udp port "$PORT" -w "$PCAP_FILE" &
+# Inicia captura de pacotes
+echo "[INFO] Capturando pacotes ($FILTER) em $PCAP"
+sudo tcpdump -i any $FILTER -w "$PCAP" &
 TCPDUMP_PID=$!
 
-# Transmissão e recepção
+# Aguarda interface UP
+sleep 5
+
+echo "[INFO] Iniciando transmissor e receptor para $PROTO"
 case "$PROTO" in
-    srt)
-        echo "[INFO] Transmissor SRT (listener)…"
-        ffmpeg -re -i "$VIDEO" \
-            -c:v libx264 -preset veryfast -b:v 2M \
-            -c:a aac -ar 44100 -b:a 128k \
-            -f mpegts "srt://$SERVIDOR_IP:$PORT?mode=listener&pkt_size=1316" \
-            >"$FFMPEG_LOG" 2>&1 &
-        TX_PID=$!
-        sleep 5
-        echo "[INFO] Receptor SRT (caller)…"
-        ffmpeg -i "srt://$CLIENTE_IP:$PORT?mode=caller" \
-            -c copy "$RECEBIDO" \
-            >"$RECV_LOG" 2>&1 &
-        RX_PID=$!
-        ;;
-         rtp)
-        echo "[INFO] Iniciando receptor RTP (salvando em TS)…"
-        ffmpeg -y \
-            -i "rtp://192.168.2.99:4004" \
-            -c copy "$RECEBIDO" \
-            2>&1 | tee "$RECV_LOG" &
-        RX_PID=$!
-
-        sleep 3  # dá tempo para o receptor abrir
-
-        echo "[INFO] Iniciando transmissor RTP…"
-        ffmpeg -re -i "$VIDEO" \
-            -c copy -f rtp_mpegts \
-            "rtp://192.168.3.20:4004?pkt_size=1300" \
-            2>&1 | tee "$FFMPEG_LOG" &
-        TX_PID=$!
-
-        # espera o transmissor terminar de enviar
-        wait "$TX_PID"
-        # dá um tempinho para o receptor fechar o TS
-        sleep 1
-        kill "$RX_PID"
-        ;;
-
-
-    rtmp)
-        echo "[INFO] Reiniciando nginx…"
-        sudo nginx -s stop &> /dev/null && sleep 1
-        sudo nginx
-        echo "[INFO] Transmissor RTMP…"
-        ffmpeg -re -i "$VIDEO" \
-            -c:v libx264 -preset veryfast -b:v 2M \
-            -c:a aac -ar 44100 -b:a 128k \
-            -f flv "rtmp://$SERVIDOR_IP:$PORT/live/stream" \
-            >"$FFMPEG_LOG" 2>&1 &
-        TX_PID=$!
-        sleep 5
-        echo "[INFO] Receptor RTMP…"
-        ffmpeg -i "rtmp://$CLIENTE_IP:$PORT/live/stream" \
-            -c copy "$RECEBIDO" \
-            >"$RECV_LOG" 2>&1 &
-        RX_PID=$!
-        ;;
+  srt)
+    ffmpeg -re -i "$VIDEO" \
+           -c:v libx264 -b:v 4M \
+           -c:a aac -ar 44100 -b:a 128k \
+           -f mpegts "srt://$SERVIP:$PORT?mode=listener&pkt_size=1316" \
+           >"$DIR/ffmpeg_tx.log" 2>&1 &
+    TX_PID=$!
+    sleep 1
+    ffmpeg -i "srt://$CLIIP:$PORT?mode=caller" -c copy "$RECV" \
+           >"$DIR/ffmpeg_rx.log" 2>&1 &
+    RX_PID=$!;;
+  rtp)
+    ffmpeg -re -i "$VIDEO" \
+           -c:v libx264 -b:v 4M \
+           -c:a aac -ar 44100 -b:a 128k \
+           -f rtp_mpegts "rtp://${CLIIP}:$PORT?pkt_size=1300" \
+           2>&1 | tee "$DIR/ffmpeg_tx.log" &
+    TX_PID=$!
+    sleep 1
+    ffmpeg -i "rtp://${SERVIP}:$PORT" -c copy "$RECV" -loglevel debug \
+           2>&1 | ts '[%Y-%m-%d %H:%M:%S]' >"$DIR/ffmpeg_rx.log" &
+    RX_PID=$!;;
+  rtmp)
+    sudo nginx -s stop &> /dev/null && sleep 1 && sudo nginx
+    ffmpeg -re -i "$VIDEO" \
+           -c:v libx264 -b:v 4M \
+           -c:a aac -ar 44100 -b:a 128k \
+           -f flv "rtmp://$SERVIP:$PORT/live/stream" \
+           >"$DIR/ffmpeg_tx.log" 2>&1 &
+    TX_PID=$!
+    sleep 1
+    ffmpeg -i "rtmp://$CLIIP:$PORT/live/stream" -c copy "$RECV" \
+           >"$DIR/ffmpeg_rx.log" 2>&1 &
+    RX_PID=$!;;
 esac
 
-# Duração do teste (segundos)
-sleep 100
+sleep 300
+# Aguarda o ffmpeg receptor finalizar (encerra quando receber tudo ou der erro)
+wait $RX_PID
 
-echo "[INFO] Encerrando processos…"
-kill "$TX_PID" &>/dev/null
-kill "$RX_PID" &>/dev/null
-sudo kill "$TCPDUMP_PID"
+# Finaliza o transmissor (se ainda estiver rodando) e o tcpdump
+kill $TX_PID &>/dev/null
+sudo kill $TCPDUMP_PID &>/dev/null
 
-# Cálculo de PSNR e SSIM
-echo "[INFO] Calculando PSNR…"
-ffmpeg -i "$VIDEO" -i "$RECEBIDO" \
-    -lavfi "psnr=stats_file=${PSNR_STATS}" -f null - \
-    > /dev/null 2>&1
+# ---- Chamada ao calculate_metrics.sh ----
+echo "[INFO] Extraindo métricas de PSNR e SSIM..."
+"$SCRIPT_DIR/calculate_metrics.sh" \
+  "$VIDEO" \
+  "$RECV" \
+  "$PSNR_STATS" \
+  "$SSIM_STATS" \
+  "$PROTO" \
+  "$RESULT_CSV"
 
-echo "[INFO] Calculando SSIM…"
-ffmpeg -i "$VIDEO" -i "$RECEBIDO" \
-    -lavfi "ssim=stats_file=${SSIM_STATS}" -f null - \
-    > /dev/null 2>&1
+# Exporta o PCAP para CSV conforme o protocolo
+case "$PROTO" in
+  srt)
+    tshark -r "$PCAP" \
+      -T fields \
+      -e frame.number \
+      -e frame.time_relative \
+      -e ip.src \
+      -e ip.dst \
+      -e udp.srcport \
+      -e udp.dstport \
+      -e frame.len \
+      -E header=y \
+      -E separator=, \
+      > "$CSV_PCAP"
+    ;;
+  rtp)
+    tshark -r "$PCAP" \
+      -T fields \
+      -e frame.number \
+      -e frame.time_relative \
+      -e ip.src \
+      -e ip.dst \
+      -e udp.srcport \
+      -e udp.dstport \
+      -e rtp.seq \
+      -e rtp.timestamp \
+      -e frame.len \
+      -E header=y \
+      -E separator=, \
+      > "$CSV_PCAP"
+    ;;
+  rtmp)
+    tshark -r "$PCAP" \
+      -T fields \
+      -e frame.number \
+      -e frame.time_relative \
+      -e ip.src \
+      -e ip.dst \
+      -e tcp.srcport \
+      -e tcp.dstport \
+      -e frame.len \
+      -E header=y \
+      -E separator=, \
+      > "$CSV_PCAP"
+    ;;
+esac
 
-# Extrai médias finais
-FINAL_PSNR=$(grep -oP 'psnr_avg:\K[0-9]+\.[0-9]+' "$PSNR_STATS" | tail -1)
-FINAL_SSIM=$(grep -oP 'All:\K[0-9]+\.[0-9]+'     "$SSIM_STATS" | tail -1)
-
-# Grava resultados em CSV
-{
-  echo "protocol,psnr,ssim"
-  echo "$PROTO,$FINAL_PSNR,$FINAL_SSIM"
-} > "$RESULTS_CSV"
-
-echo "[INFO] Resultados finais:"
-echo "  PSNR médio: $FINAL_PSNR"
-echo "  SSIM médio: $FINAL_SSIM"
-echo "[INFO] CSV de resultados: $RESULTS_CSV"
