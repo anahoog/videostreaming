@@ -1,8 +1,8 @@
 version 3
-run General-2-0-20250629-20:13:36-295134
+run General-2-0-20250630-18:38:45-87830
 attr configname General-2
-attr datetime 20250629-20:13:36
-attr datetimef 20250629-201336
+attr datetime 20250630-18:38:45
+attr datetimef 20250630-183845
 attr experiment General-2
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,7 +10,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network VideoStreamingShowcase
-attr processid 295134
+attr processid 87830
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -1536,7 +1536,7 @@ par VideoStreamingShowcase.switch1.bridging displayStringTextFormat "\"proc: %p\
 scalar VideoStreamingShowcase.switch1.bridging "processed frames" 0
 scalar VideoStreamingShowcase.switch1.bridging "discarded frames" 0
 scalar VideoStreamingShowcase.switch1.bridging "number of received BPDUs from STP module" 0
-scalar VideoStreamingShowcase.switch1.bridging "number of received frames from network (including BPDUs)" 15265
+scalar VideoStreamingShowcase.switch1.bridging "number of received frames from network (including BPDUs)" 99272
 scalar VideoStreamingShowcase.switch1.bridging "number of dropped frames (including BPDUs)" 0
 scalar VideoStreamingShowcase.switch1.bridging "number of delivered BPDUs to the STP module" 0
 scalar VideoStreamingShowcase.switch1.bridging "number of dispatched BPDU frames to the network" 0
@@ -1568,22 +1568,22 @@ attr title "pause sent, count"
 scalar VideoStreamingShowcase.switch1.ethernet pauseSent:sum 0
 attr recordingmode sum
 attr title "pause sent, sum"
-scalar VideoStreamingShowcase.switch1.ethernet decapPk:count 15265
+scalar VideoStreamingShowcase.switch1.ethernet decapPk:count 99272
 attr interpolationmode none
 attr recordingmode count
 attr source decapPk
 attr title "packets decapsulated, count"
-scalar VideoStreamingShowcase.switch1.ethernet decapPk:sum(packetBytes) 15488193
+scalar VideoStreamingShowcase.switch1.ethernet decapPk:sum(packetBytes) 91223343
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source decapPk
 attr title "packets decapsulated, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch1.ethernet encapPk:count 15265
+scalar VideoStreamingShowcase.switch1.ethernet encapPk:count 99272
 attr interpolationmode none
 attr recordingmode count
 attr source encapPk
 attr title "packets encapsulated, count"
-scalar VideoStreamingShowcase.switch1.ethernet encapPk:sum(packetBytes) 15488193
+scalar VideoStreamingShowcase.switch1.ethernet encapPk:sum(packetBytes) 91223343
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source encapPk
@@ -2135,14 +2135,14 @@ attr recordingmode last
 attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
 attr title "queue length, last"
 attr unit pk
-scalar VideoStreamingShowcase.switch1.eth[0].queue queueLength:max 1
+scalar VideoStreamingShowcase.switch1.eth[0].queue queueLength:max 0
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode max
 attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
 attr title "queue length, max"
 attr unit pk
-scalar VideoStreamingShowcase.switch1.eth[0].queue queueLength:timeavg 5.6974099927701e-08
+scalar VideoStreamingShowcase.switch1.eth[0].queue queueLength:timeavg 0
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode timeavg
@@ -2156,14 +2156,14 @@ attr recordingmode last
 attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
 attr title "queue bit length, last"
 attr unit b
-scalar VideoStreamingShowcase.switch1.eth[0].queue queueBitLength:max 1264
+scalar VideoStreamingShowcase.switch1.eth[0].queue queueBitLength:max 0
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode max
 attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
 attr title "queue bit length, max"
 attr unit b
-scalar VideoStreamingShowcase.switch1.eth[0].queue queueBitLength:timeavg 7.2015262308613e-05
+scalar VideoStreamingShowcase.switch1.eth[0].queue queueBitLength:timeavg 0
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode timeavg
@@ -2171,13 +2171,13 @@ attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetP
 attr title "queue bit length, timeavg"
 attr unit b
 statistic VideoStreamingShowcase.switch1.eth[0].queue queueingTime:histogram
-field count 2740
-field mean 2.9519708029197e-08
-field stddev 1.5452093917115e-06
+field count 16222
+field mean 0
+field stddev 0
 field min 0
-field max 8.0884e-05
-field sum 8.0884e-05
-field sqrsum 6.542221456e-09
+field max 0
+field sum 0
+field sqrsum 0
 attr interpolationmode none
 attr recordingmode histogram
 attr source queueingTime(packetPulled)
@@ -2209,7 +2209,7 @@ bin	-0.08	0
 bin	-0.06	0
 bin	-0.04	0
 bin	-0.02	0
-bin	0	2740
+bin	0	16222
 bin	0.02	0
 bin	0.04	0
 bin	0.06	0
@@ -2235,108 +2235,108 @@ bin	0.44	0
 bin	0.46	0
 bin	0.48	0
 bin	0.5	0
-scalar VideoStreamingShowcase.switch1.eth[0].queue outgoingPackets:count 2740
+scalar VideoStreamingShowcase.switch1.eth[0].queue outgoingPackets:count 16222
 attr recordingmode count
 attr source packetPulled
 attr title "outgoing packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.switch1.eth[0].queue outgoingPacketLengths:sum 1728168
+scalar VideoStreamingShowcase.switch1.eth[0].queue outgoingPacketLengths:sum 10817120
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPulled)
 attr title "outgoing packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.switch1.eth[0].queue outgoingPacketLengths:histogram
-field count 2740
-field mean 630.71824817518
-field stddev 450.49642590242
+field count 16222
+field mean 666.81790161509
+field stddev 84.866455536596
 field min 512
-field max 12144
-field sum 1728168
-field sqrsum 1645859008
+field max 1008
+field sum 10817120
+field sqrsum 7329878016
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPulled)
 attr title "outgoing packet lengths"
 attr unit b
 bin	-inf	0
-bin	0	0
-bin	200	0
-bin	400	1619
-bin	600	1103
-bin	800	4
-bin	1000	1
-bin	1200	6
-bin	1400	0
-bin	1600	0
-bin	1800	0
-bin	2000	0
-bin	2200	3
-bin	2400	0
-bin	2600	0
-bin	2800	0
-bin	3000	0
-bin	3200	0
-bin	3400	0
-bin	3600	0
-bin	3800	0
-bin	4000	0
-bin	4200	0
-bin	4400	0
-bin	4600	0
-bin	4800	0
-bin	5000	0
-bin	5200	0
-bin	5400	0
-bin	5600	0
-bin	5800	0
-bin	6000	0
-bin	6200	0
-bin	6400	0
-bin	6600	0
-bin	6800	0
-bin	7000	0
-bin	7200	0
-bin	7400	0
-bin	7600	0
-bin	7800	0
-bin	8000	0
-bin	8200	0
-bin	8400	0
-bin	8600	0
-bin	8800	0
-bin	9000	0
-bin	9200	0
-bin	9400	0
-bin	9600	0
-bin	9800	0
-bin	10000	0
-bin	10200	0
-bin	10400	0
-bin	10600	0
-bin	10800	0
-bin	11000	0
-bin	11200	0
-bin	11400	0
-bin	11600	0
-bin	11800	0
-bin	12000	4
-bin	12200	0
-bin	12400	0
-bin	12600	0
-bin	12800	0
-bin	13000	0
-bin	13200	0
-bin	13400	0
-bin	13600	0
-bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
+bin	380	0
+bin	390	0
+bin	400	0
+bin	410	0
+bin	420	0
+bin	430	0
+bin	440	0
+bin	450	0
+bin	460	0
+bin	470	0
+bin	480	0
+bin	490	0
+bin	500	0
+bin	510	14
+bin	520	4004
+bin	530	0
+bin	540	0
+bin	550	0
+bin	560	470
+bin	570	0
+bin	580	0
+bin	590	100
+bin	600	0
+bin	610	0
+bin	620	41
+bin	630	0
+bin	640	0
+bin	650	10
+bin	660	0
+bin	670	0
+bin	680	8
+bin	690	0
+bin	700	0
+bin	710	0
+bin	720	11564
+bin	730	0
+bin	740	0
+bin	750	3
+bin	760	0
+bin	770	0
+bin	780	0
+bin	790	0
+bin	800	0
+bin	810	1
+bin	820	0
+bin	830	0
+bin	840	0
+bin	850	0
+bin	860	0
+bin	870	0
+bin	880	3
+bin	890	0
+bin	900	0
+bin	910	0
+bin	920	0
+bin	930	0
+bin	940	0
+bin	950	0
+bin	960	0
+bin	970	1
+bin	980	0
+bin	990	0
+bin	1000	3
+bin	1010	0
+bin	1020	0
+bin	1030	0
+bin	1040	0
+bin	1050	0
+bin	1060	0
+bin	1070	0
+bin	1080	0
+bin	1090	0
+bin	1100	0
+bin	1110	0
+bin	1120	0
+bin	1130	0
+bin	1140	0
 statistic VideoStreamingShowcase.switch1.eth[0].queue flowQueueingTime:histogram
 field count 0
 field mean -nan
@@ -2353,108 +2353,108 @@ attr unit s
 bin	-inf	0
 bin	0	0
 bin	1	0
-scalar VideoStreamingShowcase.switch1.eth[0].queue incomingPackets:count 2740
+scalar VideoStreamingShowcase.switch1.eth[0].queue incomingPackets:count 16222
 attr recordingmode count
 attr source packetPushStarted
 attr title "incoming packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.switch1.eth[0].queue incomingPacketLengths:sum 1728168
+scalar VideoStreamingShowcase.switch1.eth[0].queue incomingPacketLengths:sum 10817120
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPushStarted)
 attr title "incoming packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.switch1.eth[0].queue incomingPacketLengths:histogram
-field count 2740
-field mean 630.71824817518
-field stddev 450.49642590242
+field count 16222
+field mean 666.81790161509
+field stddev 84.866455536596
 field min 512
-field max 12144
-field sum 1728168
-field sqrsum 1645859008
+field max 1008
+field sum 10817120
+field sqrsum 7329878016
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPushStarted)
 attr title "incoming packet lengths"
 attr unit b
 bin	-inf	0
-bin	0	0
-bin	200	0
-bin	400	1619
-bin	600	1103
-bin	800	4
-bin	1000	1
-bin	1200	6
-bin	1400	0
-bin	1600	0
-bin	1800	0
-bin	2000	0
-bin	2200	3
-bin	2400	0
-bin	2600	0
-bin	2800	0
-bin	3000	0
-bin	3200	0
-bin	3400	0
-bin	3600	0
-bin	3800	0
-bin	4000	0
-bin	4200	0
-bin	4400	0
-bin	4600	0
-bin	4800	0
-bin	5000	0
-bin	5200	0
-bin	5400	0
-bin	5600	0
-bin	5800	0
-bin	6000	0
-bin	6200	0
-bin	6400	0
-bin	6600	0
-bin	6800	0
-bin	7000	0
-bin	7200	0
-bin	7400	0
-bin	7600	0
-bin	7800	0
-bin	8000	0
-bin	8200	0
-bin	8400	0
-bin	8600	0
-bin	8800	0
-bin	9000	0
-bin	9200	0
-bin	9400	0
-bin	9600	0
-bin	9800	0
-bin	10000	0
-bin	10200	0
-bin	10400	0
-bin	10600	0
-bin	10800	0
-bin	11000	0
-bin	11200	0
-bin	11400	0
-bin	11600	0
-bin	11800	0
-bin	12000	4
-bin	12200	0
-bin	12400	0
-bin	12600	0
-bin	12800	0
-bin	13000	0
-bin	13200	0
-bin	13400	0
-bin	13600	0
-bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
+bin	380	0
+bin	390	0
+bin	400	0
+bin	410	0
+bin	420	0
+bin	430	0
+bin	440	0
+bin	450	0
+bin	460	0
+bin	470	0
+bin	480	0
+bin	490	0
+bin	500	0
+bin	510	14
+bin	520	4004
+bin	530	0
+bin	540	0
+bin	550	0
+bin	560	470
+bin	570	0
+bin	580	0
+bin	590	100
+bin	600	0
+bin	610	0
+bin	620	41
+bin	630	0
+bin	640	0
+bin	650	10
+bin	660	0
+bin	670	0
+bin	680	8
+bin	690	0
+bin	700	0
+bin	710	0
+bin	720	11564
+bin	730	0
+bin	740	0
+bin	750	3
+bin	760	0
+bin	770	0
+bin	780	0
+bin	790	0
+bin	800	0
+bin	810	1
+bin	820	0
+bin	830	0
+bin	840	0
+bin	850	0
+bin	860	0
+bin	870	0
+bin	880	3
+bin	890	0
+bin	900	0
+bin	910	0
+bin	920	0
+bin	930	0
+bin	940	0
+bin	950	0
+bin	960	0
+bin	970	1
+bin	980	0
+bin	990	0
+bin	1000	3
+bin	1010	0
+bin	1020	0
+bin	1030	0
+bin	1040	0
+bin	1050	0
+bin	1060	0
+bin	1070	0
+bin	1080	0
+bin	1090	0
+bin	1100	0
+bin	1110	0
+bin	1120	0
+bin	1130	0
+bin	1140	0
 scalar VideoStreamingShowcase.switch1.eth[0].queue droppedPacketsQueueOverflow:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -2481,14 +2481,14 @@ par VideoStreamingShowcase.switch1.eth[0].mac stopOperationExtraTime -1s
 attr unit s
 par VideoStreamingShowcase.switch1.eth[0].mac stopOperationTimeout 2s
 attr unit s
-scalar VideoStreamingShowcase.switch1.eth[0].mac "simulated time" 1419.66262043
+scalar VideoStreamingShowcase.switch1.eth[0].mac "simulated time" 1120.774384492
 scalar VideoStreamingShowcase.switch1.eth[0].mac full-duplex 1
-scalar VideoStreamingShowcase.switch1.eth[0].mac "frames/sec sent" 1.9300360244535
-scalar VideoStreamingShowcase.switch1.eth[0].mac "frames/sec rcvd" 8.8225186884235
-scalar VideoStreamingShowcase.switch1.eth[0].mac "bits/sec sent" 1217.3089402583
-scalar VideoStreamingShowcase.switch1.eth[0].mac "bits/sec rcvd" 87609.22081778
-scalar VideoStreamingShowcase.switch1.eth[0].mac "rx channel idle (%)" 99.911826137986
-scalar VideoStreamingShowcase.switch1.eth[0].mac "rx channel utilization (%)" 0.088173862013839
+scalar VideoStreamingShowcase.switch1.eth[0].mac "frames/sec sent" 14.473921089259
+scalar VideoStreamingShowcase.switch1.eth[0].mac "frames/sec rcvd" 74.100551501847
+scalar VideoStreamingShowcase.switch1.eth[0].mac "bits/sec sent" 9651.4696888821
+scalar VideoStreamingShowcase.switch1.eth[0].mac "bits/sec rcvd" 654248.35019972
+scalar VideoStreamingShowcase.switch1.eth[0].mac "rx channel idle (%)" 99.341009214504
+scalar VideoStreamingShowcase.switch1.eth[0].mac "rx channel utilization (%)" 0.65899078549584
 scalar VideoStreamingShowcase.switch1.eth[0].mac rxPausePkUnits:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -2505,42 +2505,42 @@ scalar VideoStreamingShowcase.switch1.eth[0].mac txPausePkUnits:sum 0
 attr interpolationmode none
 attr recordingmode sum
 attr title "pause units sent, sum"
-scalar VideoStreamingShowcase.switch1.eth[0].mac rxPkOk:count 12525
+scalar VideoStreamingShowcase.switch1.eth[0].mac rxPkOk:count 83050
 attr interpolationmode none
 attr recordingmode count
 attr source rxPkOk
 attr title "packets received OK, count"
-scalar VideoStreamingShowcase.switch1.eth[0].mac rxPkOk:sum(packetBytes) 15546942
+scalar VideoStreamingShowcase.switch1.eth[0].mac rxPkOk:sum(packetBytes) 91658099
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source rxPkOk
 attr title "packets received OK, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch1.eth[0].mac txPk:count 2740
+scalar VideoStreamingShowcase.switch1.eth[0].mac txPk:count 16222
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToLower
 attr title "packets transmitted, count"
-scalar VideoStreamingShowcase.switch1.eth[0].mac txPk:sum(packetBytes) 216021
+scalar VideoStreamingShowcase.switch1.eth[0].mac txPk:sum(packetBytes) 1352140
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToLower
 attr title "packets transmitted, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch1.eth[0].mac packetReceivedFromUpper:count 2740
+scalar VideoStreamingShowcase.switch1.eth[0].mac packetReceivedFromUpper:count 16222
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, count"
-scalar VideoStreamingShowcase.switch1.eth[0].mac packetReceivedFromUpper:sum(packetBytes) 216021
+scalar VideoStreamingShowcase.switch1.eth[0].mac packetReceivedFromUpper:sum(packetBytes) 1352140
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch1.eth[0].mac passedUpPk:count 12525
+scalar VideoStreamingShowcase.switch1.eth[0].mac passedUpPk:count 83050
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
 attr title "packets passed to higher layer, count"
-scalar VideoStreamingShowcase.switch1.eth[0].mac passedUpPk:sum(packetBytes) 15546942
+scalar VideoStreamingShowcase.switch1.eth[0].mac passedUpPk:sum(packetBytes) 91658099
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToUpper
@@ -2664,7 +2664,7 @@ attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetP
 attr title "queue bit length, timeavg"
 attr unit b
 statistic VideoStreamingShowcase.switch1.eth[1].queue queueingTime:histogram
-field count 12525
+field count 83050
 field mean 0
 field stddev 0
 field min 0
@@ -2702,7 +2702,7 @@ bin	-0.08	0
 bin	-0.06	0
 bin	-0.04	0
 bin	-0.02	0
-bin	0	12525
+bin	0	83050
 bin	0.02	0
 bin	0.04	0
 bin	0.06	0
@@ -2728,25 +2728,25 @@ bin	0.44	0
 bin	0.46	0
 bin	0.48	0
 bin	0.5	0
-scalar VideoStreamingShowcase.switch1.eth[1].queue outgoingPackets:count 12525
+scalar VideoStreamingShowcase.switch1.eth[1].queue outgoingPackets:count 83050
 attr recordingmode count
 attr source packetPulled
 attr title "outgoing packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.switch1.eth[1].queue outgoingPacketLengths:sum 124375536
+scalar VideoStreamingShowcase.switch1.eth[1].queue outgoingPacketLengths:sum 733264792
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPulled)
 attr title "outgoing packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.switch1.eth[1].queue outgoingPacketLengths:histogram
-field count 12525
-field mean 9930.1825149701
-field stddev 2765.824714653
+field count 83050
+field mean 8829.1967730283
+field stddev 3970.1424428856
 field min 512
-field max 12144
-field sum 124375536
-field sqrsum 1330877697152
+field max 11024
+field sum 733264792
+field sqrsum 7783160049216
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPulled)
@@ -2755,65 +2755,65 @@ attr unit b
 bin	-inf	0
 bin	0	0
 bin	200	0
-bin	400	602
-bin	600	41
-bin	800	7
-bin	1000	1
-bin	1200	5
-bin	1400	3
-bin	1600	2
+bin	400	11193
+bin	600	6
+bin	800	11
+bin	1000	3
+bin	1200	11
+bin	1400	11
+bin	1600	0
 bin	1800	0
-bin	2000	153
+bin	2000	3500
 bin	2200	0
-bin	2400	2
+bin	2400	0
 bin	2600	0
 bin	2800	0
-bin	3000	1
-bin	3200	1
-bin	3400	95
-bin	3600	3
+bin	3000	0
+bin	3200	0
+bin	3400	1567
+bin	3600	0
 bin	3800	0
-bin	4000	3
+bin	4000	0
 bin	4200	0
-bin	4400	1
+bin	4400	0
 bin	4600	0
-bin	4800	1
-bin	5000	76
+bin	4800	0
+bin	5000	1573
 bin	5200	0
-bin	5400	2
+bin	5400	0
 bin	5600	0
 bin	5800	0
 bin	6000	0
 bin	6200	0
-bin	6400	72
+bin	6400	1381
 bin	6600	0
 bin	6800	0
-bin	7000	1
+bin	7000	0
 bin	7200	0
 bin	7400	0
 bin	7600	0
 bin	7800	0
-bin	8000	45
+bin	8000	1154
 bin	8200	0
-bin	8400	1
+bin	8400	0
 bin	8600	0
 bin	8800	0
 bin	9000	0
 bin	9200	0
-bin	9400	4731
+bin	9400	1229
 bin	9600	0
-bin	9800	1
-bin	10000	1
+bin	9800	0
+bin	10000	0
 bin	10200	0
 bin	10400	0
 bin	10600	0
-bin	10800	1
-bin	11000	3454
-bin	11200	2
+bin	10800	0
+bin	11000	61411
+bin	11200	0
 bin	11400	0
 bin	11600	0
-bin	11800	2
-bin	12000	3215
+bin	11800	0
+bin	12000	0
 bin	12200	0
 bin	12400	0
 bin	12600	0
@@ -2823,13 +2823,6 @@ bin	13200	0
 bin	13400	0
 bin	13600	0
 bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
 statistic VideoStreamingShowcase.switch1.eth[1].queue flowQueueingTime:histogram
 field count 0
 field mean -nan
@@ -2846,25 +2839,25 @@ attr unit s
 bin	-inf	0
 bin	0	0
 bin	1	0
-scalar VideoStreamingShowcase.switch1.eth[1].queue incomingPackets:count 12525
+scalar VideoStreamingShowcase.switch1.eth[1].queue incomingPackets:count 83050
 attr recordingmode count
 attr source packetPushStarted
 attr title "incoming packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.switch1.eth[1].queue incomingPacketLengths:sum 124375536
+scalar VideoStreamingShowcase.switch1.eth[1].queue incomingPacketLengths:sum 733264792
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPushStarted)
 attr title "incoming packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.switch1.eth[1].queue incomingPacketLengths:histogram
-field count 12525
-field mean 9930.1825149701
-field stddev 2765.824714653
+field count 83050
+field mean 8829.1967730283
+field stddev 3970.1424428856
 field min 512
-field max 12144
-field sum 124375536
-field sqrsum 1330877697152
+field max 11024
+field sum 733264792
+field sqrsum 7783160049216
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPushStarted)
@@ -2873,65 +2866,65 @@ attr unit b
 bin	-inf	0
 bin	0	0
 bin	200	0
-bin	400	602
-bin	600	41
-bin	800	7
-bin	1000	1
-bin	1200	5
-bin	1400	3
-bin	1600	2
+bin	400	11193
+bin	600	6
+bin	800	11
+bin	1000	3
+bin	1200	11
+bin	1400	11
+bin	1600	0
 bin	1800	0
-bin	2000	153
+bin	2000	3500
 bin	2200	0
-bin	2400	2
+bin	2400	0
 bin	2600	0
 bin	2800	0
-bin	3000	1
-bin	3200	1
-bin	3400	95
-bin	3600	3
+bin	3000	0
+bin	3200	0
+bin	3400	1567
+bin	3600	0
 bin	3800	0
-bin	4000	3
+bin	4000	0
 bin	4200	0
-bin	4400	1
+bin	4400	0
 bin	4600	0
-bin	4800	1
-bin	5000	76
+bin	4800	0
+bin	5000	1573
 bin	5200	0
-bin	5400	2
+bin	5400	0
 bin	5600	0
 bin	5800	0
 bin	6000	0
 bin	6200	0
-bin	6400	72
+bin	6400	1381
 bin	6600	0
 bin	6800	0
-bin	7000	1
+bin	7000	0
 bin	7200	0
 bin	7400	0
 bin	7600	0
 bin	7800	0
-bin	8000	45
+bin	8000	1154
 bin	8200	0
-bin	8400	1
+bin	8400	0
 bin	8600	0
 bin	8800	0
 bin	9000	0
 bin	9200	0
-bin	9400	4731
+bin	9400	1229
 bin	9600	0
-bin	9800	1
-bin	10000	1
+bin	9800	0
+bin	10000	0
 bin	10200	0
 bin	10400	0
 bin	10600	0
-bin	10800	1
-bin	11000	3454
-bin	11200	2
+bin	10800	0
+bin	11000	61411
+bin	11200	0
 bin	11400	0
 bin	11600	0
-bin	11800	2
-bin	12000	3215
+bin	11800	0
+bin	12000	0
 bin	12200	0
 bin	12400	0
 bin	12600	0
@@ -2941,13 +2934,6 @@ bin	13200	0
 bin	13400	0
 bin	13600	0
 bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
 scalar VideoStreamingShowcase.switch1.eth[1].queue droppedPacketsQueueOverflow:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -2974,14 +2960,14 @@ par VideoStreamingShowcase.switch1.eth[1].mac stopOperationExtraTime -1s
 attr unit s
 par VideoStreamingShowcase.switch1.eth[1].mac stopOperationTimeout 2s
 attr unit s
-scalar VideoStreamingShowcase.switch1.eth[1].mac "simulated time" 1419.66262043
+scalar VideoStreamingShowcase.switch1.eth[1].mac "simulated time" 1120.774384492
 scalar VideoStreamingShowcase.switch1.eth[1].mac full-duplex 1
-scalar VideoStreamingShowcase.switch1.eth[1].mac "frames/sec sent" 8.8225186884235
-scalar VideoStreamingShowcase.switch1.eth[1].mac "frames/sec rcvd" 1.9300360244535
-scalar VideoStreamingShowcase.switch1.eth[1].mac "bits/sec sent" 87609.22081778
-scalar VideoStreamingShowcase.switch1.eth[1].mac "bits/sec rcvd" 1217.3089402583
-scalar VideoStreamingShowcase.switch1.eth[1].mac "rx channel idle (%)" 99.998659168754
-scalar VideoStreamingShowcase.switch1.eth[1].mac "rx channel utilization (%)" 0.0013408312458234
+scalar VideoStreamingShowcase.switch1.eth[1].mac "frames/sec sent" 74.100551501847
+scalar VideoStreamingShowcase.switch1.eth[1].mac "frames/sec rcvd" 14.473921089259
+scalar VideoStreamingShowcase.switch1.eth[1].mac "bits/sec sent" 654248.35019972
+scalar VideoStreamingShowcase.switch1.eth[1].mac "bits/sec rcvd" 9651.4696888821
+scalar VideoStreamingShowcase.switch1.eth[1].mac "rx channel idle (%)" 99.989422199361
+scalar VideoStreamingShowcase.switch1.eth[1].mac "rx channel utilization (%)" 0.010577800638595
 scalar VideoStreamingShowcase.switch1.eth[1].mac rxPausePkUnits:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -2998,42 +2984,42 @@ scalar VideoStreamingShowcase.switch1.eth[1].mac txPausePkUnits:sum 0
 attr interpolationmode none
 attr recordingmode sum
 attr title "pause units sent, sum"
-scalar VideoStreamingShowcase.switch1.eth[1].mac rxPkOk:count 2740
+scalar VideoStreamingShowcase.switch1.eth[1].mac rxPkOk:count 16222
 attr interpolationmode none
 attr recordingmode count
 attr source rxPkOk
 attr title "packets received OK, count"
-scalar VideoStreamingShowcase.switch1.eth[1].mac rxPkOk:sum(packetBytes) 216021
+scalar VideoStreamingShowcase.switch1.eth[1].mac rxPkOk:sum(packetBytes) 1352140
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source rxPkOk
 attr title "packets received OK, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch1.eth[1].mac txPk:count 12525
+scalar VideoStreamingShowcase.switch1.eth[1].mac txPk:count 83050
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToLower
 attr title "packets transmitted, count"
-scalar VideoStreamingShowcase.switch1.eth[1].mac txPk:sum(packetBytes) 15546942
+scalar VideoStreamingShowcase.switch1.eth[1].mac txPk:sum(packetBytes) 91658099
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToLower
 attr title "packets transmitted, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch1.eth[1].mac packetReceivedFromUpper:count 12525
+scalar VideoStreamingShowcase.switch1.eth[1].mac packetReceivedFromUpper:count 83050
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, count"
-scalar VideoStreamingShowcase.switch1.eth[1].mac packetReceivedFromUpper:sum(packetBytes) 15546942
+scalar VideoStreamingShowcase.switch1.eth[1].mac packetReceivedFromUpper:sum(packetBytes) 91658099
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch1.eth[1].mac passedUpPk:count 2740
+scalar VideoStreamingShowcase.switch1.eth[1].mac passedUpPk:count 16222
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
 attr title "packets passed to higher layer, count"
-scalar VideoStreamingShowcase.switch1.eth[1].mac passedUpPk:sum(packetBytes) 216021
+scalar VideoStreamingShowcase.switch1.eth[1].mac passedUpPk:sum(packetBytes) 1352140
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToUpper
@@ -3145,7 +3131,7 @@ par VideoStreamingShowcase.switch2.bridging displayStringTextFormat "\"proc: %p\
 scalar VideoStreamingShowcase.switch2.bridging "processed frames" 0
 scalar VideoStreamingShowcase.switch2.bridging "discarded frames" 0
 scalar VideoStreamingShowcase.switch2.bridging "number of received BPDUs from STP module" 0
-scalar VideoStreamingShowcase.switch2.bridging "number of received frames from network (including BPDUs)" 15433
+scalar VideoStreamingShowcase.switch2.bridging "number of received frames from network (including BPDUs)" 100126
 scalar VideoStreamingShowcase.switch2.bridging "number of dropped frames (including BPDUs)" 0
 scalar VideoStreamingShowcase.switch2.bridging "number of delivered BPDUs to the STP module" 0
 scalar VideoStreamingShowcase.switch2.bridging "number of dispatched BPDU frames to the network" 0
@@ -3177,22 +3163,22 @@ attr title "pause sent, count"
 scalar VideoStreamingShowcase.switch2.ethernet pauseSent:sum 0
 attr recordingmode sum
 attr title "pause sent, sum"
-scalar VideoStreamingShowcase.switch2.ethernet decapPk:count 15433
+scalar VideoStreamingShowcase.switch2.ethernet decapPk:count 100126
 attr interpolationmode none
 attr recordingmode count
 attr source decapPk
 attr title "packets decapsulated, count"
-scalar VideoStreamingShowcase.switch2.ethernet decapPk:sum(packetBytes) 15499309
+scalar VideoStreamingShowcase.switch2.ethernet decapPk:sum(packetBytes) 91288063
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source decapPk
 attr title "packets decapsulated, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch2.ethernet encapPk:count 15433
+scalar VideoStreamingShowcase.switch2.ethernet encapPk:count 100126
 attr interpolationmode none
 attr recordingmode count
 attr source encapPk
 attr title "packets encapsulated, count"
-scalar VideoStreamingShowcase.switch2.ethernet encapPk:sum(packetBytes) 15499309
+scalar VideoStreamingShowcase.switch2.ethernet encapPk:sum(packetBytes) 91288063
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source encapPk
@@ -3780,7 +3766,7 @@ attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetP
 attr title "queue bit length, timeavg"
 attr unit b
 statistic VideoStreamingShowcase.switch2.eth[0].queue queueingTime:histogram
-field count 2915
+field count 17112
 field mean 0
 field stddev 0
 field min 0
@@ -3818,7 +3804,7 @@ bin	-0.08	0
 bin	-0.06	0
 bin	-0.04	0
 bin	-0.02	0
-bin	0	2915
+bin	0	17112
 bin	0.02	0
 bin	0.04	0
 bin	0.06	0
@@ -3844,108 +3830,87 @@ bin	0.44	0
 bin	0.46	0
 bin	0.48	0
 bin	0.5	0
-scalar VideoStreamingShowcase.switch2.eth[0].queue outgoingPackets:count 2915
+scalar VideoStreamingShowcase.switch2.eth[0].queue outgoingPackets:count 17112
 attr recordingmode count
 attr source packetPulled
 attr title "outgoing packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.switch2.eth[0].queue outgoingPacketLengths:sum 1849240
+scalar VideoStreamingShowcase.switch2.eth[0].queue outgoingPacketLengths:sum 11500472
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPulled)
 attr title "outgoing packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.switch2.eth[0].queue outgoingPacketLengths:histogram
-field count 2915
-field mean 634.38765008576
-field stddev 487.11366437031
+field count 17112
+field mean 672.07059373539
+field stddev 159.41309770857
 field min 512
-field max 12144
-field sum 1849240
-field sqrsum 1864568128
+field max 4752
+field sum 11500472
+field sqrsum 8163962944
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPulled)
 attr title "outgoing packet lengths"
 attr unit b
 bin	-inf	0
-bin	0	0
-bin	200	0
-bin	400	1720
-bin	600	1169
-bin	800	9
-bin	1000	1
-bin	1200	6
-bin	1400	1
-bin	1600	1
-bin	1800	0
-bin	2000	0
-bin	2200	3
-bin	2400	0
-bin	2600	0
-bin	2800	0
-bin	3000	0
-bin	3200	0
-bin	3400	0
-bin	3600	0
-bin	3800	0
-bin	4000	0
-bin	4200	0
-bin	4400	0
-bin	4600	0
-bin	4800	0
-bin	5000	0
-bin	5200	0
-bin	5400	0
-bin	5600	0
-bin	5800	0
-bin	6000	0
-bin	6200	0
-bin	6400	0
-bin	6600	0
-bin	6800	0
-bin	7000	0
-bin	7200	0
-bin	7400	0
-bin	7600	0
-bin	7800	0
-bin	8000	0
-bin	8200	0
-bin	8400	0
-bin	8600	0
-bin	8800	0
-bin	9000	0
-bin	9200	0
-bin	9400	0
-bin	9600	0
-bin	9800	0
-bin	10000	0
-bin	10200	0
-bin	10400	0
-bin	10600	0
-bin	10800	0
-bin	11000	0
-bin	11200	0
-bin	11400	0
-bin	11600	0
-bin	11800	0
-bin	12000	5
-bin	12200	0
-bin	12400	0
-bin	12600	0
-bin	12800	0
-bin	13000	0
-bin	13200	0
-bin	13400	0
-bin	13600	0
-bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
+bin	380	0
+bin	460	4228
+bin	540	604
+bin	620	61
+bin	700	12167
+bin	780	1
+bin	860	7
+bin	940	4
+bin	1020	0
+bin	1100	0
+bin	1180	0
+bin	1260	11
+bin	1340	0
+bin	1420	11
+bin	1500	0
+bin	1580	0
+bin	1660	0
+bin	1740	0
+bin	1820	0
+bin	1900	0
+bin	1980	0
+bin	2060	0
+bin	2140	0
+bin	2220	0
+bin	2300	0
+bin	2380	0
+bin	2460	0
+bin	2540	0
+bin	2620	0
+bin	2700	0
+bin	2780	0
+bin	2860	0
+bin	2940	0
+bin	3020	0
+bin	3100	0
+bin	3180	0
+bin	3260	0
+bin	3340	0
+bin	3420	0
+bin	3500	0
+bin	3580	0
+bin	3660	0
+bin	3740	0
+bin	3820	0
+bin	3900	0
+bin	3980	0
+bin	4060	0
+bin	4140	0
+bin	4220	0
+bin	4300	0
+bin	4380	0
+bin	4460	0
+bin	4540	0
+bin	4620	0
+bin	4700	18
+bin	4780	0
 statistic VideoStreamingShowcase.switch2.eth[0].queue flowQueueingTime:histogram
 field count 0
 field mean -nan
@@ -3962,108 +3927,87 @@ attr unit s
 bin	-inf	0
 bin	0	0
 bin	1	0
-scalar VideoStreamingShowcase.switch2.eth[0].queue incomingPackets:count 2915
+scalar VideoStreamingShowcase.switch2.eth[0].queue incomingPackets:count 17112
 attr recordingmode count
 attr source packetPushStarted
 attr title "incoming packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.switch2.eth[0].queue incomingPacketLengths:sum 1849240
+scalar VideoStreamingShowcase.switch2.eth[0].queue incomingPacketLengths:sum 11500472
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPushStarted)
 attr title "incoming packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.switch2.eth[0].queue incomingPacketLengths:histogram
-field count 2915
-field mean 634.38765008576
-field stddev 487.11366437031
+field count 17112
+field mean 672.07059373539
+field stddev 159.41309770857
 field min 512
-field max 12144
-field sum 1849240
-field sqrsum 1864568128
+field max 4752
+field sum 11500472
+field sqrsum 8163962944
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPushStarted)
 attr title "incoming packet lengths"
 attr unit b
 bin	-inf	0
-bin	0	0
-bin	200	0
-bin	400	1720
-bin	600	1169
-bin	800	9
-bin	1000	1
-bin	1200	6
-bin	1400	1
-bin	1600	1
-bin	1800	0
-bin	2000	0
-bin	2200	3
-bin	2400	0
-bin	2600	0
-bin	2800	0
-bin	3000	0
-bin	3200	0
-bin	3400	0
-bin	3600	0
-bin	3800	0
-bin	4000	0
-bin	4200	0
-bin	4400	0
-bin	4600	0
-bin	4800	0
-bin	5000	0
-bin	5200	0
-bin	5400	0
-bin	5600	0
-bin	5800	0
-bin	6000	0
-bin	6200	0
-bin	6400	0
-bin	6600	0
-bin	6800	0
-bin	7000	0
-bin	7200	0
-bin	7400	0
-bin	7600	0
-bin	7800	0
-bin	8000	0
-bin	8200	0
-bin	8400	0
-bin	8600	0
-bin	8800	0
-bin	9000	0
-bin	9200	0
-bin	9400	0
-bin	9600	0
-bin	9800	0
-bin	10000	0
-bin	10200	0
-bin	10400	0
-bin	10600	0
-bin	10800	0
-bin	11000	0
-bin	11200	0
-bin	11400	0
-bin	11600	0
-bin	11800	0
-bin	12000	5
-bin	12200	0
-bin	12400	0
-bin	12600	0
-bin	12800	0
-bin	13000	0
-bin	13200	0
-bin	13400	0
-bin	13600	0
-bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
+bin	380	0
+bin	460	4228
+bin	540	604
+bin	620	61
+bin	700	12167
+bin	780	1
+bin	860	7
+bin	940	4
+bin	1020	0
+bin	1100	0
+bin	1180	0
+bin	1260	11
+bin	1340	0
+bin	1420	11
+bin	1500	0
+bin	1580	0
+bin	1660	0
+bin	1740	0
+bin	1820	0
+bin	1900	0
+bin	1980	0
+bin	2060	0
+bin	2140	0
+bin	2220	0
+bin	2300	0
+bin	2380	0
+bin	2460	0
+bin	2540	0
+bin	2620	0
+bin	2700	0
+bin	2780	0
+bin	2860	0
+bin	2940	0
+bin	3020	0
+bin	3100	0
+bin	3180	0
+bin	3260	0
+bin	3340	0
+bin	3420	0
+bin	3500	0
+bin	3580	0
+bin	3660	0
+bin	3740	0
+bin	3820	0
+bin	3900	0
+bin	3980	0
+bin	4060	0
+bin	4140	0
+bin	4220	0
+bin	4300	0
+bin	4380	0
+bin	4460	0
+bin	4540	0
+bin	4620	0
+bin	4700	18
+bin	4780	0
 scalar VideoStreamingShowcase.switch2.eth[0].queue droppedPacketsQueueOverflow:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -4090,14 +4034,14 @@ par VideoStreamingShowcase.switch2.eth[0].mac stopOperationExtraTime -1s
 attr unit s
 par VideoStreamingShowcase.switch2.eth[0].mac stopOperationTimeout 2s
 attr unit s
-scalar VideoStreamingShowcase.switch2.eth[0].mac "simulated time" 1419.66262043
+scalar VideoStreamingShowcase.switch2.eth[0].mac "simulated time" 1120.774384492
 scalar VideoStreamingShowcase.switch2.eth[0].mac full-duplex 1
-scalar VideoStreamingShowcase.switch2.eth[0].mac "frames/sec sent" 2.0533047486431
-scalar VideoStreamingShowcase.switch2.eth[0].mac "frames/sec rcvd" 8.817587939456
-scalar VideoStreamingShowcase.switch2.eth[0].mac "bits/sec sent" 1302.5911744016
-scalar VideoStreamingShowcase.switch2.eth[0].mac "bits/sec rcvd" 87603.619486953
-scalar VideoStreamingShowcase.switch2.eth[0].mac "rx channel idle (%)" 99.911832054885
-scalar VideoStreamingShowcase.switch2.eth[0].mac "rx channel utilization (%)" 0.088167945115078
+scalar VideoStreamingShowcase.switch2.eth[0].mac "frames/sec sent" 15.268014898249
+scalar VideoStreamingShowcase.switch2.eth[0].mac "frames/sec rcvd" 74.068430853393
+scalar VideoStreamingShowcase.switch2.eth[0].mac "bits/sec sent" 10261.183837827
+scalar VideoStreamingShowcase.switch2.eth[0].mac "bits/sec rcvd" 654210.32648987
+scalar VideoStreamingShowcase.switch2.eth[0].mac "rx channel idle (%)" 99.341049293936
+scalar VideoStreamingShowcase.switch2.eth[0].mac "rx channel utilization (%)" 0.65895070606449
 scalar VideoStreamingShowcase.switch2.eth[0].mac rxPausePkUnits:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -4114,42 +4058,42 @@ scalar VideoStreamingShowcase.switch2.eth[0].mac txPausePkUnits:sum 0
 attr interpolationmode none
 attr recordingmode sum
 attr title "pause units sent, sum"
-scalar VideoStreamingShowcase.switch2.eth[0].mac rxPkOk:count 12518
+scalar VideoStreamingShowcase.switch2.eth[0].mac rxPkOk:count 83014
 attr interpolationmode none
 attr recordingmode count
 attr source rxPkOk
 attr title "packets received OK, count"
-scalar VideoStreamingShowcase.switch2.eth[0].mac rxPkOk:sum(packetBytes) 15545948
+scalar VideoStreamingShowcase.switch2.eth[0].mac rxPkOk:sum(packetBytes) 91652772
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source rxPkOk
 attr title "packets received OK, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch2.eth[0].mac txPk:count 2915
+scalar VideoStreamingShowcase.switch2.eth[0].mac txPk:count 17112
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToLower
 attr title "packets transmitted, count"
-scalar VideoStreamingShowcase.switch2.eth[0].mac txPk:sum(packetBytes) 231155
+scalar VideoStreamingShowcase.switch2.eth[0].mac txPk:sum(packetBytes) 1437559
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToLower
 attr title "packets transmitted, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch2.eth[0].mac packetReceivedFromUpper:count 2915
+scalar VideoStreamingShowcase.switch2.eth[0].mac packetReceivedFromUpper:count 17112
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, count"
-scalar VideoStreamingShowcase.switch2.eth[0].mac packetReceivedFromUpper:sum(packetBytes) 231155
+scalar VideoStreamingShowcase.switch2.eth[0].mac packetReceivedFromUpper:sum(packetBytes) 1437559
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch2.eth[0].mac passedUpPk:count 12518
+scalar VideoStreamingShowcase.switch2.eth[0].mac passedUpPk:count 83014
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
 attr title "packets passed to higher layer, count"
-scalar VideoStreamingShowcase.switch2.eth[0].mac passedUpPk:sum(packetBytes) 15545948
+scalar VideoStreamingShowcase.switch2.eth[0].mac passedUpPk:sum(packetBytes) 91652772
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToUpper
@@ -4237,14 +4181,14 @@ attr recordingmode last
 attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
 attr title "queue length, last"
 attr unit pk
-scalar VideoStreamingShowcase.switch2.eth[1].queue queueLength:max 0
+scalar VideoStreamingShowcase.switch2.eth[1].queue queueLength:max 1
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode max
 attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
 attr title "queue length, max"
 attr unit pk
-scalar VideoStreamingShowcase.switch2.eth[1].queue queueLength:timeavg 0
+scalar VideoStreamingShowcase.switch2.eth[1].queue queueLength:timeavg 4.5616674245435e-08
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode timeavg
@@ -4258,14 +4202,14 @@ attr recordingmode last
 attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
 attr title "queue bit length, last"
 attr unit b
-scalar VideoStreamingShowcase.switch2.eth[1].queue queueBitLength:max 0
+scalar VideoStreamingShowcase.switch2.eth[1].queue queueBitLength:max 512
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode max
 attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
 attr title "queue bit length, max"
 attr unit b
-scalar VideoStreamingShowcase.switch2.eth[1].queue queueBitLength:timeavg 0
+scalar VideoStreamingShowcase.switch2.eth[1].queue queueBitLength:timeavg 2.3355737213663e-05
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode timeavg
@@ -4273,13 +4217,13 @@ attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetP
 attr title "queue bit length, timeavg"
 attr unit b
 statistic VideoStreamingShowcase.switch2.eth[1].queue queueingTime:histogram
-field count 12518
-field mean 0
-field stddev 0
+field count 83014
+field mean 6.1587202158672e-10
+field stddev 1.7744597199047e-07
 field min 0
-field max 0
-field sum 0
-field sqrsum 0
+field max 5.1126e-05
+field sum 5.1126e-05
+field sqrsum 2.613867876e-09
 attr interpolationmode none
 attr recordingmode histogram
 attr source queueingTime(packetPulled)
@@ -4311,7 +4255,7 @@ bin	-0.08	0
 bin	-0.06	0
 bin	-0.04	0
 bin	-0.02	0
-bin	0	12518
+bin	0	83014
 bin	0.02	0
 bin	0.04	0
 bin	0.06	0
@@ -4337,25 +4281,25 @@ bin	0.44	0
 bin	0.46	0
 bin	0.48	0
 bin	0.5	0
-scalar VideoStreamingShowcase.switch2.eth[1].queue outgoingPackets:count 12518
+scalar VideoStreamingShowcase.switch2.eth[1].queue outgoingPackets:count 83014
 attr recordingmode count
 attr source packetPulled
 attr title "outgoing packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.switch2.eth[1].queue outgoingPacketLengths:sum 124367584
+scalar VideoStreamingShowcase.switch2.eth[1].queue outgoingPacketLengths:sum 733222176
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPulled)
 attr title "outgoing packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.switch2.eth[1].queue outgoingPacketLengths:histogram
-field count 12518
-field mean 9935.1001757469
-field stddev 2758.7628811421
+field count 83014
+field mean 8832.5122991303
+field stddev 3967.8047000513
 field min 512
-field max 12144
-field sum 124367584
-field sqrsum 1330868446720
+field max 11024
+field sum 733222176
+field sqrsum 7783106906112
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPulled)
@@ -4364,65 +4308,65 @@ attr unit b
 bin	-inf	0
 bin	0	0
 bin	200	0
-bin	400	605
-bin	600	35
-bin	800	5
-bin	1000	1
-bin	1200	5
-bin	1400	2
-bin	1600	1
+bin	400	11193
+bin	600	0
+bin	800	3
+bin	1000	3
+bin	1200	0
+bin	1400	0
+bin	1600	0
 bin	1800	0
-bin	2000	153
+bin	2000	3500
 bin	2200	0
-bin	2400	2
+bin	2400	0
 bin	2600	0
 bin	2800	0
-bin	3000	1
-bin	3200	1
-bin	3400	95
-bin	3600	3
+bin	3000	0
+bin	3200	0
+bin	3400	1567
+bin	3600	0
 bin	3800	0
-bin	4000	3
+bin	4000	0
 bin	4200	0
-bin	4400	1
+bin	4400	0
 bin	4600	0
-bin	4800	1
-bin	5000	76
+bin	4800	0
+bin	5000	1573
 bin	5200	0
-bin	5400	2
+bin	5400	0
 bin	5600	0
 bin	5800	0
 bin	6000	0
 bin	6200	0
-bin	6400	72
+bin	6400	1381
 bin	6600	0
 bin	6800	0
-bin	7000	1
+bin	7000	0
 bin	7200	0
 bin	7400	0
 bin	7600	0
 bin	7800	0
-bin	8000	45
+bin	8000	1154
 bin	8200	0
-bin	8400	1
+bin	8400	0
 bin	8600	0
 bin	8800	0
 bin	9000	0
 bin	9200	0
-bin	9400	4731
+bin	9400	1229
 bin	9600	0
-bin	9800	1
-bin	10000	1
+bin	9800	0
+bin	10000	0
 bin	10200	0
 bin	10400	0
 bin	10600	0
-bin	10800	1
-bin	11000	3454
-bin	11200	2
+bin	10800	0
+bin	11000	61411
+bin	11200	0
 bin	11400	0
 bin	11600	0
-bin	11800	2
-bin	12000	3215
+bin	11800	0
+bin	12000	0
 bin	12200	0
 bin	12400	0
 bin	12600	0
@@ -4432,13 +4376,6 @@ bin	13200	0
 bin	13400	0
 bin	13600	0
 bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
 statistic VideoStreamingShowcase.switch2.eth[1].queue flowQueueingTime:histogram
 field count 0
 field mean -nan
@@ -4455,25 +4392,25 @@ attr unit s
 bin	-inf	0
 bin	0	0
 bin	1	0
-scalar VideoStreamingShowcase.switch2.eth[1].queue incomingPackets:count 12518
+scalar VideoStreamingShowcase.switch2.eth[1].queue incomingPackets:count 83014
 attr recordingmode count
 attr source packetPushStarted
 attr title "incoming packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.switch2.eth[1].queue incomingPacketLengths:sum 124367584
+scalar VideoStreamingShowcase.switch2.eth[1].queue incomingPacketLengths:sum 733222176
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPushStarted)
 attr title "incoming packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.switch2.eth[1].queue incomingPacketLengths:histogram
-field count 12518
-field mean 9935.1001757469
-field stddev 2758.7628811421
+field count 83014
+field mean 8832.5122991303
+field stddev 3967.8047000513
 field min 512
-field max 12144
-field sum 124367584
-field sqrsum 1330868446720
+field max 11024
+field sum 733222176
+field sqrsum 7783106906112
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPushStarted)
@@ -4482,65 +4419,65 @@ attr unit b
 bin	-inf	0
 bin	0	0
 bin	200	0
-bin	400	605
-bin	600	35
-bin	800	5
-bin	1000	1
-bin	1200	5
-bin	1400	2
-bin	1600	1
+bin	400	11193
+bin	600	0
+bin	800	3
+bin	1000	3
+bin	1200	0
+bin	1400	0
+bin	1600	0
 bin	1800	0
-bin	2000	153
+bin	2000	3500
 bin	2200	0
-bin	2400	2
+bin	2400	0
 bin	2600	0
 bin	2800	0
-bin	3000	1
-bin	3200	1
-bin	3400	95
-bin	3600	3
+bin	3000	0
+bin	3200	0
+bin	3400	1567
+bin	3600	0
 bin	3800	0
-bin	4000	3
+bin	4000	0
 bin	4200	0
-bin	4400	1
+bin	4400	0
 bin	4600	0
-bin	4800	1
-bin	5000	76
+bin	4800	0
+bin	5000	1573
 bin	5200	0
-bin	5400	2
+bin	5400	0
 bin	5600	0
 bin	5800	0
 bin	6000	0
 bin	6200	0
-bin	6400	72
+bin	6400	1381
 bin	6600	0
 bin	6800	0
-bin	7000	1
+bin	7000	0
 bin	7200	0
 bin	7400	0
 bin	7600	0
 bin	7800	0
-bin	8000	45
+bin	8000	1154
 bin	8200	0
-bin	8400	1
+bin	8400	0
 bin	8600	0
 bin	8800	0
 bin	9000	0
 bin	9200	0
-bin	9400	4731
+bin	9400	1229
 bin	9600	0
-bin	9800	1
-bin	10000	1
+bin	9800	0
+bin	10000	0
 bin	10200	0
 bin	10400	0
 bin	10600	0
-bin	10800	1
-bin	11000	3454
-bin	11200	2
+bin	10800	0
+bin	11000	61411
+bin	11200	0
 bin	11400	0
 bin	11600	0
-bin	11800	2
-bin	12000	3215
+bin	11800	0
+bin	12000	0
 bin	12200	0
 bin	12400	0
 bin	12600	0
@@ -4550,13 +4487,6 @@ bin	13200	0
 bin	13400	0
 bin	13600	0
 bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
 scalar VideoStreamingShowcase.switch2.eth[1].queue droppedPacketsQueueOverflow:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -4583,14 +4513,14 @@ par VideoStreamingShowcase.switch2.eth[1].mac stopOperationExtraTime -1s
 attr unit s
 par VideoStreamingShowcase.switch2.eth[1].mac stopOperationTimeout 2s
 attr unit s
-scalar VideoStreamingShowcase.switch2.eth[1].mac "simulated time" 1419.66262043
+scalar VideoStreamingShowcase.switch2.eth[1].mac "simulated time" 1120.774384492
 scalar VideoStreamingShowcase.switch2.eth[1].mac full-duplex 1
-scalar VideoStreamingShowcase.switch2.eth[1].mac "frames/sec sent" 8.817587939456
-scalar VideoStreamingShowcase.switch2.eth[1].mac "frames/sec rcvd" 2.0533047486431
-scalar VideoStreamingShowcase.switch2.eth[1].mac "bits/sec sent" 87603.619486953
-scalar VideoStreamingShowcase.switch2.eth[1].mac "bits/sec rcvd" 1302.5911744016
-scalar VideoStreamingShowcase.switch2.eth[1].mac "rx channel idle (%)" 99.998565997322
-scalar VideoStreamingShowcase.switch2.eth[1].mac "rx channel utilization (%)" 0.0014340026783148
+scalar VideoStreamingShowcase.switch2.eth[1].mac "frames/sec sent" 74.068430853393
+scalar VideoStreamingShowcase.switch2.eth[1].mac "frames/sec rcvd" 15.268014898249
+scalar VideoStreamingShowcase.switch2.eth[1].mac "bits/sec sent" 654210.32648987
+scalar VideoStreamingShowcase.switch2.eth[1].mac "bits/sec rcvd" 10261.183837827
+scalar VideoStreamingShowcase.switch2.eth[1].mac "rx channel idle (%)" 99.988761663209
+scalar VideoStreamingShowcase.switch2.eth[1].mac "rx channel utilization (%)" 0.011238336791315
 scalar VideoStreamingShowcase.switch2.eth[1].mac rxPausePkUnits:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -4607,42 +4537,42 @@ scalar VideoStreamingShowcase.switch2.eth[1].mac txPausePkUnits:sum 0
 attr interpolationmode none
 attr recordingmode sum
 attr title "pause units sent, sum"
-scalar VideoStreamingShowcase.switch2.eth[1].mac rxPkOk:count 2915
+scalar VideoStreamingShowcase.switch2.eth[1].mac rxPkOk:count 17112
 attr interpolationmode none
 attr recordingmode count
 attr source rxPkOk
 attr title "packets received OK, count"
-scalar VideoStreamingShowcase.switch2.eth[1].mac rxPkOk:sum(packetBytes) 231155
+scalar VideoStreamingShowcase.switch2.eth[1].mac rxPkOk:sum(packetBytes) 1437559
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source rxPkOk
 attr title "packets received OK, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch2.eth[1].mac txPk:count 12518
+scalar VideoStreamingShowcase.switch2.eth[1].mac txPk:count 83014
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToLower
 attr title "packets transmitted, count"
-scalar VideoStreamingShowcase.switch2.eth[1].mac txPk:sum(packetBytes) 15545948
+scalar VideoStreamingShowcase.switch2.eth[1].mac txPk:sum(packetBytes) 91652772
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToLower
 attr title "packets transmitted, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch2.eth[1].mac packetReceivedFromUpper:count 12518
+scalar VideoStreamingShowcase.switch2.eth[1].mac packetReceivedFromUpper:count 83014
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, count"
-scalar VideoStreamingShowcase.switch2.eth[1].mac packetReceivedFromUpper:sum(packetBytes) 15545948
+scalar VideoStreamingShowcase.switch2.eth[1].mac packetReceivedFromUpper:sum(packetBytes) 91652772
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, sum(packetBytes)"
-scalar VideoStreamingShowcase.switch2.eth[1].mac passedUpPk:count 2915
+scalar VideoStreamingShowcase.switch2.eth[1].mac passedUpPk:count 17112
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
 attr title "packets passed to higher layer, count"
-scalar VideoStreamingShowcase.switch2.eth[1].mac passedUpPk:sum(packetBytes) 231155
+scalar VideoStreamingShowcase.switch2.eth[1].mac passedUpPk:sum(packetBytes) 1437559
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToUpper
@@ -4752,22 +4682,22 @@ attr title "pause sent, count"
 scalar VideoStreamingShowcase.router.ethernet pauseSent:sum 0
 attr recordingmode sum
 attr title "pause sent, sum"
-scalar VideoStreamingShowcase.router.ethernet decapPk:count 15273
+scalar VideoStreamingShowcase.router.ethernet decapPk:count 99292
 attr interpolationmode none
 attr recordingmode count
 attr source decapPk
 attr title "packets decapsulated, count"
-scalar VideoStreamingShowcase.router.ethernet decapPk:sum(packetBytes) 15488555
+scalar VideoStreamingShowcase.router.ethernet decapPk:sum(packetBytes) 91233098
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source decapPk
 attr title "packets decapsulated, sum(packetBytes)"
-scalar VideoStreamingShowcase.router.ethernet encapPk:count 15258
+scalar VideoStreamingShowcase.router.ethernet encapPk:count 99236
 attr interpolationmode none
 attr recordingmode count
 attr source encapPk
 attr title "packets encapsulated, count"
-scalar VideoStreamingShowcase.router.ethernet encapPk:sum(packetBytes) 15486575
+scalar VideoStreamingShowcase.router.ethernet encapPk:sum(packetBytes) 91218160
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source encapPk
@@ -4846,14 +4776,14 @@ attr recordingmode last
 attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
 attr title "queue length, last"
 attr unit pk
-scalar VideoStreamingShowcase.router.eth[0].queue queueLength:max 1
+scalar VideoStreamingShowcase.router.eth[0].queue queueLength:max 0
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode max
 attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
 attr title "queue length, max"
 attr unit pk
-scalar VideoStreamingShowcase.router.eth[0].queue queueLength:timeavg 1.0143255019026e-08
+scalar VideoStreamingShowcase.router.eth[0].queue queueLength:timeavg 0
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode timeavg
@@ -4867,14 +4797,14 @@ attr recordingmode last
 attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
 attr title "queue bit length, last"
 attr unit b
-scalar VideoStreamingShowcase.router.eth[0].queue queueBitLength:max 656
+scalar VideoStreamingShowcase.router.eth[0].queue queueBitLength:max 0
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode max
 attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
 attr title "queue bit length, max"
 attr unit b
-scalar VideoStreamingShowcase.router.eth[0].queue queueBitLength:timeavg 6.4916832121765e-06
+scalar VideoStreamingShowcase.router.eth[0].queue queueBitLength:timeavg 0
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode timeavg
@@ -4882,13 +4812,13 @@ attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetP
 attr title "queue bit length, timeavg"
 attr unit b
 statistic VideoStreamingShowcase.router.eth[0].queue queueingTime:histogram
-field count 2740
-field mean 5.2554744525547e-09
-field stddev 1.944880485031e-07
+field count 16222
+field mean 0
+field stddev 0
 field min 0
-field max 7.2e-06
-field sum 1.44e-05
-field sqrsum 1.0368e-10
+field max 0
+field sum 0
+field sqrsum 0
 attr interpolationmode none
 attr recordingmode histogram
 attr source queueingTime(packetPulled)
@@ -4920,7 +4850,7 @@ bin	-0.08	0
 bin	-0.06	0
 bin	-0.04	0
 bin	-0.02	0
-bin	0	2740
+bin	0	16222
 bin	0.02	0
 bin	0.04	0
 bin	0.06	0
@@ -4946,108 +4876,81 @@ bin	0.44	0
 bin	0.46	0
 bin	0.48	0
 bin	0.5	0
-scalar VideoStreamingShowcase.router.eth[0].queue outgoingPackets:count 2740
+scalar VideoStreamingShowcase.router.eth[0].queue outgoingPackets:count 16222
 attr recordingmode count
 attr source packetPulled
 attr title "outgoing packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.router.eth[0].queue outgoingPacketLengths:sum 1725432
+scalar VideoStreamingShowcase.router.eth[0].queue outgoingPacketLengths:sum 10815104
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPulled)
 attr title "outgoing packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.router.eth[0].queue outgoingPacketLengths:histogram
-field count 2740
-field mean 629.7197080292
-field stddev 450.91800919577
+field count 16222
+field mean 666.69362594008
+field stddev 85.197882609209
 field min 368
-field max 12144
-field sum 1725432
-field sqrsum 1643451328
+field max 1008
+field sum 10815104
+field sqrsum 7328103936
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPulled)
 attr title "outgoing packet lengths"
 attr unit b
 bin	-inf	0
-bin	0	0
-bin	200	19
-bin	400	1600
-bin	600	1103
-bin	800	4
-bin	1000	1
-bin	1200	6
-bin	1400	0
-bin	1600	0
-bin	1800	0
-bin	2000	0
-bin	2200	3
-bin	2400	0
-bin	2600	0
-bin	2800	0
-bin	3000	0
-bin	3200	0
-bin	3400	0
-bin	3600	0
-bin	3800	0
-bin	4000	0
-bin	4200	0
-bin	4400	0
-bin	4600	0
-bin	4800	0
-bin	5000	0
-bin	5200	0
-bin	5400	0
-bin	5600	0
-bin	5800	0
-bin	6000	0
-bin	6200	0
-bin	6400	0
-bin	6600	0
-bin	6800	0
-bin	7000	0
-bin	7200	0
-bin	7400	0
-bin	7600	0
-bin	7800	0
-bin	8000	0
-bin	8200	0
-bin	8400	0
-bin	8600	0
-bin	8800	0
-bin	9000	0
-bin	9200	0
-bin	9400	0
-bin	9600	0
-bin	9800	0
-bin	10000	0
-bin	10200	0
-bin	10400	0
-bin	10600	0
-bin	10800	0
-bin	11000	0
-bin	11200	0
-bin	11400	0
-bin	11600	0
-bin	11800	0
-bin	12000	4
-bin	12200	0
-bin	12400	0
-bin	12600	0
-bin	12800	0
-bin	13000	0
-bin	13200	0
-bin	13400	0
-bin	13600	0
-bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
+bin	200	0
+bin	220	0
+bin	240	0
+bin	260	0
+bin	280	0
+bin	300	0
+bin	320	0
+bin	340	0
+bin	360	14
+bin	380	0
+bin	400	0
+bin	420	0
+bin	440	0
+bin	460	0
+bin	480	0
+bin	500	0
+bin	520	4004
+bin	540	0
+bin	560	470
+bin	580	100
+bin	600	0
+bin	620	41
+bin	640	10
+bin	660	0
+bin	680	8
+bin	700	0
+bin	720	11564
+bin	740	3
+bin	760	0
+bin	780	0
+bin	800	1
+bin	820	0
+bin	840	0
+bin	860	0
+bin	880	3
+bin	900	0
+bin	920	0
+bin	940	0
+bin	960	1
+bin	980	0
+bin	1000	3
+bin	1020	0
+bin	1040	0
+bin	1060	0
+bin	1080	0
+bin	1100	0
+bin	1120	0
+bin	1140	0
+bin	1160	0
+bin	1180	0
 statistic VideoStreamingShowcase.router.eth[0].queue flowQueueingTime:histogram
 field count 0
 field mean -nan
@@ -5064,108 +4967,81 @@ attr unit s
 bin	-inf	0
 bin	0	0
 bin	1	0
-scalar VideoStreamingShowcase.router.eth[0].queue incomingPackets:count 2740
+scalar VideoStreamingShowcase.router.eth[0].queue incomingPackets:count 16222
 attr recordingmode count
 attr source packetPushStarted
 attr title "incoming packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.router.eth[0].queue incomingPacketLengths:sum 1725432
+scalar VideoStreamingShowcase.router.eth[0].queue incomingPacketLengths:sum 10815104
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPushStarted)
 attr title "incoming packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.router.eth[0].queue incomingPacketLengths:histogram
-field count 2740
-field mean 629.7197080292
-field stddev 450.91800919577
+field count 16222
+field mean 666.69362594008
+field stddev 85.197882609209
 field min 368
-field max 12144
-field sum 1725432
-field sqrsum 1643451328
+field max 1008
+field sum 10815104
+field sqrsum 7328103936
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPushStarted)
 attr title "incoming packet lengths"
 attr unit b
 bin	-inf	0
-bin	0	0
-bin	200	19
-bin	400	1600
-bin	600	1103
-bin	800	4
-bin	1000	1
-bin	1200	6
-bin	1400	0
-bin	1600	0
-bin	1800	0
-bin	2000	0
-bin	2200	3
-bin	2400	0
-bin	2600	0
-bin	2800	0
-bin	3000	0
-bin	3200	0
-bin	3400	0
-bin	3600	0
-bin	3800	0
-bin	4000	0
-bin	4200	0
-bin	4400	0
-bin	4600	0
-bin	4800	0
-bin	5000	0
-bin	5200	0
-bin	5400	0
-bin	5600	0
-bin	5800	0
-bin	6000	0
-bin	6200	0
-bin	6400	0
-bin	6600	0
-bin	6800	0
-bin	7000	0
-bin	7200	0
-bin	7400	0
-bin	7600	0
-bin	7800	0
-bin	8000	0
-bin	8200	0
-bin	8400	0
-bin	8600	0
-bin	8800	0
-bin	9000	0
-bin	9200	0
-bin	9400	0
-bin	9600	0
-bin	9800	0
-bin	10000	0
-bin	10200	0
-bin	10400	0
-bin	10600	0
-bin	10800	0
-bin	11000	0
-bin	11200	0
-bin	11400	0
-bin	11600	0
-bin	11800	0
-bin	12000	4
-bin	12200	0
-bin	12400	0
-bin	12600	0
-bin	12800	0
-bin	13000	0
-bin	13200	0
-bin	13400	0
-bin	13600	0
-bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
+bin	200	0
+bin	220	0
+bin	240	0
+bin	260	0
+bin	280	0
+bin	300	0
+bin	320	0
+bin	340	0
+bin	360	14
+bin	380	0
+bin	400	0
+bin	420	0
+bin	440	0
+bin	460	0
+bin	480	0
+bin	500	0
+bin	520	4004
+bin	540	0
+bin	560	470
+bin	580	100
+bin	600	0
+bin	620	41
+bin	640	10
+bin	660	0
+bin	680	8
+bin	700	0
+bin	720	11564
+bin	740	3
+bin	760	0
+bin	780	0
+bin	800	1
+bin	820	0
+bin	840	0
+bin	860	0
+bin	880	3
+bin	900	0
+bin	920	0
+bin	940	0
+bin	960	1
+bin	980	0
+bin	1000	3
+bin	1020	0
+bin	1040	0
+bin	1060	0
+bin	1080	0
+bin	1100	0
+bin	1120	0
+bin	1140	0
+bin	1160	0
+bin	1180	0
 scalar VideoStreamingShowcase.router.eth[0].queue droppedPacketsQueueOverflow:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -5192,14 +5068,14 @@ par VideoStreamingShowcase.router.eth[0].mac stopOperationExtraTime -1s
 attr unit s
 par VideoStreamingShowcase.router.eth[0].mac stopOperationTimeout 2s
 attr unit s
-scalar VideoStreamingShowcase.router.eth[0].mac "simulated time" 1419.66262043
+scalar VideoStreamingShowcase.router.eth[0].mac "simulated time" 1120.774384492
 scalar VideoStreamingShowcase.router.eth[0].mac full-duplex 1
-scalar VideoStreamingShowcase.router.eth[0].mac "frames/sec sent" 1.9300360244535
-scalar VideoStreamingShowcase.router.eth[0].mac "frames/sec rcvd" 8.8225186884235
-scalar VideoStreamingShowcase.router.eth[0].mac "bits/sec sent" 1217.3089402583
-scalar VideoStreamingShowcase.router.eth[0].mac "bits/sec rcvd" 87609.22081778
-scalar VideoStreamingShowcase.router.eth[0].mac "rx channel idle (%)" 99.911826137986
-scalar VideoStreamingShowcase.router.eth[0].mac "rx channel utilization (%)" 0.088173862013839
+scalar VideoStreamingShowcase.router.eth[0].mac "frames/sec sent" 14.473921089259
+scalar VideoStreamingShowcase.router.eth[0].mac "frames/sec rcvd" 74.100551501847
+scalar VideoStreamingShowcase.router.eth[0].mac "bits/sec sent" 9651.4696888821
+scalar VideoStreamingShowcase.router.eth[0].mac "bits/sec rcvd" 654248.35019972
+scalar VideoStreamingShowcase.router.eth[0].mac "rx channel idle (%)" 99.341009214504
+scalar VideoStreamingShowcase.router.eth[0].mac "rx channel utilization (%)" 0.65899078549584
 scalar VideoStreamingShowcase.router.eth[0].mac rxPausePkUnits:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -5216,42 +5092,42 @@ scalar VideoStreamingShowcase.router.eth[0].mac txPausePkUnits:sum 0
 attr interpolationmode none
 attr recordingmode sum
 attr title "pause units sent, sum"
-scalar VideoStreamingShowcase.router.eth[0].mac rxPkOk:count 12525
+scalar VideoStreamingShowcase.router.eth[0].mac rxPkOk:count 83050
 attr interpolationmode none
 attr recordingmode count
 attr source rxPkOk
 attr title "packets received OK, count"
-scalar VideoStreamingShowcase.router.eth[0].mac rxPkOk:sum(packetBytes) 15546942
+scalar VideoStreamingShowcase.router.eth[0].mac rxPkOk:sum(packetBytes) 91658099
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source rxPkOk
 attr title "packets received OK, sum(packetBytes)"
-scalar VideoStreamingShowcase.router.eth[0].mac txPk:count 2740
+scalar VideoStreamingShowcase.router.eth[0].mac txPk:count 16222
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToLower
 attr title "packets transmitted, count"
-scalar VideoStreamingShowcase.router.eth[0].mac txPk:sum(packetBytes) 216021
+scalar VideoStreamingShowcase.router.eth[0].mac txPk:sum(packetBytes) 1352140
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToLower
 attr title "packets transmitted, sum(packetBytes)"
-scalar VideoStreamingShowcase.router.eth[0].mac packetReceivedFromUpper:count 2740
+scalar VideoStreamingShowcase.router.eth[0].mac packetReceivedFromUpper:count 16222
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, count"
-scalar VideoStreamingShowcase.router.eth[0].mac packetReceivedFromUpper:sum(packetBytes) 215679
+scalar VideoStreamingShowcase.router.eth[0].mac packetReceivedFromUpper:sum(packetBytes) 1351888
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, sum(packetBytes)"
-scalar VideoStreamingShowcase.router.eth[0].mac passedUpPk:count 12525
+scalar VideoStreamingShowcase.router.eth[0].mac passedUpPk:count 83050
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
 attr title "packets passed to higher layer, count"
-scalar VideoStreamingShowcase.router.eth[0].mac passedUpPk:sum(packetBytes) 15546942
+scalar VideoStreamingShowcase.router.eth[0].mac passedUpPk:sum(packetBytes) 91658099
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToUpper
@@ -5339,14 +5215,14 @@ attr recordingmode last
 attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
 attr title "queue length, last"
 attr unit pk
-scalar VideoStreamingShowcase.router.eth[1].queue queueLength:max 1
+scalar VideoStreamingShowcase.router.eth[1].queue queueLength:max 0
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode max
 attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
 attr title "queue length, max"
 attr unit pk
-scalar VideoStreamingShowcase.router.eth[1].queue queueLength:timeavg 5.5224388436919e-09
+scalar VideoStreamingShowcase.router.eth[1].queue queueLength:timeavg 0
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode timeavg
@@ -5360,14 +5236,14 @@ attr recordingmode last
 attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
 attr title "queue bit length, last"
 attr unit b
-scalar VideoStreamingShowcase.router.eth[1].queue queueBitLength:max 624
+scalar VideoStreamingShowcase.router.eth[1].queue queueBitLength:max 0
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode max
 attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
 attr title "queue bit length, max"
 attr unit b
-scalar VideoStreamingShowcase.router.eth[1].queue queueBitLength:timeavg 3.4460018384637e-06
+scalar VideoStreamingShowcase.router.eth[1].queue queueBitLength:timeavg 0
 attr autoWarmupFilter false
 attr interpolationmode sample-hold
 attr recordingmode timeavg
@@ -5375,13 +5251,13 @@ attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetP
 attr title "queue bit length, timeavg"
 attr unit b
 statistic VideoStreamingShowcase.router.eth[1].queue queueingTime:histogram
-field count 12518
-field mean 6.262981306918e-10
-field stddev 7.0072657610681e-08
+field count 83014
+field mean 0
+field stddev 0
 field min 0
-field max 7.84e-06
-field sum 7.84e-06
-field sqrsum 6.14656e-11
+field max 0
+field sum 0
+field sqrsum 0
 attr interpolationmode none
 attr recordingmode histogram
 attr source queueingTime(packetPulled)
@@ -5413,7 +5289,7 @@ bin	-0.08	0
 bin	-0.06	0
 bin	-0.04	0
 bin	-0.02	0
-bin	0	12518
+bin	0	83014
 bin	0.02	0
 bin	0.04	0
 bin	0.06	0
@@ -5439,25 +5315,25 @@ bin	0.44	0
 bin	0.46	0
 bin	0.48	0
 bin	0.5	0
-scalar VideoStreamingShowcase.router.eth[1].queue outgoingPackets:count 12518
+scalar VideoStreamingShowcase.router.eth[1].queue outgoingPackets:count 83014
 attr recordingmode count
 attr source packetPulled
 attr title "outgoing packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.router.eth[1].queue outgoingPacketLengths:sum 124364320
+scalar VideoStreamingShowcase.router.eth[1].queue outgoingPacketLengths:sum 733220160
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPulled)
 attr title "outgoing packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.router.eth[1].queue outgoingPacketLengths:histogram
-field count 12518
-field mean 9934.839431219
-field stddev 2759.6600907558
+field count 83014
+field mean 8832.4880140699
+field stddev 3967.856066871
 field min 368
-field max 12144
-field sum 124364320
-field sqrsum 1330865565184
+field max 11024
+field sum 733220160
+field sqrsum 7783105132032
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPulled)
@@ -5465,66 +5341,66 @@ attr title "outgoing packet lengths"
 attr unit b
 bin	-inf	0
 bin	0	0
-bin	200	22
-bin	400	583
-bin	600	35
-bin	800	5
-bin	1000	1
-bin	1200	5
-bin	1400	2
-bin	1600	1
+bin	200	14
+bin	400	11179
+bin	600	0
+bin	800	3
+bin	1000	3
+bin	1200	0
+bin	1400	0
+bin	1600	0
 bin	1800	0
-bin	2000	153
+bin	2000	3500
 bin	2200	0
-bin	2400	2
+bin	2400	0
 bin	2600	0
 bin	2800	0
-bin	3000	1
-bin	3200	1
-bin	3400	95
-bin	3600	3
+bin	3000	0
+bin	3200	0
+bin	3400	1567
+bin	3600	0
 bin	3800	0
-bin	4000	3
+bin	4000	0
 bin	4200	0
-bin	4400	1
+bin	4400	0
 bin	4600	0
-bin	4800	1
-bin	5000	76
+bin	4800	0
+bin	5000	1573
 bin	5200	0
-bin	5400	2
+bin	5400	0
 bin	5600	0
 bin	5800	0
 bin	6000	0
 bin	6200	0
-bin	6400	72
+bin	6400	1381
 bin	6600	0
 bin	6800	0
-bin	7000	1
+bin	7000	0
 bin	7200	0
 bin	7400	0
 bin	7600	0
 bin	7800	0
-bin	8000	45
+bin	8000	1154
 bin	8200	0
-bin	8400	1
+bin	8400	0
 bin	8600	0
 bin	8800	0
 bin	9000	0
 bin	9200	0
-bin	9400	4731
+bin	9400	1229
 bin	9600	0
-bin	9800	1
-bin	10000	1
+bin	9800	0
+bin	10000	0
 bin	10200	0
 bin	10400	0
 bin	10600	0
-bin	10800	1
-bin	11000	3454
-bin	11200	2
+bin	10800	0
+bin	11000	61411
+bin	11200	0
 bin	11400	0
 bin	11600	0
-bin	11800	2
-bin	12000	3215
+bin	11800	0
+bin	12000	0
 bin	12200	0
 bin	12400	0
 bin	12600	0
@@ -5534,13 +5410,6 @@ bin	13200	0
 bin	13400	0
 bin	13600	0
 bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
 statistic VideoStreamingShowcase.router.eth[1].queue flowQueueingTime:histogram
 field count 0
 field mean -nan
@@ -5557,25 +5426,25 @@ attr unit s
 bin	-inf	0
 bin	0	0
 bin	1	0
-scalar VideoStreamingShowcase.router.eth[1].queue incomingPackets:count 12518
+scalar VideoStreamingShowcase.router.eth[1].queue incomingPackets:count 83014
 attr recordingmode count
 attr source packetPushStarted
 attr title "incoming packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.router.eth[1].queue incomingPacketLengths:sum 124364320
+scalar VideoStreamingShowcase.router.eth[1].queue incomingPacketLengths:sum 733220160
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPushStarted)
 attr title "incoming packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.router.eth[1].queue incomingPacketLengths:histogram
-field count 12518
-field mean 9934.839431219
-field stddev 2759.6600907558
+field count 83014
+field mean 8832.4880140699
+field stddev 3967.856066871
 field min 368
-field max 12144
-field sum 124364320
-field sqrsum 1330865565184
+field max 11024
+field sum 733220160
+field sqrsum 7783105132032
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPushStarted)
@@ -5583,66 +5452,66 @@ attr title "incoming packet lengths"
 attr unit b
 bin	-inf	0
 bin	0	0
-bin	200	22
-bin	400	583
-bin	600	35
-bin	800	5
-bin	1000	1
-bin	1200	5
-bin	1400	2
-bin	1600	1
+bin	200	14
+bin	400	11179
+bin	600	0
+bin	800	3
+bin	1000	3
+bin	1200	0
+bin	1400	0
+bin	1600	0
 bin	1800	0
-bin	2000	153
+bin	2000	3500
 bin	2200	0
-bin	2400	2
+bin	2400	0
 bin	2600	0
 bin	2800	0
-bin	3000	1
-bin	3200	1
-bin	3400	95
-bin	3600	3
+bin	3000	0
+bin	3200	0
+bin	3400	1567
+bin	3600	0
 bin	3800	0
-bin	4000	3
+bin	4000	0
 bin	4200	0
-bin	4400	1
+bin	4400	0
 bin	4600	0
-bin	4800	1
-bin	5000	76
+bin	4800	0
+bin	5000	1573
 bin	5200	0
-bin	5400	2
+bin	5400	0
 bin	5600	0
 bin	5800	0
 bin	6000	0
 bin	6200	0
-bin	6400	72
+bin	6400	1381
 bin	6600	0
 bin	6800	0
-bin	7000	1
+bin	7000	0
 bin	7200	0
 bin	7400	0
 bin	7600	0
 bin	7800	0
-bin	8000	45
+bin	8000	1154
 bin	8200	0
-bin	8400	1
+bin	8400	0
 bin	8600	0
 bin	8800	0
 bin	9000	0
 bin	9200	0
-bin	9400	4731
+bin	9400	1229
 bin	9600	0
-bin	9800	1
-bin	10000	1
+bin	9800	0
+bin	10000	0
 bin	10200	0
 bin	10400	0
 bin	10600	0
-bin	10800	1
-bin	11000	3454
-bin	11200	2
+bin	10800	0
+bin	11000	61411
+bin	11200	0
 bin	11400	0
 bin	11600	0
-bin	11800	2
-bin	12000	3215
+bin	11800	0
+bin	12000	0
 bin	12200	0
 bin	12400	0
 bin	12600	0
@@ -5652,13 +5521,6 @@ bin	13200	0
 bin	13400	0
 bin	13600	0
 bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
 scalar VideoStreamingShowcase.router.eth[1].queue droppedPacketsQueueOverflow:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -5685,14 +5547,14 @@ par VideoStreamingShowcase.router.eth[1].mac stopOperationExtraTime -1s
 attr unit s
 par VideoStreamingShowcase.router.eth[1].mac stopOperationTimeout 2s
 attr unit s
-scalar VideoStreamingShowcase.router.eth[1].mac "simulated time" 1419.66262043
+scalar VideoStreamingShowcase.router.eth[1].mac "simulated time" 1120.774384492
 scalar VideoStreamingShowcase.router.eth[1].mac full-duplex 1
-scalar VideoStreamingShowcase.router.eth[1].mac "frames/sec sent" 8.817587939456
-scalar VideoStreamingShowcase.router.eth[1].mac "frames/sec rcvd" 1.9406019150984
-scalar VideoStreamingShowcase.router.eth[1].mac "bits/sec sent" 87603.619486953
-scalar VideoStreamingShowcase.router.eth[1].mac "bits/sec rcvd" 1225.4798956903
-scalar VideoStreamingShowcase.router.eth[1].mac "rx channel idle (%)" 99.998565997322
-scalar VideoStreamingShowcase.router.eth[1].mac "rx channel utilization (%)" 0.0014340026783148
+scalar VideoStreamingShowcase.router.eth[1].mac "frames/sec sent" 74.068430853393
+scalar VideoStreamingShowcase.router.eth[1].mac "frames/sec rcvd" 14.51674862053
+scalar VideoStreamingShowcase.router.eth[1].mac "bits/sec sent" 654210.32648987
+scalar VideoStreamingShowcase.router.eth[1].mac "bits/sec rcvd" 9757.4035874818
+scalar VideoStreamingShowcase.router.eth[1].mac "rx channel idle (%)" 99.988761663209
+scalar VideoStreamingShowcase.router.eth[1].mac "rx channel utilization (%)" 0.011238336791315
 scalar VideoStreamingShowcase.router.eth[1].mac rxPausePkUnits:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -5709,52 +5571,52 @@ scalar VideoStreamingShowcase.router.eth[1].mac txPausePkUnits:sum 0
 attr interpolationmode none
 attr recordingmode sum
 attr title "pause units sent, sum"
-scalar VideoStreamingShowcase.router.eth[1].mac rxPkOk:count 2755
+scalar VideoStreamingShowcase.router.eth[1].mac rxPkOk:count 16270
 attr interpolationmode none
 attr recordingmode count
 attr source rxPkOk
 attr title "packets received OK, count"
-scalar VideoStreamingShowcase.router.eth[1].mac rxPkOk:sum(packetBytes) 217471
+scalar VideoStreamingShowcase.router.eth[1].mac rxPkOk:sum(packetBytes) 1366981
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source rxPkOk
 attr title "packets received OK, sum(packetBytes)"
-scalar VideoStreamingShowcase.router.eth[1].mac txPk:count 12518
+scalar VideoStreamingShowcase.router.eth[1].mac txPk:count 83014
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToLower
 attr title "packets transmitted, count"
-scalar VideoStreamingShowcase.router.eth[1].mac txPk:sum(packetBytes) 15545948
+scalar VideoStreamingShowcase.router.eth[1].mac txPk:sum(packetBytes) 91652772
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToLower
 attr title "packets transmitted, sum(packetBytes)"
-scalar VideoStreamingShowcase.router.eth[1].mac packetReceivedFromUpper:count 12518
+scalar VideoStreamingShowcase.router.eth[1].mac packetReceivedFromUpper:count 83014
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, count"
-scalar VideoStreamingShowcase.router.eth[1].mac packetReceivedFromUpper:sum(packetBytes) 15545540
+scalar VideoStreamingShowcase.router.eth[1].mac packetReceivedFromUpper:sum(packetBytes) 91652520
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, sum(packetBytes)"
-scalar VideoStreamingShowcase.router.eth[1].mac passedUpPk:count 2755
+scalar VideoStreamingShowcase.router.eth[1].mac passedUpPk:count 16270
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
 attr title "packets passed to higher layer, count"
-scalar VideoStreamingShowcase.router.eth[1].mac passedUpPk:sum(packetBytes) 217471
+scalar VideoStreamingShowcase.router.eth[1].mac passedUpPk:sum(packetBytes) 1366981
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToUpper
 attr title "packets passed to higher layer, sum(packetBytes)"
-scalar VideoStreamingShowcase.router.eth[1].mac packetDropIncorrectlyReceived:count 160
+scalar VideoStreamingShowcase.router.eth[1].mac packetDropIncorrectlyReceived:count 842
 attr interpolationmode none
 attr recordingmode count
 attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
 attr title "packet drop: incorrectly received, count"
-scalar VideoStreamingShowcase.router.eth[1].mac packetDropIncorrectlyReceived:sum(packetBytes) 13684
+scalar VideoStreamingShowcase.router.eth[1].mac packetDropIncorrectlyReceived:sum(packetBytes) 70578
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
@@ -5958,25 +5820,25 @@ par VideoStreamingShowcase.router.ipv4.arp proxyArpInterfaces "\"*\""
 scalar VideoStreamingShowcase.router.ipv4.arp arpResolutionFailed:count 0
 attr recordingmode count
 attr title "ARP failed resolutions, count"
-scalar VideoStreamingShowcase.router.ipv4.arp arpResolutionCompleted:count 40
+scalar VideoStreamingShowcase.router.ipv4.arp arpResolutionCompleted:count 28
 attr recordingmode count
 attr title "ARP completed resolutions, count"
-scalar VideoStreamingShowcase.router.ipv4.arp arpResolutionInitiated:count 7
+scalar VideoStreamingShowcase.router.ipv4.arp arpResolutionInitiated:count 3
 attr recordingmode count
 attr title "ARP initiated resolutions, count"
-scalar VideoStreamingShowcase.router.ipv4.arp arpReplySent:count 33
+scalar VideoStreamingShowcase.router.ipv4.arp arpReplySent:count 25
 attr recordingmode count
 attr source arpReplySent
 attr title "ARP replies sent, count"
-scalar VideoStreamingShowcase.router.ipv4.arp arpReplySent:sum(packetBytes) 924
+scalar VideoStreamingShowcase.router.ipv4.arp arpReplySent:sum(packetBytes) 700
 attr recordingmode sum(packetBytes)
 attr source arpReplySent
 attr title "ARP replies sent, sum(packetBytes)"
-scalar VideoStreamingShowcase.router.ipv4.arp arpRequestSent:count 8
+scalar VideoStreamingShowcase.router.ipv4.arp arpRequestSent:count 3
 attr recordingmode count
 attr source arpRequestSent
 attr title "ARP request sent, count"
-scalar VideoStreamingShowcase.router.ipv4.arp arpRequestSent:sum(packetBytes) 224
+scalar VideoStreamingShowcase.router.ipv4.arp arpRequestSent:sum(packetBytes) 84
 attr recordingmode sum(packetBytes)
 attr source arpRequestSent
 attr title "ARP request sent, sum(packetBytes)"
@@ -6140,42 +6002,42 @@ par VideoStreamingShowcase.host1.eth[0].tap typename "\"inet.emulation.linklayer
 par VideoStreamingShowcase.host1.eth[0].tap device "\"tapa\""
 par VideoStreamingShowcase.host1.eth[0].tap namespace "\"\""
 par VideoStreamingShowcase.host1.eth[0].tap packetNameFormat "\"Ext-%p-%t-%n\""
-scalar VideoStreamingShowcase.host1.eth[0].tap packetReceived:count 12525
+scalar VideoStreamingShowcase.host1.eth[0].tap packetReceived:count 83050
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceived
 attr title "packets received, count"
-scalar VideoStreamingShowcase.host1.eth[0].tap packetReceived:sum(packetBytes) 15546588
+scalar VideoStreamingShowcase.host1.eth[0].tap packetReceived:sum(packetBytes) 91657847
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceived
 attr title "packets received, sum(packetBytes)"
-scalar VideoStreamingShowcase.host1.eth[0].tap packetSent:count 2740
+scalar VideoStreamingShowcase.host1.eth[0].tap packetSent:count 16222
 attr interpolationmode none
 attr recordingmode count
 attr source packetSent
 attr title "packets sent, count"
-scalar VideoStreamingShowcase.host1.eth[0].tap packetSent:sum(packetBytes) 205061
+scalar VideoStreamingShowcase.host1.eth[0].tap packetSent:sum(packetBytes) 1287252
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSent
 attr title "packets sent, sum(packetBytes)"
-scalar VideoStreamingShowcase.host1.eth[0].tap packetReceivedFromLower:count 2740
+scalar VideoStreamingShowcase.host1.eth[0].tap packetReceivedFromLower:count 16222
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceivedFromLower
 attr title "packets received from higher layer, count"
-scalar VideoStreamingShowcase.host1.eth[0].tap packetReceivedFromLower:sum(packetBytes) 216021
+scalar VideoStreamingShowcase.host1.eth[0].tap packetReceivedFromLower:sum(packetBytes) 1352140
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceivedFromLower
 attr title "packets received from higher layer, sum(packetBytes)"
-scalar VideoStreamingShowcase.host1.eth[0].tap packetSentFromLower:count 12525
+scalar VideoStreamingShowcase.host1.eth[0].tap packetSentFromLower:count 83050
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToLower
 attr title "packets sent to higher layer, count"
-scalar VideoStreamingShowcase.host1.eth[0].tap packetSentFromLower:sum(packetBytes) 15546588
+scalar VideoStreamingShowcase.host1.eth[0].tap packetSentFromLower:sum(packetBytes) 91657847
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToLower
@@ -6231,7 +6093,7 @@ attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetP
 attr title "queue bit length, timeavg"
 attr unit b
 statistic VideoStreamingShowcase.host1.eth[0].queue queueingTime:histogram
-field count 12525
+field count 83050
 field mean 0
 field stddev 0
 field min 0
@@ -6269,7 +6131,7 @@ bin	-0.08	0
 bin	-0.06	0
 bin	-0.04	0
 bin	-0.02	0
-bin	0	12525
+bin	0	83050
 bin	0.02	0
 bin	0.04	0
 bin	0.06	0
@@ -6295,25 +6157,25 @@ bin	0.44	0
 bin	0.46	0
 bin	0.48	0
 bin	0.5	0
-scalar VideoStreamingShowcase.host1.eth[0].queue outgoingPackets:count 12525
+scalar VideoStreamingShowcase.host1.eth[0].queue outgoingPackets:count 83050
 attr recordingmode count
 attr source packetPulled
 attr title "outgoing packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.host1.eth[0].queue outgoingPacketLengths:sum 124372704
+scalar VideoStreamingShowcase.host1.eth[0].queue outgoingPacketLengths:sum 733262776
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPulled)
 attr title "outgoing packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.host1.eth[0].queue outgoingPacketLengths:histogram
-field count 12525
-field mean 9929.9564071856
-field stddev 2766.6003535287
+field count 83050
+field mean 8829.1724984949
+field stddev 3970.1937369341
 field min 368
-field max 12144
-field sum 124372704
-field sqrsum 1330875195776
+field max 11024
+field sum 733262776
+field sqrsum 7783158275136
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPulled)
@@ -6321,66 +6183,66 @@ attr title "outgoing packet lengths"
 attr unit b
 bin	-inf	0
 bin	0	0
-bin	200	19
-bin	400	583
-bin	600	41
-bin	800	7
-bin	1000	1
-bin	1200	5
-bin	1400	3
-bin	1600	2
+bin	200	14
+bin	400	11179
+bin	600	6
+bin	800	11
+bin	1000	3
+bin	1200	11
+bin	1400	11
+bin	1600	0
 bin	1800	0
-bin	2000	153
+bin	2000	3500
 bin	2200	0
-bin	2400	2
+bin	2400	0
 bin	2600	0
 bin	2800	0
-bin	3000	1
-bin	3200	1
-bin	3400	95
-bin	3600	3
+bin	3000	0
+bin	3200	0
+bin	3400	1567
+bin	3600	0
 bin	3800	0
-bin	4000	3
+bin	4000	0
 bin	4200	0
-bin	4400	1
+bin	4400	0
 bin	4600	0
-bin	4800	1
-bin	5000	76
+bin	4800	0
+bin	5000	1573
 bin	5200	0
-bin	5400	2
+bin	5400	0
 bin	5600	0
 bin	5800	0
 bin	6000	0
 bin	6200	0
-bin	6400	72
+bin	6400	1381
 bin	6600	0
 bin	6800	0
-bin	7000	1
+bin	7000	0
 bin	7200	0
 bin	7400	0
 bin	7600	0
 bin	7800	0
-bin	8000	45
+bin	8000	1154
 bin	8200	0
-bin	8400	1
+bin	8400	0
 bin	8600	0
 bin	8800	0
 bin	9000	0
 bin	9200	0
-bin	9400	4731
+bin	9400	1229
 bin	9600	0
-bin	9800	1
-bin	10000	1
+bin	9800	0
+bin	10000	0
 bin	10200	0
 bin	10400	0
 bin	10600	0
-bin	10800	1
-bin	11000	3454
-bin	11200	2
+bin	10800	0
+bin	11000	61411
+bin	11200	0
 bin	11400	0
 bin	11600	0
-bin	11800	2
-bin	12000	3215
+bin	11800	0
+bin	12000	0
 bin	12200	0
 bin	12400	0
 bin	12600	0
@@ -6390,13 +6252,6 @@ bin	13200	0
 bin	13400	0
 bin	13600	0
 bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
 statistic VideoStreamingShowcase.host1.eth[0].queue flowQueueingTime:histogram
 field count 0
 field mean -nan
@@ -6413,25 +6268,25 @@ attr unit s
 bin	-inf	0
 bin	0	0
 bin	1	0
-scalar VideoStreamingShowcase.host1.eth[0].queue incomingPackets:count 12525
+scalar VideoStreamingShowcase.host1.eth[0].queue incomingPackets:count 83050
 attr recordingmode count
 attr source packetPushStarted
 attr title "incoming packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.host1.eth[0].queue incomingPacketLengths:sum 124372704
+scalar VideoStreamingShowcase.host1.eth[0].queue incomingPacketLengths:sum 733262776
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPushStarted)
 attr title "incoming packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.host1.eth[0].queue incomingPacketLengths:histogram
-field count 12525
-field mean 9929.9564071856
-field stddev 2766.6003535287
+field count 83050
+field mean 8829.1724984949
+field stddev 3970.1937369341
 field min 368
-field max 12144
-field sum 124372704
-field sqrsum 1330875195776
+field max 11024
+field sum 733262776
+field sqrsum 7783158275136
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPushStarted)
@@ -6439,66 +6294,66 @@ attr title "incoming packet lengths"
 attr unit b
 bin	-inf	0
 bin	0	0
-bin	200	19
-bin	400	583
-bin	600	41
-bin	800	7
-bin	1000	1
-bin	1200	5
-bin	1400	3
-bin	1600	2
+bin	200	14
+bin	400	11179
+bin	600	6
+bin	800	11
+bin	1000	3
+bin	1200	11
+bin	1400	11
+bin	1600	0
 bin	1800	0
-bin	2000	153
+bin	2000	3500
 bin	2200	0
-bin	2400	2
+bin	2400	0
 bin	2600	0
 bin	2800	0
-bin	3000	1
-bin	3200	1
-bin	3400	95
-bin	3600	3
+bin	3000	0
+bin	3200	0
+bin	3400	1567
+bin	3600	0
 bin	3800	0
-bin	4000	3
+bin	4000	0
 bin	4200	0
-bin	4400	1
+bin	4400	0
 bin	4600	0
-bin	4800	1
-bin	5000	76
+bin	4800	0
+bin	5000	1573
 bin	5200	0
-bin	5400	2
+bin	5400	0
 bin	5600	0
 bin	5800	0
 bin	6000	0
 bin	6200	0
-bin	6400	72
+bin	6400	1381
 bin	6600	0
 bin	6800	0
-bin	7000	1
+bin	7000	0
 bin	7200	0
 bin	7400	0
 bin	7600	0
 bin	7800	0
-bin	8000	45
+bin	8000	1154
 bin	8200	0
-bin	8400	1
+bin	8400	0
 bin	8600	0
 bin	8800	0
 bin	9000	0
 bin	9200	0
-bin	9400	4731
+bin	9400	1229
 bin	9600	0
-bin	9800	1
-bin	10000	1
+bin	9800	0
+bin	10000	0
 bin	10200	0
 bin	10400	0
 bin	10600	0
-bin	10800	1
-bin	11000	3454
-bin	11200	2
+bin	10800	0
+bin	11000	61411
+bin	11200	0
 bin	11400	0
 bin	11600	0
-bin	11800	2
-bin	12000	3215
+bin	11800	0
+bin	12000	0
 bin	12200	0
 bin	12400	0
 bin	12600	0
@@ -6508,13 +6363,6 @@ bin	13200	0
 bin	13400	0
 bin	13600	0
 bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
 scalar VideoStreamingShowcase.host1.eth[0].queue droppedPacketsQueueOverflow:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -6541,14 +6389,14 @@ par VideoStreamingShowcase.host1.eth[0].mac stopOperationExtraTime -1s
 attr unit s
 par VideoStreamingShowcase.host1.eth[0].mac stopOperationTimeout 2s
 attr unit s
-scalar VideoStreamingShowcase.host1.eth[0].mac "simulated time" 1419.66262043
+scalar VideoStreamingShowcase.host1.eth[0].mac "simulated time" 1120.774384492
 scalar VideoStreamingShowcase.host1.eth[0].mac full-duplex 1
-scalar VideoStreamingShowcase.host1.eth[0].mac "frames/sec sent" 8.8225186884235
-scalar VideoStreamingShowcase.host1.eth[0].mac "frames/sec rcvd" 1.9300360244535
-scalar VideoStreamingShowcase.host1.eth[0].mac "bits/sec sent" 87609.22081778
-scalar VideoStreamingShowcase.host1.eth[0].mac "bits/sec rcvd" 1217.3089402583
-scalar VideoStreamingShowcase.host1.eth[0].mac "rx channel idle (%)" 99.998659168754
-scalar VideoStreamingShowcase.host1.eth[0].mac "rx channel utilization (%)" 0.0013408312458234
+scalar VideoStreamingShowcase.host1.eth[0].mac "frames/sec sent" 74.100551501847
+scalar VideoStreamingShowcase.host1.eth[0].mac "frames/sec rcvd" 14.473921089259
+scalar VideoStreamingShowcase.host1.eth[0].mac "bits/sec sent" 654248.35019972
+scalar VideoStreamingShowcase.host1.eth[0].mac "bits/sec rcvd" 9651.4696888821
+scalar VideoStreamingShowcase.host1.eth[0].mac "rx channel idle (%)" 99.989422199361
+scalar VideoStreamingShowcase.host1.eth[0].mac "rx channel utilization (%)" 0.010577800638595
 scalar VideoStreamingShowcase.host1.eth[0].mac rxPausePkUnits:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -6565,42 +6413,42 @@ scalar VideoStreamingShowcase.host1.eth[0].mac txPausePkUnits:sum 0
 attr interpolationmode none
 attr recordingmode sum
 attr title "pause units sent, sum"
-scalar VideoStreamingShowcase.host1.eth[0].mac rxPkOk:count 2740
+scalar VideoStreamingShowcase.host1.eth[0].mac rxPkOk:count 16222
 attr interpolationmode none
 attr recordingmode count
 attr source rxPkOk
 attr title "packets received OK, count"
-scalar VideoStreamingShowcase.host1.eth[0].mac rxPkOk:sum(packetBytes) 216021
+scalar VideoStreamingShowcase.host1.eth[0].mac rxPkOk:sum(packetBytes) 1352140
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source rxPkOk
 attr title "packets received OK, sum(packetBytes)"
-scalar VideoStreamingShowcase.host1.eth[0].mac txPk:count 12525
+scalar VideoStreamingShowcase.host1.eth[0].mac txPk:count 83050
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToLower
 attr title "packets transmitted, count"
-scalar VideoStreamingShowcase.host1.eth[0].mac txPk:sum(packetBytes) 15546942
+scalar VideoStreamingShowcase.host1.eth[0].mac txPk:sum(packetBytes) 91658099
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToLower
 attr title "packets transmitted, sum(packetBytes)"
-scalar VideoStreamingShowcase.host1.eth[0].mac packetReceivedFromUpper:count 12525
+scalar VideoStreamingShowcase.host1.eth[0].mac packetReceivedFromUpper:count 83050
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, count"
-scalar VideoStreamingShowcase.host1.eth[0].mac packetReceivedFromUpper:sum(packetBytes) 15546588
+scalar VideoStreamingShowcase.host1.eth[0].mac packetReceivedFromUpper:sum(packetBytes) 91657847
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, sum(packetBytes)"
-scalar VideoStreamingShowcase.host1.eth[0].mac passedUpPk:count 2740
+scalar VideoStreamingShowcase.host1.eth[0].mac passedUpPk:count 16222
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
 attr title "packets passed to higher layer, count"
-scalar VideoStreamingShowcase.host1.eth[0].mac passedUpPk:sum(packetBytes) 216021
+scalar VideoStreamingShowcase.host1.eth[0].mac passedUpPk:sum(packetBytes) 1352140
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToUpper
@@ -7065,42 +6913,42 @@ par VideoStreamingShowcase.host2.eth[0].tap typename "\"inet.emulation.linklayer
 par VideoStreamingShowcase.host2.eth[0].tap device "\"tapb\""
 par VideoStreamingShowcase.host2.eth[0].tap namespace "\"\""
 par VideoStreamingShowcase.host2.eth[0].tap packetNameFormat "\"Ext-%p-%t-%n\""
-scalar VideoStreamingShowcase.host2.eth[0].tap packetReceived:count 2915
+scalar VideoStreamingShowcase.host2.eth[0].tap packetReceived:count 17112
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceived
 attr title "packets received, count"
-scalar VideoStreamingShowcase.host2.eth[0].tap packetReceived:sum(packetBytes) 230633
+scalar VideoStreamingShowcase.host2.eth[0].tap packetReceived:sum(packetBytes) 1437289
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceived
 attr title "packets received, sum(packetBytes)"
-scalar VideoStreamingShowcase.host2.eth[0].tap packetSent:count 11891
+scalar VideoStreamingShowcase.host2.eth[0].tap packetSent:count 78778
 attr interpolationmode none
 attr recordingmode count
 attr source packetSent
 attr title "packets sent, count"
-scalar VideoStreamingShowcase.host2.eth[0].tap packetSent:sum(packetBytes) 14729333
+scalar VideoStreamingShowcase.host2.eth[0].tap packetSent:sum(packetBytes) 86658718
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSent
 attr title "packets sent, sum(packetBytes)"
-scalar VideoStreamingShowcase.host2.eth[0].tap packetReceivedFromLower:count 11891
+scalar VideoStreamingShowcase.host2.eth[0].tap packetReceivedFromLower:count 78778
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceivedFromLower
 attr title "packets received from higher layer, count"
-scalar VideoStreamingShowcase.host2.eth[0].tap packetReceivedFromLower:sum(packetBytes) 14776897
+scalar VideoStreamingShowcase.host2.eth[0].tap packetReceivedFromLower:sum(packetBytes) 86973830
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceivedFromLower
 attr title "packets received from higher layer, sum(packetBytes)"
-scalar VideoStreamingShowcase.host2.eth[0].tap packetSentFromLower:count 2915
+scalar VideoStreamingShowcase.host2.eth[0].tap packetSentFromLower:count 17112
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToLower
 attr title "packets sent to higher layer, count"
-scalar VideoStreamingShowcase.host2.eth[0].tap packetSentFromLower:sum(packetBytes) 230633
+scalar VideoStreamingShowcase.host2.eth[0].tap packetSentFromLower:sum(packetBytes) 1437289
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToLower
@@ -7156,7 +7004,7 @@ attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetP
 attr title "queue bit length, timeavg"
 attr unit b
 statistic VideoStreamingShowcase.host2.eth[0].queue queueingTime:histogram
-field count 2915
+field count 17112
 field mean 0
 field stddev 0
 field min 0
@@ -7194,7 +7042,7 @@ bin	-0.08	0
 bin	-0.06	0
 bin	-0.04	0
 bin	-0.02	0
-bin	0	2915
+bin	0	17112
 bin	0.02	0
 bin	0.04	0
 bin	0.06	0
@@ -7220,108 +7068,89 @@ bin	0.44	0
 bin	0.46	0
 bin	0.48	0
 bin	0.5	0
-scalar VideoStreamingShowcase.host2.eth[0].queue outgoingPackets:count 2915
+scalar VideoStreamingShowcase.host2.eth[0].queue outgoingPackets:count 17112
 attr recordingmode count
 attr source packetPulled
 attr title "outgoing packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.host2.eth[0].queue outgoingPacketLengths:sum 1845064
+scalar VideoStreamingShowcase.host2.eth[0].queue outgoingPacketLengths:sum 11498312
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPulled)
 attr title "outgoing packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.host2.eth[0].queue outgoingPacketLengths:histogram
-field count 2915
-field mean 632.95506003431
-field stddev 487.6831099761
+field count 17112
+field mean 671.94436652641
+field stddev 159.59671192547
 field min 368
-field max 12144
-field sum 1845064
-field sqrsum 1860893248
+field max 4752
+field sum 11498312
+field sqrsum 8162062144
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPulled)
 attr title "outgoing packet lengths"
 attr unit b
 bin	-inf	0
-bin	0	0
-bin	200	29
-bin	400	1691
-bin	600	1169
-bin	800	9
-bin	1000	1
-bin	1200	6
-bin	1400	1
-bin	1600	1
+bin	200	0
+bin	280	0
+bin	360	15
+bin	440	0
+bin	520	4817
+bin	600	53
+bin	680	12169
+bin	760	7
+bin	840	7
+bin	920	1
+bin	1000	3
+bin	1080	0
+bin	1160	0
+bin	1240	11
+bin	1320	0
+bin	1400	11
+bin	1480	0
+bin	1560	0
+bin	1640	0
+bin	1720	0
 bin	1800	0
-bin	2000	0
-bin	2200	3
-bin	2400	0
+bin	1880	0
+bin	1960	0
+bin	2040	0
+bin	2120	0
+bin	2200	0
+bin	2280	0
+bin	2360	0
+bin	2440	0
+bin	2520	0
 bin	2600	0
-bin	2800	0
+bin	2680	0
+bin	2760	0
+bin	2840	0
+bin	2920	0
 bin	3000	0
-bin	3200	0
+bin	3080	0
+bin	3160	0
+bin	3240	0
+bin	3320	0
 bin	3400	0
-bin	3600	0
+bin	3480	0
+bin	3560	0
+bin	3640	0
+bin	3720	0
 bin	3800	0
-bin	4000	0
+bin	3880	0
+bin	3960	0
+bin	4040	0
+bin	4120	0
 bin	4200	0
-bin	4400	0
+bin	4280	0
+bin	4360	0
+bin	4440	0
+bin	4520	0
 bin	4600	0
-bin	4800	0
-bin	5000	0
-bin	5200	0
-bin	5400	0
-bin	5600	0
-bin	5800	0
-bin	6000	0
-bin	6200	0
-bin	6400	0
-bin	6600	0
-bin	6800	0
-bin	7000	0
-bin	7200	0
-bin	7400	0
-bin	7600	0
-bin	7800	0
-bin	8000	0
-bin	8200	0
-bin	8400	0
-bin	8600	0
-bin	8800	0
-bin	9000	0
-bin	9200	0
-bin	9400	0
-bin	9600	0
-bin	9800	0
-bin	10000	0
-bin	10200	0
-bin	10400	0
-bin	10600	0
-bin	10800	0
-bin	11000	0
-bin	11200	0
-bin	11400	0
-bin	11600	0
-bin	11800	0
-bin	12000	5
-bin	12200	0
-bin	12400	0
-bin	12600	0
-bin	12800	0
-bin	13000	0
-bin	13200	0
-bin	13400	0
-bin	13600	0
-bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
+bin	4680	18
+bin	4760	0
 statistic VideoStreamingShowcase.host2.eth[0].queue flowQueueingTime:histogram
 field count 0
 field mean -nan
@@ -7338,108 +7167,89 @@ attr unit s
 bin	-inf	0
 bin	0	0
 bin	1	0
-scalar VideoStreamingShowcase.host2.eth[0].queue incomingPackets:count 2915
+scalar VideoStreamingShowcase.host2.eth[0].queue incomingPackets:count 17112
 attr recordingmode count
 attr source packetPushStarted
 attr title "incoming packets, count"
 attr unit pk
-scalar VideoStreamingShowcase.host2.eth[0].queue incomingPacketLengths:sum 1845064
+scalar VideoStreamingShowcase.host2.eth[0].queue incomingPacketLengths:sum 11498312
 attr interpolationmode none
 attr recordingmode sum
 attr source packetLength(packetPushStarted)
 attr title "incoming packet lengths, sum"
 attr unit b
 statistic VideoStreamingShowcase.host2.eth[0].queue incomingPacketLengths:histogram
-field count 2915
-field mean 632.95506003431
-field stddev 487.6831099761
+field count 17112
+field mean 671.94436652641
+field stddev 159.59671192547
 field min 368
-field max 12144
-field sum 1845064
-field sqrsum 1860893248
+field max 4752
+field sum 11498312
+field sqrsum 8162062144
 attr interpolationmode none
 attr recordingmode histogram
 attr source packetLength(packetPushStarted)
 attr title "incoming packet lengths"
 attr unit b
 bin	-inf	0
-bin	0	0
-bin	200	29
-bin	400	1691
-bin	600	1169
-bin	800	9
-bin	1000	1
-bin	1200	6
-bin	1400	1
-bin	1600	1
+bin	200	0
+bin	280	0
+bin	360	15
+bin	440	0
+bin	520	4817
+bin	600	53
+bin	680	12169
+bin	760	7
+bin	840	7
+bin	920	1
+bin	1000	3
+bin	1080	0
+bin	1160	0
+bin	1240	11
+bin	1320	0
+bin	1400	11
+bin	1480	0
+bin	1560	0
+bin	1640	0
+bin	1720	0
 bin	1800	0
-bin	2000	0
-bin	2200	3
-bin	2400	0
+bin	1880	0
+bin	1960	0
+bin	2040	0
+bin	2120	0
+bin	2200	0
+bin	2280	0
+bin	2360	0
+bin	2440	0
+bin	2520	0
 bin	2600	0
-bin	2800	0
+bin	2680	0
+bin	2760	0
+bin	2840	0
+bin	2920	0
 bin	3000	0
-bin	3200	0
+bin	3080	0
+bin	3160	0
+bin	3240	0
+bin	3320	0
 bin	3400	0
-bin	3600	0
+bin	3480	0
+bin	3560	0
+bin	3640	0
+bin	3720	0
 bin	3800	0
-bin	4000	0
+bin	3880	0
+bin	3960	0
+bin	4040	0
+bin	4120	0
 bin	4200	0
-bin	4400	0
+bin	4280	0
+bin	4360	0
+bin	4440	0
+bin	4520	0
 bin	4600	0
-bin	4800	0
-bin	5000	0
-bin	5200	0
-bin	5400	0
-bin	5600	0
-bin	5800	0
-bin	6000	0
-bin	6200	0
-bin	6400	0
-bin	6600	0
-bin	6800	0
-bin	7000	0
-bin	7200	0
-bin	7400	0
-bin	7600	0
-bin	7800	0
-bin	8000	0
-bin	8200	0
-bin	8400	0
-bin	8600	0
-bin	8800	0
-bin	9000	0
-bin	9200	0
-bin	9400	0
-bin	9600	0
-bin	9800	0
-bin	10000	0
-bin	10200	0
-bin	10400	0
-bin	10600	0
-bin	10800	0
-bin	11000	0
-bin	11200	0
-bin	11400	0
-bin	11600	0
-bin	11800	0
-bin	12000	5
-bin	12200	0
-bin	12400	0
-bin	12600	0
-bin	12800	0
-bin	13000	0
-bin	13200	0
-bin	13400	0
-bin	13600	0
-bin	13800	0
-bin	14000	0
-bin	14200	0
-bin	14400	0
-bin	14600	0
-bin	14800	0
-bin	15000	0
-bin	15200	0
+bin	4680	18
+bin	4760	0
 scalar VideoStreamingShowcase.host2.eth[0].queue droppedPacketsQueueOverflow:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -7466,14 +7276,14 @@ par VideoStreamingShowcase.host2.eth[0].mac stopOperationExtraTime -1s
 attr unit s
 par VideoStreamingShowcase.host2.eth[0].mac stopOperationTimeout 2s
 attr unit s
-scalar VideoStreamingShowcase.host2.eth[0].mac "simulated time" 1419.66262043
+scalar VideoStreamingShowcase.host2.eth[0].mac "simulated time" 1120.774384492
 scalar VideoStreamingShowcase.host2.eth[0].mac full-duplex 1
-scalar VideoStreamingShowcase.host2.eth[0].mac "frames/sec sent" 2.0533047486431
-scalar VideoStreamingShowcase.host2.eth[0].mac "frames/sec rcvd" 8.3759337105025
-scalar VideoStreamingShowcase.host2.eth[0].mac "bits/sec sent" 1302.5911744016
-scalar VideoStreamingShowcase.host2.eth[0].mac "bits/sec rcvd" 83269.908144932
-scalar VideoStreamingShowcase.host2.eth[0].mac "rx channel idle (%)" 99.911832054885
-scalar VideoStreamingShowcase.host2.eth[0].mac "rx channel utilization (%)" 0.088167945115078
+scalar VideoStreamingShowcase.host2.eth[0].mac "frames/sec sent" 15.268014898249
+scalar VideoStreamingShowcase.host2.eth[0].mac "frames/sec rcvd" 70.288901218693
+scalar VideoStreamingShowcase.host2.eth[0].mac "bits/sec sent" 10261.183837827
+scalar VideoStreamingShowcase.host2.eth[0].mac "bits/sec rcvd" 620812.40401954
+scalar VideoStreamingShowcase.host2.eth[0].mac "rx channel idle (%)" 99.341049293936
+scalar VideoStreamingShowcase.host2.eth[0].mac "rx channel utilization (%)" 0.65895070606449
 scalar VideoStreamingShowcase.host2.eth[0].mac rxPausePkUnits:count 0
 attr interpolationmode none
 attr recordingmode count
@@ -7490,52 +7300,52 @@ scalar VideoStreamingShowcase.host2.eth[0].mac txPausePkUnits:sum 0
 attr interpolationmode none
 attr recordingmode sum
 attr title "pause units sent, sum"
-scalar VideoStreamingShowcase.host2.eth[0].mac rxPkOk:count 11891
+scalar VideoStreamingShowcase.host2.eth[0].mac rxPkOk:count 78778
 attr interpolationmode none
 attr recordingmode count
 attr source rxPkOk
 attr title "packets received OK, count"
-scalar VideoStreamingShowcase.host2.eth[0].mac rxPkOk:sum(packetBytes) 14776897
+scalar VideoStreamingShowcase.host2.eth[0].mac rxPkOk:sum(packetBytes) 86973830
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source rxPkOk
 attr title "packets received OK, sum(packetBytes)"
-scalar VideoStreamingShowcase.host2.eth[0].mac txPk:count 2915
+scalar VideoStreamingShowcase.host2.eth[0].mac txPk:count 17112
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToLower
 attr title "packets transmitted, count"
-scalar VideoStreamingShowcase.host2.eth[0].mac txPk:sum(packetBytes) 231155
+scalar VideoStreamingShowcase.host2.eth[0].mac txPk:sum(packetBytes) 1437559
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToLower
 attr title "packets transmitted, sum(packetBytes)"
-scalar VideoStreamingShowcase.host2.eth[0].mac packetReceivedFromUpper:count 2915
+scalar VideoStreamingShowcase.host2.eth[0].mac packetReceivedFromUpper:count 17112
 attr interpolationmode none
 attr recordingmode count
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, count"
-scalar VideoStreamingShowcase.host2.eth[0].mac packetReceivedFromUpper:sum(packetBytes) 230633
+scalar VideoStreamingShowcase.host2.eth[0].mac packetReceivedFromUpper:sum(packetBytes) 1437289
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, sum(packetBytes)"
-scalar VideoStreamingShowcase.host2.eth[0].mac passedUpPk:count 11891
+scalar VideoStreamingShowcase.host2.eth[0].mac passedUpPk:count 78778
 attr interpolationmode none
 attr recordingmode count
 attr source packetSentToUpper
 attr title "packets passed to higher layer, count"
-scalar VideoStreamingShowcase.host2.eth[0].mac passedUpPk:sum(packetBytes) 14776897
+scalar VideoStreamingShowcase.host2.eth[0].mac passedUpPk:sum(packetBytes) 86973830
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetSentToUpper
 attr title "packets passed to higher layer, sum(packetBytes)"
-scalar VideoStreamingShowcase.host2.eth[0].mac packetDropIncorrectlyReceived:count 627
+scalar VideoStreamingShowcase.host2.eth[0].mac packetDropIncorrectlyReceived:count 4236
 attr interpolationmode none
 attr recordingmode count
 attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
 attr title "packet drop: incorrectly received, count"
-scalar VideoStreamingShowcase.host2.eth[0].mac packetDropIncorrectlyReceived:sum(packetBytes) 769051
+scalar VideoStreamingShowcase.host2.eth[0].mac packetDropIncorrectlyReceived:sum(packetBytes) 4678942
 attr interpolationmode none
 attr recordingmode sum(packetBytes)
 attr source packetDropReasonIsIncorrectlyReceived(packetDropped)

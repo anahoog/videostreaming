@@ -1,0 +1,1215 @@
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+21:42:42.793465/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508011946 delayed for 3.704 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 142718).
+21:42:42.793811/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508011958 delayed for 3.924 ms
+21:42:42.793887/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508011963 delayed for 3.989 ms
+21:42:42.793937/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508011966 delayed for 4.030 ms
+21:42:42.794072/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508011982 delayed for 4.109 ms
+21:42:42.817387/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508011987 delayed for 0.132 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 213859).
+21:42:42.817639/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508011997 delayed for 0.365 ms
+21:42:42.817771/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012001 delayed for 0.493 ms
+21:42:42.817888/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012004 delayed for 0.582 ms
+21:42:42.858975/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012009 delayed for 0.253 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 217459).
+[h264 @ 0x5d9e2c090040] left block unavailable for requested intra4x4 mode -1
+[h264 @ 0x5d9e2c090040] error while decoding MB 0 4, bytestream 24626
+[h264 @ 0x5d9e2c090040] concealing 7729 DC, 7729 AC, 7729 MV errors in I frame
+21:42:42.872079/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012015 delayed for 13.315 ms
+21:42:42.897004/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012020 delayed for 0.082 ms
+21:42:42.897118/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012029 delayed for 0.170 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 221059).
+21:42:42.977259/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012053 delayed for 0.140 ms
+21:42:42.977388/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012059 delayed for 0.254 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 203322).
+21:42:43.016865/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012064 delayed for 0.181 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 231859).
+21:42:43.016989/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012070 delayed for 0.300 ms
+21:42:43.017023/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012073 delayed for 0.306 ms
+21:42:43.017073/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012075 delayed for 0.354 ms
+21:42:43.017106/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012078 delayed for 0.382 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 235459).
+21:42:43.057284/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012091 delayed for 0.252 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 239059).
+21:42:43.096287/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012105 delayed for 0.208 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 242659).
+21:42:43.137343/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508012122 delayed for 0.214 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 217951).
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 246259).
+21:42:43.218122/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012157 delayed for 0.239 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 253459).
+21:42:43.257127/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012175 delayed for 0.170 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 257059).
+21:42:43.375786/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012204 delayed for 0.212 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 267859).
+21:42:43.419085/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012217 delayed for 0.290 ms
+21:42:43.419158/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012221 delayed for 0.364 ms
+21:42:43.419226/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012233 delayed for 0.424 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 271459).
+21:42:43.458103/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012251 delayed for 0.346 ms
+21:42:43.458226/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012263 delayed for 0.456 ms
+21:42:43.458263/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012265 delayed for 0.490 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 275059).
+21:42:43.536895/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012278 delayed for 0.191 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 282259).
+21:42:43.656936/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508012312 delayed for 0.271 ms
+21:42:43.657116/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012317 delayed for 0.439 ms
+21:42:43.657208/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012320 delayed for 0.524 ms
+21:42:43.657304/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012323 delayed for 0.611 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 293059).
+21:42:43.737068/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012332 delayed for 0.104 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 300259).
+21:42:43.857239/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012369 delayed for 0.239 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 311059).
+21:42:43.897386/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012376 delayed for 0.161 ms
+21:42:43.936856/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508012393 delayed for 0.059 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 314659).
+21:42:44.016688/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508012419 delayed for 0.254 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 325459).
+21:42:44.057009/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012439 delayed for 0.323 ms
+21:42:44.057092/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012441 delayed for 0.407 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 329059).
+21:42:44.136806/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012455 delayed for 0.128 ms
+21:42:44.137011/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012472 delayed for 0.293 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 336259).
+21:42:44.217396/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012493 delayed for 0.199 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 343459).
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 320351).
+21:42:44.296823/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012518 delayed for 0.265 ms
+21:42:44.296898/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012520 delayed for 0.343 ms
+21:42:44.296939/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012529 delayed for 0.375 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 350659).
+21:42:44.336666/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508012535 delayed for 0.133 ms
+21:42:44.376644/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012540 delayed for 0.093 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 354259).
+21:42:44.416501/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012550 delayed for 0.077 ms
+21:42:44.416674/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012560 delayed for 0.251 ms
+21:42:44.416729/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012566 delayed for 0.302 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 357859).
+21:42:44.456771/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012574 delayed for 0.256 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 365059).
+21:42:44.536650/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012593 delayed for 0.144 ms
+21:42:44.536718/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012595 delayed for 0.215 ms
+21:42:44.536750/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508012602 delayed for 0.237 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 372259).
+21:42:44.576859/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012609 delayed for 0.121 ms
+21:42:44.576940/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012611 delayed for 0.202 ms
+21:42:44.576973/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012613 delayed for 0.233 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 375859).
+21:42:44.656522/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012630 delayed for 0.257 ms
+21:42:44.656686/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012639 delayed for 0.400 ms
+21:42:44.656760/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012647 delayed for 0.465 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 383059).
+21:42:44.736715/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012657 delayed for 0.083 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 386659).
+21:42:44.736947/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012660 delayed for 0.306 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 390259).
+21:42:44.776495/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012672 delayed for 0.291 ms
+21:42:44.776550/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012677 delayed for 0.340 ms
+21:42:44.776598/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508012689 delayed for 0.370 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 393859).
+21:42:44.896754/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012709 delayed for 0.069 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 401059).
+21:42:44.976563/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012746 delayed for 0.291 ms
+21:42:45.016649/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508012751 delayed for 0.092 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 411859).
+21:42:45.016908/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012760 delayed for 0.339 ms
+21:42:45.016962/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012764 delayed for 0.390 ms
+21:42:45.017003/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012768 delayed for 0.424 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 415459).
+21:42:45.097004/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012781 delayed for 0.094 ms
+21:42:45.097236/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012787 delayed for 0.325 ms
+21:42:45.097409/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012789 delayed for 0.493 ms
+21:42:45.136633/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012803 delayed for 0.131 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 419059).
+21:42:45.136806/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012806 delayed for 0.306 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 426259).
+21:42:45.176736/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012815 delayed for 0.252 ms
+21:42:45.176863/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012820 delayed for 0.380 ms
+21:42:45.176981/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012824 delayed for 0.495 ms
+21:42:45.216417/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508012837 delayed for 0.069 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 429859).
+21:42:45.216687/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012845 delayed for 0.332 ms
+21:42:45.216800/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012851 delayed for 0.442 ms
+21:42:45.216831/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012853 delayed for 0.473 ms
+21:42:45.256922/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012858 delayed for 0.058 ms
+21:42:45.257008/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012860 delayed for 0.138 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 433459).
+21:42:45.257125/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012870 delayed for 0.243 ms
+21:42:45.296353/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012873 delayed for 0.117 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 408122).
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 437059).
+21:42:45.296956/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012882 delayed for 0.666 ms
+21:42:45.336807/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012887 delayed for 0.104 ms
+21:42:45.337152/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012890 delayed for 0.449 ms
+21:42:45.337260/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508012899 delayed for 0.536 ms
+21:42:45.337335/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012907 delayed for 0.594 ms
+21:42:45.376609/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012911 delayed for 0.069 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 440659).
+21:42:45.416840/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012919 delayed for 0.112 ms
+21:42:45.417053/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012922 delayed for 0.322 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 447859).
+21:42:45.456801/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012943 delayed for 0.232 ms
+21:42:45.456848/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012945 delayed for 0.279 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 455059).
+21:42:45.536417/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012967 delayed for 0.069 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 458659).
+21:42:45.576783/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508012981 delayed for 0.227 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 465859).
+21:42:45.616700/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013011 delayed for 0.248 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 469459).
+21:42:45.696544/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508013050 delayed for 0.230 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 476659).
+21:42:45.776941/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508013065 delayed for 0.145 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 483859).
+21:42:45.816216/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013082 delayed for 0.197 ms
+21:42:45.816271/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013094 delayed for 0.231 ms
+21:42:45.856098/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013097 delayed for 0.067 ms
+21:42:45.896680/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013104 delayed for 0.058 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 487459).
+21:42:45.896871/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013107 delayed for 0.242 ms
+21:42:45.896907/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013113 delayed for 0.276 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 494659).
+21:42:45.938031/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013131 delayed for 0.318 ms
+21:42:45.938115/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508013139 delayed for 0.396 ms
+21:42:45.938182/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013141 delayed for 0.463 ms
+21:42:45.975859/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013143 delayed for 0.067 ms
+21:42:45.976001/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013148 delayed for 0.211 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 498259).
+21:42:46.016511/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013156 delayed for 0.185 ms
+21:42:46.016559/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013158 delayed for 0.233 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 505459).
+21:42:46.057002/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013166 delayed for 0.370 ms
+21:42:46.057072/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013169 delayed for 0.442 ms
+21:42:46.057111/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508013174 delayed for 0.476 ms
+21:42:46.057149/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013180 delayed for 0.507 ms
+21:42:46.096933/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013186 delayed for 0.099 ms
+21:42:46.097019/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013188 delayed for 0.178 ms
+21:42:46.097073/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508013192 delayed for 0.224 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 509059).
+21:42:46.136316/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013202 delayed for 0.324 ms
+21:42:46.136487/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013208 delayed for 0.483 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 516259).
+21:42:46.176929/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013213 delayed for 0.333 ms
+21:42:46.177025/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013216 delayed for 0.431 ms
+21:42:46.216664/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013230 delayed for 0.075 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 519859).
+21:42:46.216823/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013232 delayed for 0.227 ms
+21:42:46.216978/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013240 delayed for 0.372 ms
+21:42:46.217119/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013254 delayed for 0.498 ms
+21:42:46.217229/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013257 delayed for 0.604 ms
+21:42:46.217406/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013276 delayed for 0.761 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 495894).
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 523459).
+21:42:46.256478/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013285 delayed for 0.342 ms
+21:42:46.256550/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508013290 delayed for 0.412 ms
+21:42:46.256609/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013306 delayed for 0.453 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 527059).
+21:42:46.297350/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013323 delayed for 0.557 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 530659).
+21:42:46.337313/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013333 delayed for 0.261 ms
+21:42:46.337445/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013340 delayed for 0.387 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 534259).
+21:42:46.376840/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013347 delayed for 0.114 ms
+21:42:46.415901/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508013371 delayed for 0.088 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 537859).
+21:42:46.416348/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013384 delayed for 0.466 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 541459).
+21:42:46.456399/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013389 delayed for 0.277 ms
+21:42:46.456511/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013398 delayed for 0.378 ms
+21:42:46.496756/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013403 delayed for 0.069 ms
+21:42:46.496856/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013409 delayed for 0.163 ms
+21:42:46.496889/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508013419 delayed for 0.181 ms
+21:42:46.496917/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013426 delayed for 0.198 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 545059).
+21:42:46.576119/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013440 delayed for 0.086 ms
+21:42:46.616661/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013460 delayed for 0.166 ms
+21:42:46.616832/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013465 delayed for 0.328 ms
+21:42:46.616901/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013478 delayed for 0.379 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 559459).
+21:42:46.696377/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013508 delayed for 0.067 ms
+21:42:46.696509/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013510 delayed for 0.203 ms
+21:42:46.736644/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013522 delayed for 0.083 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 563059).
+21:42:46.776881/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013547 delayed for 0.276 ms
+21:42:46.777052/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013568 delayed for 0.426 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 573859).
+21:42:46.817313/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013573 delayed for 0.231 ms
+21:42:46.817375/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013576 delayed for 0.295 ms
+21:42:46.817405/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013580 delayed for 0.321 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 577459).
+21:42:46.856951/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013594 delayed for 0.347 ms
+21:42:46.856993/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013596 delayed for 0.390 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 581059).
+21:42:46.897143/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013605 delayed for 0.452 ms
+21:42:46.897245/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013609 delayed for 0.548 ms
+21:42:46.897381/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013620 delayed for 0.668 ms
+21:42:46.936914/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508013623 delayed for 0.092 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 584659).
+21:42:46.976612/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013635 delayed for 0.308 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 591859).
+21:42:47.016884/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013649 delayed for 0.137 ms
+21:42:47.017022/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013659 delayed for 0.269 ms
+21:42:47.017047/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013661 delayed for 0.294 ms
+21:42:47.017073/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013665 delayed for 0.316 ms
+21:42:47.056657/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013672 delayed for 0.109 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 595459).
+21:42:47.056789/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013681 delayed for 0.213 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 599059).
+21:42:47.096821/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013688 delayed for 0.153 ms
+21:42:47.097239/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013696 delayed for 0.558 ms
+21:42:47.138057/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013706 delayed for 0.087 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 602659).
+21:42:47.138166/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013708 delayed for 0.189 ms
+21:42:47.138429/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013722 delayed for 0.426 ms
+21:42:47.138505/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013725 delayed for 0.502 ms
+21:42:47.138575/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013741 delayed for 0.550 ms
+21:42:47.138621/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013746 delayed for 0.568 ms
+21:42:47.138679/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013756 delayed for 0.604 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 606259).
+21:42:47.176862/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013784 delayed for 0.345 ms
+21:42:47.176958/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013800 delayed for 0.428 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 583665).
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 609859).
+21:42:47.216539/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013810 delayed for 0.213 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 613459).
+21:42:47.296884/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013832 delayed for 0.087 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 617059).
+21:42:47.297232/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013862 delayed for 0.409 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 620659).
+21:42:47.416300/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508013895 delayed for 0.165 ms
+21:42:47.416600/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013897 delayed for 0.466 ms
+21:42:47.416642/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013902 delayed for 0.503 ms
+21:42:47.416686/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013917 delayed for 0.517 ms
+21:42:47.416712/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013922 delayed for 0.536 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 631459).
+21:42:47.456901/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013930 delayed for 0.206 ms
+21:42:47.456973/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013940 delayed for 0.262 ms
+21:42:47.457005/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013943 delayed for 0.265 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 635059).
+21:42:47.501293/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013959 delayed for 0.323 ms
+Input #0, mpegts, from 'srt://192.168.3.99:4004?mode=caller':
+  Duration: N/A, start: 1.400000, bitrate: N/A
+  Program 1 
+    Metadata:
+      service_name    : Service01
+      service_provider: FFmpeg
+  Stream #0:0[0x100]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn
+  Stream #0:1[0x101](eng): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 129 kb/s
+Output #0, mpegts, to 'capturas/srt_20250630_21-42-32/recebido_srt.ts':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 25 fps, 25 tbr, 90k tbn
+  Stream #0:1(eng): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 129 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    [in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 4 times
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+    Last message repeated 1 times
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 1 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 3 times
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+    Last message repeated 3 times
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 6 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+    Last message repeated 1 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+    Last message repeated 12 times
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 2 times
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+    Last message repeated 1 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+    Last message repeated 14 times
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 5 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+    Last message repeated 15 times
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 2 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+    Last message repeated 17 times
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 2 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+    Last message repeated 5 times
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 638659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:47.576908/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013982 delayed for 0.196 ms
+21:42:47.577003/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508013988 delayed for 0.287 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 645859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:47.616932/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508014007 delayed for 0.239 ms
+21:42:47.617010/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014013 delayed for 0.313 ms
+21:42:47.657638/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014016 delayed for 0.669 ms
+21:42:47.657870/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014028 delayed for 1.000 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 649459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:47.698216/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014058 delayed for 1.954 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 656659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:47.737290/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014065 delayed for 0.497 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 660259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:47.817121/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508014094 delayed for 0.201 ms
+21:42:47.817221/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508014104 delayed for 0.293 ms
+21:42:47.817257/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014107 delayed for 0.326 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 667459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:47.856750/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014124 delayed for 0.262 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 671059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:47.937638/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014146 delayed for 0.164 ms
+21:42:47.937768/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508014158 delayed for 0.280 ms
+21:42:47.937795/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014160 delayed for 0.304 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 678259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:47.976926/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014172 delayed for 0.311 ms
+21:42:47.977018/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014176 delayed for 0.398 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 681859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.018082/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014183 delayed for 0.252 ms
+21:42:48.018184/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014189 delayed for 0.346 ms
+21:42:48.018229/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014194 delayed for 0.384 ms
+21:42:48.018290/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014206 delayed for 0.431 ms
+size=    2304kB time=00:00:06.13 bitrate=3075.9kbits/s speed=11.9x    [mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 685459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.057294/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014214 delayed for 0.418 ms
+21:42:48.057349/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014217 delayed for 0.474 ms
+21:42:48.096868/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014221 delayed for 0.103 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 689059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.097123/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014237 delayed for 0.314 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 692659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.176979/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014268 delayed for 0.228 ms
+21:42:48.177084/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014270 delayed for 0.334 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 699859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.217219/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014285 delayed for 0.339 ms
+21:42:48.217274/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 3 packet(s). Packet seqno %1508014296 delayed for 0.391 ms
+21:42:48.217305/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014305 delayed for 0.416 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 703459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.296261/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014320 delayed for 0.068 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 707059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.336440/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014352 delayed for 0.160 ms
+21:42:48.336512/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014358 delayed for 0.229 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 714259)21:42:48.376899/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014365 delayed for 0.386 ms
+.
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.376992/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014367 delayed for 0.480 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 717859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.548613/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508014394 delayed for 91.741 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 725059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+size=    2560kB time=00:00:06.61 bitrate=3169.7kbits/s speed=6.46x    21:42:48.664156/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014439 delayed for 127.509 ms
+21:42:48.672549/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014450 delayed for 135.890 ms
+21:42:48.676961/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014455 delayed for 140.295 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 732259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.688223/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014472 delayed for 112.290 ms
+21:42:48.691000/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014474 delayed for 74.457 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 735859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.701212/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014490 delayed for 44.520 ms
+21:42:48.707537/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014496 delayed for 50.838 ms
+21:42:48.712042/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014501 delayed for 55.331 ms
+21:42:48.715124/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014504 delayed for 58.410 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 743059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.746380/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508014546 delayed for 10.025 ms
+21:42:48.752292/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014555 delayed for 15.915 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 750259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.777203/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014566 delayed for 0.309 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 753859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.816575/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014582 delayed for 0.262 ms
+21:42:48.856523/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014586 delayed for 0.085 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 757459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.856896/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014595 delayed for 0.380 ms
+21:42:48.856962/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014598 delayed for 0.446 ms
+21:42:48.857046/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014609 delayed for 0.520 ms
+21:42:48.857117/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014613 delayed for 0.587 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 761059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.897054/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014629 delayed for 0.167 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 764659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.936684/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014638 delayed for 0.287 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 768259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:48.977086/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014674 delayed for 0.339 ms
+21:42:48.977150/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014676 delayed for 0.406 ms
+21:42:49.017022/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508014681 delayed for 0.119 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 771859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:49.017199/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014688 delayed for 0.288 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 775459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:49.056940/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014697 delayed for 0.274 ms
+21:42:49.056992/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508014701 delayed for 0.326 ms
+21:42:49.097245/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014708 delayed for 0.080 ms
+21:42:49.097444/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014731 delayed for 0.246 ms
+21:42:49.097502/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014733 delayed for 0.302 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 779059).
+21:42:49.137011/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014739 delayed for 0.148 ms
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 759208).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 2 times
+size=    2816kB time=00:00:07.21 bitrate=3196.8kbits/s speed=4.52x    [mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 786259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:49.177315/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014760 delayed for 0.770 ms
+21:42:49.216829/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014766 delayed for 0.092 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 789859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:49.256457/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014804 delayed for 0.232 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 797059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:49.336789/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014823 delayed for 0.161 ms
+21:42:49.376907/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014860 delayed for 0.209 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 807859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:49.417198/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014870 delayed for 0.250 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 811459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 788465).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 2 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+21:42:49.497154/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014909 delayed for 0.417 ms
+21:42:49.497196/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014912 delayed for 0.459 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 818659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:49.537212/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508014937 delayed for 0.235 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 822259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:49.576471/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014955 delayed for 0.317 ms
+21:42:49.616397/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014957 delayed for 0.064 ms
+21:42:49.616520/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014962 delayed for 0.190 ms
+21:42:49.616576/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508014979 delayed for 0.233 ms
+21:42:49.616600/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 3 packet(s). Packet seqno %1508014983 delayed for 0.255 ms
+21:42:49.616636/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508014986 delayed for 0.288 ms
+size=    3072kB time=00:00:07.70 bitrate=3264.5kbits/s speed=3.64x    [mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 825859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:49.737110/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015019 delayed for 0.153 ms
+21:42:49.737212/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015028 delayed for 0.252 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 840259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:49.856989/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015071 delayed for 0.201 ms
+21:42:49.857161/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015084 delayed for 0.366 ms
+21:42:49.857247/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015093 delayed for 0.443 ms
+21:42:49.896514/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015095 delayed for 0.071 ms
+21:42:49.896627/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015101 delayed for 0.184 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 851059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:49.936731/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015109 delayed for 0.324 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 858259).
+21:42:49.976705/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015116 delayed for 0.206 ms
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.016165/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015138 delayed for 0.071 ms
+21:42:50.016256/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015141 delayed for 0.164 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 861859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.096613/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015170 delayed for 0.165 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 872659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+size=    3328kB time=00:00:08.33 bitrate=3270.4kbits/s speed=3.16x    21:42:50.257450/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015216 delayed for 0.247 ms
+21:42:50.257610/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015224 delayed for 0.403 ms
+21:42:50.257726/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015242 delayed for 0.496 ms
+21:42:50.257813/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508015248 delayed for 0.579 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 887059).
+21:42:50.296425/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015255 delayed for 0.092 ms
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.296623/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508015263 delayed for 0.285 ms
+21:42:50.296772/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015276 delayed for 0.408 ms
+21:42:50.296877/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508015288 delayed for 0.501 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 890659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.336902/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015304 delayed for 0.511 ms
+21:42:50.336998/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015323 delayed for 0.586 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 894259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.377283/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 3 packet(s). Packet seqno %1508015330 delayed for 0.229 ms
+21:42:50.377360/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015335 delayed for 0.296 ms
+21:42:50.416290/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015338 delayed for 0.073 ms
+21:42:50.416478/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015354 delayed for 0.254 ms
+21:42:50.416527/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015356 delayed for 0.298 ms
+21:42:50.416597/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015359 delayed for 0.367 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 897859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.460167/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508015375 delayed for 0.309 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 905059).
+21:42:50.496988/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015385 delayed for 0.489 ms
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.497090/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015390 delayed for 0.587 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 908659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.536971/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015404 delayed for 0.284 ms
+21:42:50.537104/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015407 delayed for 0.416 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 912259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.577152/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508015429 delayed for 0.198 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 915859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.616386/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015440 delayed for 0.249 ms
+21:42:50.656390/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015450 delayed for 0.164 ms
+21:42:50.656655/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015466 delayed for 0.403 ms
+21:42:50.656694/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015469 delayed for 0.438 ms
+21:42:50.696790/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015478 delayed for 0.071 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 919459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.696965/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015481 delayed for 0.239 ms
+21:42:50.696994/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015483 delayed for 0.265 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 926659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+size=    3840kB time=00:00:08.82 bitrate=3565.1kbits/s speed=2.79x    21:42:50.856729/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015546 delayed for 0.196 ms
+21:42:50.856828/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015549 delayed for 0.296 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 941059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.896979/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015558 delayed for 0.304 ms
+21:42:50.897077/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015567 delayed for 0.398 ms
+21:42:50.897130/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015569 delayed for 0.449 ms
+21:42:50.897187/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015572 delayed for 0.500 ms
+21:42:50.897232/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015574 delayed for 0.544 ms
+21:42:50.897277/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015576 delayed for 0.587 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 944659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:50.936734/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015583 delayed for 0.217 ms
+21:42:50.977187/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015593 delayed for 0.188 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 948259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.016249/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015623 delayed for 0.213 ms
+21:42:51.056284/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015630 delayed for 0.091 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 955459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.056524/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015636 delayed for 0.324 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 959059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.099080/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015642 delayed for 0.373 ms
+21:42:51.099286/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015657 delayed for 0.563 ms
+21:42:51.099615/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015663 delayed for 0.884 ms
+21:42:51.136374/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015667 delayed for 0.071 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 936841).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 5 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 962659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.137247/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015675 delayed for 0.928 ms
+21:42:51.137340/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015677 delayed for 1.005 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 966259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.176413/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015683 delayed for 0.237 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 969859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.216895/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015699 delayed for 0.291 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 973459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+size=    4096kB time=00:00:09.37 bitrate=3578.7kbits/s speed=2.55x    21:42:51.256399/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015727 delayed for 0.254 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 977059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.337003/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015747 delayed for 0.405 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 984259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.456094/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015796 delayed for 0.208 ms
+21:42:51.456260/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015811 delayed for 0.354 ms
+21:42:51.456318/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015813 delayed for 0.411 ms
+21:42:51.456392/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015815 delayed for 0.484 ms
+21:42:51.496821/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015820 delayed for 0.081 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 995059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.497036/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015829 delayed for 0.271 ms
+21:42:51.497089/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015832 delayed for 0.320 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 998659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.537203/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015841 delayed for 0.304 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1002259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.577114/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015851 delayed for 0.258 ms
+21:42:51.577207/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015861 delayed for 0.341 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1005859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.657097/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015890 delayed for 0.391 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1013059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.696780/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015899 delayed for 0.371 ms
+21:42:51.696980/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015913 delayed for 0.552 ms
+21:42:51.697106/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015917 delayed for 0.675 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1016659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.736727/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015931 delayed for 0.274 ms
+21:42:51.776787/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015935 delayed for 0.095 ms
+size=    4352kB time=00:00:09.85 bitrate=3617.2kbits/s speed=2.35x    [mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1020259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.817002/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015955 delayed for 0.482 ms
+21:42:51.817137/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015965 delayed for 0.608 ms
+21:42:51.817194/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508015969 delayed for 0.661 ms
+21:42:51.856535/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015975 delayed for 0.085 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1027459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.896461/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015989 delayed for 0.155 ms
+21:42:51.896533/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015993 delayed for 0.225 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1034659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.937532/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508015998 delayed for 0.356 ms
+21:42:51.937665/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016010 delayed for 0.486 ms
+21:42:51.937718/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016014 delayed for 0.538 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1038259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:51.978361/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016034 delayed for 0.687 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1041859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:52.017775/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508016043 delayed for 0.295 ms
+21:42:52.017849/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016046 delayed for 0.368 ms
+21:42:52.056644/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016049 delayed for 0.067 ms
+21:42:52.056762/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016051 delayed for 0.189 ms
+21:42:52.056800/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016053 delayed for 0.223 ms
+21:42:52.096673/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016075 delayed for 0.099 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1045459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:52.136434/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016086 delayed for 0.078 ms
+21:42:52.136643/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016096 delayed for 0.275 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1056259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:52.176719/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016106 delayed for 0.380 ms
+21:42:52.176893/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016109 delayed for 0.549 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1059859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+size=    4352kB time=00:00:10.37 bitrate=3435.9kbits/s speed= 2.2x    21:42:52.594531/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016175 delayed for 258.030 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1074259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:52.594726/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016200 delayed for 178.325 ms
+21:42:52.594795/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016218 delayed for 178.373 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1081459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:52.595064/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016244 delayed for 58.226 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1088659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:52.595175/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016259 delayed for 58.314 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1092259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+size=    4608kB time=00:00:10.69 bitrate=3529.2kbits/s speed=2.03x    21:42:52.823786/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016284 delayed for 2.188 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1099459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:52.837146/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016323 delayed for 1.154 ms
+21:42:52.837465/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016329 delayed for 1.472 ms
+21:42:52.837672/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016343 delayed for 1.663 ms
+21:42:52.837868/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016346 delayed for 1.854 ms
+21:42:52.838110/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016358 delayed for 2.081 ms
+21:42:52.838301/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016363 delayed for 2.265 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1106659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:52.872956/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016392 delayed for 17.937 ms
+21:42:52.919423/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016427 delayed for 29.589 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1121059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 1097755).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+21:42:53.232649/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016447 delayed for 295.105 ms
+21:42:53.232744/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016451 delayed for 295.199 ms
+21:42:53.232766/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016453 delayed for 295.215 ms
+21:42:53.232783/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016455 delayed for 295.232 ms
+21:42:53.232809/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508016465 delayed for 295.246 ms
+21:42:53.232825/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016467 delayed for 295.260 ms
+    Last message repeated 5 times
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1124659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+21:42:53.232992/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016510 delayed for 176.492 ms
+21:42:53.233014/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016513 delayed for 176.511 ms
+21:42:53.233033/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016516 delayed for 176.525 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1139059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:53.233166/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016528 delayed for 136.095 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1142659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:53.233252/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016545 delayed for 57.016 ms
+21:42:53.233480/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016566 delayed for 16.571 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1149859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:53.256952/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016578 delayed for 0.135 ms
+21:42:53.332878/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016585 delayed for 76.046 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1157059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:53.333013/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016595 delayed for 36.775 ms
+size=    4864kB time=00:00:11.41 bitrate=3490.3kbits/s speed=1.97x    21:42:53.333074/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016598 delayed for 36.824 ms
+21:42:53.333126/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016608 delayed for 36.852 ms
+21:42:53.333165/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016610 delayed for 36.888 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1160659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:53.416495/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016635 delayed for 0.065 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 1141641).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+21:42:53.417016/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016640 delayed for 0.566 ms
+21:42:53.417085/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016647 delayed for 0.627 ms
+21:42:53.417127/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508016653 delayed for 0.660 ms
+21:42:53.417172/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016662 delayed for 0.695 ms
+21:42:53.457810/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016664 delayed for 0.080 ms
+21:42:53.496668/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016673 delayed for 0.069 ms
+21:42:53.496775/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016679 delayed for 0.178 ms
+    Last message repeated 5 times
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1171459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:53.536800/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016698 delayed for 0.306 ms
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1182259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:53.616243/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016736 delayed for 0.081 ms
+21:42:53.616394/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016741 delayed for 0.234 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1185859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:53.656494/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508016758 delayed for 0.239 ms
+21:42:53.696755/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016762 delayed for 0.065 ms
+21:42:53.696849/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016766 delayed for 0.159 ms
+21:42:53.696887/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016777 delayed for 0.183 ms
+21:42:53.737063/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016798 delayed for 0.163 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1193059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:53.737308/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016804 delayed for 0.394 ms
+21:42:53.737439/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016807 delayed for 0.517 ms
+21:42:53.737542/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016809 delayed for 0.619 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1200259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:53.817662/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016837 delayed for 0.241 ms
+21:42:53.856789/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016847 delayed for 0.070 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1207459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:53.856970/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016853 delayed for 0.239 ms
+21:42:53.857046/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016878 delayed for 0.280 ms
+21:42:53.896359/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016880 delayed for 0.054 ms
+21:42:53.896481/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016887 delayed for 0.174 ms
+21:42:53.896559/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016892 delayed for 0.248 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 1185526).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 2 times
+size=    5120kB time=00:00:11.97 bitrate=3502.2kbits/s speed= 1.9x    [mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1211059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+21:42:54.056436/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016951 delayed for 0.062 ms
+21:42:54.056547/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016954 delayed for 0.171 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1225459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.097132/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508016968 delayed for 0.355 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1232659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.137569/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016977 delayed for 0.224 ms
+21:42:54.137653/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016982 delayed for 0.306 ms
+21:42:54.137705/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508016994 delayed for 0.337 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1236259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.256636/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017024 delayed for 0.132 ms
+21:42:54.256803/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017031 delayed for 0.293 ms
+21:42:54.256907/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017054 delayed for 0.370 ms
+21:42:54.296937/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017056 delayed for 0.075 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1247059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.297133/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017060 delayed for 0.264 ms
+21:42:54.297182/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017069 delayed for 0.302 ms
+21:42:54.297211/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017072 delayed for 0.327 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1250659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.336403/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017081 delayed for 0.285 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1254259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.377536/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017088 delayed for 0.327 ms
+21:42:54.377652/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017092 delayed for 0.442 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 1229412).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 2 times
+size=    5376kB time=00:00:12.49 bitrate=3524.3kbits/s speed=1.83x    [in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 2 times
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1257859).
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.417362/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017109 delayed for 1.016 ms
+21:42:54.417446/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017120 delayed for 1.093 ms
+21:42:54.456378/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017128 delayed for 0.065 ms
+21:42:54.456493/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017131 delayed for 0.179 ms
+21:42:54.456532/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017134 delayed for 0.209 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1261459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.496773/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017146 delayed for 0.267 ms
+21:42:54.536986/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017159 delayed for 0.073 ms
+21:42:54.577069/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017170 delayed for 0.149 ms
+21:42:54.616554/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017179 delayed for 0.073 ms
+21:42:54.616707/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017187 delayed for 0.226 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1268659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.657901/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017196 delayed for 0.295 ms
+21:42:54.658045/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017218 delayed for 0.424 ms
+21:42:54.658157/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017225 delayed for 0.529 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1283059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.696758/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508017243 delayed for 0.216 ms
+21:42:54.696817/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017245 delayed for 0.275 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1286659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.776606/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017266 delayed for 0.072 ms
+21:42:54.776708/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017275 delayed for 0.157 ms
+21:42:54.776763/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017280 delayed for 0.202 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1290259).
+21:42:54.817164/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017287 delayed for 0.124 ms
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1297459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.858031/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017300 delayed for 0.267 ms
+21:42:54.897102/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017305 delayed for 0.146 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1301059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+size=    5888kB time=00:00:13.05 bitrate=3694.4kbits/s speed=1.77x    21:42:54.936899/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017327 delayed for 0.219 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1308259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:54.976616/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017342 delayed for 0.279 ms
+21:42:54.976699/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017349 delayed for 0.361 ms
+21:42:55.016322/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017351 delayed for 0.090 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1311859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.016574/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017355 delayed for 0.339 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 1287926).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 2 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1315459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.057533/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508017368 delayed for 0.654 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1319059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.097136/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508017383 delayed for 0.254 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1322659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.136749/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017398 delayed for 0.240 ms
+21:42:55.177492/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017405 delayed for 0.096 ms
+21:42:55.217211/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508017414 delayed for 0.094 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1326259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.217666/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017429 delayed for 0.517 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1333459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.257320/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017443 delayed for 0.387 ms
+21:42:55.297603/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017446 delayed for 0.091 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1337059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.297844/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017455 delayed for 0.302 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1340659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.376949/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017480 delayed for 0.328 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1347859).
+21:42:55.416640/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017487 delayed for 0.102 ms
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.416765/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017493 delayed for 0.223 ms
+21:42:55.416825/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508017504 delayed for 0.270 ms
+21:42:55.416876/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017508 delayed for 0.317 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1351459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+size=    6144kB time=00:00:13.57 bitrate=3707.3kbits/s speed=1.72x    21:42:55.457678/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508017518 delayed for 0.739 ms
+21:42:55.457809/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017528 delayed for 0.862 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1355059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.496181/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017536 delayed for 0.289 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1358659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.536733/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017552 delayed for 0.294 ms
+21:42:55.536787/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017562 delayed for 0.346 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1362259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.616347/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017576 delayed for 0.290 ms
+21:42:55.616512/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017579 delayed for 0.459 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1369459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.656755/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017587 delayed for 0.190 ms
+21:42:55.656830/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017589 delayed for 0.265 ms
+21:42:55.696626/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017600 delayed for 0.090 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1373059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.775827/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017619 delayed for 0.092 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1380259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.776035/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017624 delayed for 0.289 ms
+21:42:55.776088/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017627 delayed for 0.341 ms
+21:42:55.776132/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017635 delayed for 0.374 ms
+21:42:55.776162/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017638 delayed for 0.398 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1383859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.817065/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017645 delayed for 0.177 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1387459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.896761/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017668 delayed for 0.198 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1394659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:55.936297/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017681 delayed for 0.259 ms
+21:42:55.936356/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 3 packet(s). Packet seqno %1508017685 delayed for 0.318 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1398259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+size=    6144kB time=00:00:14.09 bitrate=3570.6kbits/s speed=1.68x    21:42:56.017739/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017703 delayed for 1.137 ms
+21:42:56.017836/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017713 delayed for 1.226 ms
+21:42:56.056879/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017718 delayed for 0.121 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1405459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.057057/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508017727 delayed for 0.281 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1409059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.097288/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017733 delayed for 0.602 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1412659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.117773/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017753 delayed for 0.341 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1416259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.121000/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017761 delayed for 1.042 ms
+21:42:56.121087/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017784 delayed for 1.113 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 1390326).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 3 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1419859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.125678/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017807 delayed for 2.310 ms
+21:42:56.125731/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508017812 delayed for 2.362 ms
+21:42:56.125773/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017821 delayed for 1.917 ms
+21:42:56.126513/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017823 delayed for 2.650 ms
+21:42:56.130623/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508017826 delayed for 6.753 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1423459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.174576/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017838 delayed for 13.222 ms
+21:42:56.181362/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017842 delayed for 19.999 ms
+21:42:56.197482/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017852 delayed for 36.107 ms
+21:42:56.203451/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017854 delayed for 42.073 ms
+21:42:56.203781/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017856 delayed for 39.644 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1430659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.226715/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508017869 delayed for 60.624 ms
+21:42:56.240912/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017877 delayed for 74.810 ms
+21:42:56.249628/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017880 delayed for 83.521 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1441459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.393882/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017946 delayed for 157.229 ms
+21:42:56.401222/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017949 delayed for 164.568 ms
+size=    6400kB time=00:00:14.77 bitrate=3548.2kbits/s speed=1.66x    21:42:56.446222/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017957 delayed for 156.932 ms
+21:42:56.460439/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017961 delayed for 168.954 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1463059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.477207/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017969 delayed for 185.673 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1470259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.503517/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017982 delayed for 210.655 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1473859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.531438/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508017993 delayed for 205.777 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1477459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.545777/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508018001 delayed for 220.029 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1481059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.593299/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018022 delayed for 267.509 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1484659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.610551/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018028 delayed for 281.177 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1488259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.637808/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018040 delayed for 301.127 ms
+21:42:56.677552/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018055 delayed for 340.799 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1495459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.718336/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018067 delayed for 369.401 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1502659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.763767/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018072 delayed for 265.706 ms
+21:42:56.768662/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018075 delayed for 270.593 ms
+21:42:56.776268/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018081 delayed for 277.244 ms
+21:42:56.788130/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018087 delayed for 289.096 ms
+21:42:56.790346/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018089 delayed for 291.304 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 1480188).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 5 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1506259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.853790/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018116 delayed for 337.355 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1517059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.900113/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018144 delayed for 371.877 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1524259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.924541/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018160 delayed for 392.299 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1527859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+size=    6656kB time=00:00:15.57 bitrate=3500.6kbits/s speed=1.66x    21:42:56.961909/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018179 delayed for 405.871 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1535059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.973322/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018186 delayed for 416.435 ms
+21:42:56.979778/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018192 delayed for 422.883 ms
+21:42:56.987227/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018203 delayed for 423.542 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1538659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:56.996662/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018213 delayed for 418.992 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1545859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.001340/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018220 delayed for 423.654 ms
+21:42:57.009077/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018232 delayed for 423.268 ms
+21:42:57.013928/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018239 delayed for 421.002 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1549459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.016707/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018244 delayed for 423.771 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1556659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.025844/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018257 delayed for 417.104 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1560259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.042571/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018282 delayed for 419.351 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 1540792).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 2 times
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1567459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.069068/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018316 delayed for 315.104 ms
+21:42:57.081841/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018332 delayed for 310.941 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1578259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.105425/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018356 delayed for 319.733 ms
+21:42:57.106537/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018358 delayed for 320.846 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1589059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.127233/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018385 delayed for 324.344 ms
+21:42:57.132710/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018390 delayed for 329.811 ms
+21:42:57.135480/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018396 delayed for 326.369 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1596259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.144794/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018409 delayed for 328.280 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1603459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.165385/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508018436 delayed for 323.364 ms
+21:42:57.166856/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018438 delayed for 324.830 ms
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 1584677).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 2 times
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1610659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+[mpegts @ 0x5d9e2c0a88c0] AAC bitstream not in ADTS format and extradata missing
+21:42:57.180463/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018455 delayed for 315.199 ms
+21:42:57.184540/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508018460 delayed for 319.264 ms
+21:42:57.192656/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018470 delayed for 324.109 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1617859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.194240/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018472 delayed for 325.254 ms
+21:42:57.196022/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018474 delayed for 326.735 ms
+21:42:57.197245/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018476 delayed for 326.586 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1621459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.212272/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508018494 delayed for 308.662 ms
+21:42:57.226397/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018513 delayed for 322.597 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1628659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.248015/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018531 delayed for 343.929 ms
+21:42:57.255067/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018541 delayed for 349.078 ms
+21:42:57.257350/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508018544 delayed for 351.349 ms
+21:42:57.264099/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018554 delayed for 357.916 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1632259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.271977/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018564 delayed for 365.490 ms
+21:42:57.276963/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018572 delayed for 370.456 ms
+21:42:57.278060/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018574 delayed for 371.549 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1635859).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.291582/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018586 delayed for 384.895 ms
+21:42:57.293046/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018589 delayed for 386.359 ms
+21:42:57.293091/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018592 delayed for 386.399 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1639459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.301295/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018601 delayed for 394.544 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1643059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.320248/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018617 delayed for 368.684 ms
+21:42:57.321645/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018619 delayed for 370.076 ms
+21:42:57.324219/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018623 delayed for 372.641 ms
+21:42:57.327993/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 2 packet(s). Packet seqno %1508018627 delayed for 376.405 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1646659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.340879/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018641 delayed for 310.696 ms
+21:42:57.344628/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018646 delayed for 314.440 ms
+21:42:57.348506/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018651 delayed for 313.676 ms
+21:42:57.350113/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018653 delayed for 315.284 ms
+21:42:57.352598/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018656 delayed for 317.763 ms
+21:42:57.353806/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018658 delayed for 318.971 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1650259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.363717/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018672 delayed for 326.506 ms
+21:42:57.365811/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018675 delayed for 328.599 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1657459).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.374957/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018686 delayed for 334.781 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1661059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.404766/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018714 delayed for 341.903 ms
+21:42:57.405968/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018716 delayed for 337.035 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1664659).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.410393/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018722 delayed for 341.383 ms
+21:42:57.411400/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018724 delayed for 342.389 ms
+21:42:57.413607/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018727 delayed for 344.577 ms
+21:42:57.418068/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018733 delayed for 349.007 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1668259).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+21:42:57.430709/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018751 delayed for 358.718 ms
+21:42:57.443250/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018765 delayed for 344.088 ms
+21:42:57.444585/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018768 delayed for 345.415 ms
+21:42:57.448036/SRT:TsbPd!W:SRT.br: @303394753: RCV-DROPPED 1 packet(s). Packet seqno %1508018772 delayed for 348.849 ms
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 0, dts = 1679059).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 0
+[mpegts @ 0x5d9e2c023dc0] PES packet size mismatch
+[mpegts @ 0x5d9e2c023dc0] Packet corrupt (stream = 1, dts = 1657820).
+[in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+    Last message repeated 1 times
+size=    7424kB time=00:00:17.21 bitrate=3532.6kbits/s speed=1.74x    [in#0/mpegts @ 0x5d9e2c023cc0] corrupt input packet in stream 1
+[in#0/mpegts @ 0x5d9e2c023cc0] Error during demuxing: Input/output error
+[in#0/mpegts @ 0x5d9e2c023cc0] Error retrieving a packet from demuxer: Input/output error
+[out#0/mpegts @ 0x5d9e2c0d8500] video:7075kB audio:250kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 3.618033%
+size=    7590kB time=00:00:17.25 bitrate=3603.3kbits/s speed=1.74x    
