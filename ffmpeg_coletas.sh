@@ -15,7 +15,7 @@ SCRIPT_DIR="$(dirname "$0")"
 # ========================
 
 # Caminho do vídeo de entrada
-VIDEO="soundh264.mp4"
+VIDEO="v2.mp4"
 
 # Portas usadas por protocolo
 PORTA_SRT=4004
@@ -127,8 +127,8 @@ case "$PROTO" in
   srt)
     # Transmissor (listener)
     ffmpeg -re -i "$VIDEO" \
-           -c:v libx264 -b:v 4M \              # Codec e bitrate de vídeo
-           -c:a aac -ar 44100 -b:a 128k \      # Codec e bitrate de áudio
+           -c:v libx264 -b:v 4M \
+           -c:a aac -ar 44100 -b:a 128k \
            -f mpegts "srt://$SERVIP:$PORT?mode=listener&pkt_size=1316" \
            >"$DIR/ffmpeg_tx.log" 2>&1 &
     TX_PID=$!
@@ -146,14 +146,14 @@ case "$PROTO" in
     ffmpeg -re -i "$VIDEO" \
            -c:v libx264 -b:v 4M \
            -c:a aac -ar 44100 -b:a 128k \
-           -f rtp_mpegts "rtp://${CLIIP}:$PORT?pkt_size=1300" \
+           -f rtp_mpegts "rtp://${SERV_RTP}:$PORT?pkt_size=1300" \
            2>&1 | tee "$DIR/ffmpeg_tx.log" &
     TX_PID=$!
 
     sleep 1
 
     # Receptor
-    ffmpeg -i "rtp://${SERVIP}:$PORT" -c copy "$RECV" -loglevel debug \
+    ffmpeg -i "rtp://${CLI_RTP}:$PORT" -c copy "$RECV" -loglevel debug \
            2>&1 | ts '[%Y-%m-%d %H:%M:%S]' >"$DIR/ffmpeg_rx.log" &
     RX_PID=$!
     ;;
@@ -181,11 +181,11 @@ case "$PROTO" in
     ;;
 esac
 
-# Aguarda a transmissão por 5 minutos
-sleep 300
+
+sleep 130
 
 # Aguarda o término do receptor
-wait $RX_PID
+#wait $RX_PID
 
 # Encerra o transmissor e o tcpdump
 kill $TX_PID &>/dev/null
