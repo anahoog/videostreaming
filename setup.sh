@@ -9,4 +9,3 @@ sudo ip addr add 192.168.3.20/24 dev tapb
 # bring up all interfaces
 sudo ip link set dev tapa up
 sudo ip link set dev tapb up
-

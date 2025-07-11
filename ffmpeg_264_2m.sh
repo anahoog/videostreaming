@@ -50,7 +50,7 @@ fi
 # ========================
 
 # Usa ffprobe para obter a duração do vídeo em segundos (sem casas decimais)
-DURACAO_VIDEO=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO")
+DURACAO_VIDEO=$(/home/anahoog/bin/ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO")
 DURACAO_VIDEO=${DURACAO_VIDEO%.*}
 
 # Se a duração não for válida, interrompe o script
@@ -129,7 +129,7 @@ case "$PROTO" in
   srt)
     # Transmissor (listener)
     ffmpeg -re -i "$VIDEO" \
-           -c:v libx264 -b:v 2M \
+           -c:v libx264  \
            -c:a aac -ar 44100 -b:a 128k \
            -f mpegts "srt://$SERVIP:$PORT?mode=listener&pkt_size=1316" \
            >"$DIR/ffmpeg_tx_${TS}.log" 2>&1 &
@@ -148,7 +148,7 @@ case "$PROTO" in
   rtp)
      # Transmissor (sender envia via RTP MPEG-TS)
     ffmpeg -re -i "$VIDEO" \
-           -c:v libx264 -b:v 2M \
+           -c:v libx264  \
            -c:a aac -ar 44100 -b:a 128k \
            -f rtp_mpegts "rtp://${SERV_RTP}:$PORT?pkt_size=1300" \
            2>&1 | tee "$DIR/ffmpeg_tx_${TS}.log" &
@@ -170,7 +170,7 @@ case "$PROTO" in
 
     # Transmissor: envia via FLV
     ffmpeg -re -i "$VIDEO" \
-           -c:v libx264 -b:v 2M \
+           -c:v libx264  \
            -c:a aac -ar 44100 -b:a 128k \
            -f flv "rtmp://$SERVIP:$PORT/live/stream" \
            >"$DIR/ffmpeg_tx_${TS}.log" 2>&1 &
@@ -198,7 +198,7 @@ sudo kill $TCPDUMP_PID &>/dev/null
 # ========================
 # ANÁLISE DE MÉTRICAS VISUAIS
 # ========================
-
+sleep 10
 echo "[INFO] Extraindo métricas de PSNR e SSIM..."
 "$SCRIPT_DIR/calculate_metrics.sh" \
   "$VIDEO" \

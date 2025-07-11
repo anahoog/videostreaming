@@ -129,7 +129,7 @@ case "$PROTO" in
   srt)
     # Transmissor (listener)
     ffmpeg -re -i "$VIDEO" \
-           -c:v libx265 -b:v 2M \
+           -c:v libx265 -b:v  \
            -c:a aac -ar 44100 -b:a 128k \
            -f mpegts "srt://$SERVIP:$PORT?mode=listener&pkt_size=1316" \
            >"$DIR/ffmpeg_tx_${TS}.log" 2>&1 &
@@ -148,7 +148,7 @@ case "$PROTO" in
   rtp)
      # Transmissor (sender envia via RTP MPEG-TS)
     ffmpeg -re -i "$VIDEO" \
-           -c:v libx265 -b:v 2M \
+           -c:v libx265 -b:v  \
            -c:a aac -ar 44100 -b:a 128k \
            -f rtp_mpegts "rtp://${SERV_RTP}:$PORT?pkt_size=1300" \
            2>&1 | tee "$DIR/ffmpeg_tx_${TS}.log" &
@@ -170,7 +170,7 @@ case "$PROTO" in
 
     # Transmissor: envia via FLV
     ffmpeg -re -i "$VIDEO" \
-           -c:v libx264 -b:v 2M \
+           -c:v libx264 -b:v \
            -c:a aac -ar 44100 -b:a 128k \
            -f flv "rtmp://$SERVIP:$PORT/live/stream" \
            >"$DIR/ffmpeg_tx_${TS}.log" 2>&1 &
