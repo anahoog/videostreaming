@@ -189,7 +189,7 @@ esac
 sleep 130
 
 # Aguarda o término do receptor
-#wait $RX_PID
+wait $RX_PID
 
 # Encerra o transmissor e o tcpdump
 kill $TX_PID &>/dev/null

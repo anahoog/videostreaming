@@ -129,7 +129,7 @@ case "$PROTO" in
   srt)
     # Transmissor (listener)
     ffmpeg -re -i "$VIDEO" \
-           -c:v libx264 -b:v  \
+           -c:v libx264 -b:v 4M \
            -c:a aac -ar 44100 -b:a 128k \
            -f mpegts "srt://$SERVIP:$PORT?mode=listener&pkt_size=1316" \
            >"$DIR/ffmpeg_tx_${TS}.log" 2>&1 &
@@ -148,7 +148,7 @@ case "$PROTO" in
   rtp)
      # Transmissor (sender envia via RTP MPEG-TS)
     ffmpeg -re -i "$VIDEO" \
-           -c:v libx264 -b:v  \
+           -c:v libx264 -b:v 4M \
            -c:a aac -ar 44100 -b:a 128k \
            -f rtp_mpegts "rtp://${SERV_RTP}:$PORT?pkt_size=1300" \
            2>&1 | tee "$DIR/ffmpeg_tx_${TS}.log" &
@@ -165,12 +165,12 @@ case "$PROTO" in
   rtmp)
     # Reinicia o servidor Nginx (com módulo RTMP)
     sudo nginx -s stop &> /dev/null
-    sleep 1
+    sleep 5
     sudo nginx
 
     # Transmissor: envia via FLV
     ffmpeg -re -i "$VIDEO" \
-           -c:v libx264 -b:v  \
+           -c:v libx264 -b:v 4M \
            -c:a aac -ar 44100 -b:a 128k \
            -f flv "rtmp://$SERVIP:$PORT/live/stream" \
            >"$DIR/ffmpeg_tx_${TS}.log" 2>&1 &

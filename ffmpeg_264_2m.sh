@@ -127,28 +127,31 @@ echo "[INFO] Iniciando transmissor e receptor para $PROTO"
 
 case "$PROTO" in
   srt)
-    # Transmissor (listener)
-    ffmpeg -re -i "$VIDEO" \
-           -c:v libx264  \
+    # Transmissor (listener) com estatísticas SRT
+    ffmpeg -loglevel info -stats_period 0.01 \
+           -re -i "$VIDEO" \
+           -c:v libx264 -b:v 2M \
            -c:a aac -ar 44100 -b:a 128k \
            -f mpegts "srt://$SERVIP:$PORT?mode=listener&pkt_size=1316" \
-           >"$DIR/ffmpeg_tx_${TS}.log" 2>&1 &
+           >"$DIR/ffmpeg_tx_${TS}_stats.log" 2>&1 &
     TX_PID=$!
 
     sleep 1
 
-    # Receptor (caller)
-    ffmpeg -i "srt://$CLIIP:$PORT?mode=caller" -c copy "$RECEBIDO" \
-           >"$DIR/ffmpeg_rx_${TS}.log" 2>&1 &
+    # Receptor (caller) com estatísticas SRT
+    ffmpeg -loglevel info -stats_period 0.01 \
+           -i "srt://$CLIIP:$PORT?mode=caller" \
+           -c copy "$RECEBIDO" \
+           >"$DIR/ffmpeg_rx_${TS}_stats.log" 2>&1 &
     RX_PID=$!
 
-    
     ;;
+
   
   rtp)
      # Transmissor (sender envia via RTP MPEG-TS)
     ffmpeg -re -i "$VIDEO" \
-           -c:v libx264  \
+           -c:v libx264  -b:v 2M \
            -c:a aac -ar 44100 -b:a 128k \
            -f rtp_mpegts "rtp://${SERV_RTP}:$PORT?pkt_size=1300" \
            2>&1 | tee "$DIR/ffmpeg_tx_${TS}.log" &
@@ -165,12 +168,12 @@ case "$PROTO" in
   rtmp)
     # Reinicia o servidor Nginx (com módulo RTMP)
     sudo nginx -s stop &> /dev/null
-    sleep 1
+    sleep 5
     sudo nginx
 
     # Transmissor: envia via FLV
     ffmpeg -re -i "$VIDEO" \
-           -c:v libx264  \
+           -c:v libx264 -b:v 2M \
            -c:a aac -ar 44100 -b:a 128k \
            -f flv "rtmp://$SERVIP:$PORT/live/stream" \
            >"$DIR/ffmpeg_tx_${TS}.log" 2>&1 &
