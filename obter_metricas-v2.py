@@ -172,9 +172,6 @@ def main():
     ssim = sum(ssim_vals)/len(ssim_vals) if ssim_vals else None
     vmaf = sum(vmaf_vals)/len(vmaf_vals) if vmaf_vals else None
 
-    thr_k = extract_values(tx_log, r'bitrate=\s*([0-9\.]+)kbits/s') if tx_log else []
-    thr = (sum(thr_k)/len(thr_k)/1000) if thr_k else None
-
     sent = parse_tx(tx_log) if tx_log else None
     recv, jitter, rebufs = parse_rx(rx_log) if rx_log else (None,None,None)
 
@@ -194,7 +191,6 @@ def main():
     print(f"PSNR médio (dB): {psnr:.2f}" if psnr is not None else "PSNR: não disponível")
     print(f"SSIM médio: {ssim:.4f}" if ssim is not None else "SSIM: não disponível")
     print(f"VMAF médio: {vmaf:.2f}" if vmaf is not None else "VMAF: não disponível")
-    print(f"Vazão média (Mbps): {thr:.3f}" if thr is not None else "Vazão: não disponível")
     print()
     print("== Estatísticas de Transmissão/Recepção ==")
     print(f"Pacotes transmitidos: {sent}" if sent is not None else "Pacotes transmitidos: –")
@@ -205,5 +201,5 @@ def main():
     print(f"Jitter médio (ms): {jitter:.2f}" if jitter is not None else "Jitter: não disponível")
     print(f"Rebuffering (eventos): {rebufs}" if rebufs is not None else "Rebuffering: não disponível")
 
-if __name__=='__main__':
+if __name__ == '__main__':
     main()
